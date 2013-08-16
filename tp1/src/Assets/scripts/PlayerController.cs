@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
             Transform bullet = (Transform)GameObject.Instantiate(bulletPrototype);
 
             //Set the bullet in it's initial position and rotation
-            bullet.position = transform.position*2;
+            //bullet.position = transform.position;
+			Vector3 move = new Vector3(transform.position.x, transform.position.y + 10, transform.position.z);
+			bullet.position = move;
             bullet.transform.Rotate(0,0,0);
         }
 	}
