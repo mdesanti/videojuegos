@@ -11,9 +11,10 @@ public class Ball : MonoBehaviour
     void Start()
     {
 		//random + or - sign
-		float sign = Random.value;
+		float y = Random.value;
+		float x = Random.value;
 		
-        rigidbody.AddForce(1000,sign*1000,0);
+        rigidbody.AddForce(x*1000,y*1000,0);
 		Debug.Log("Instanciated!!");
     }
 
