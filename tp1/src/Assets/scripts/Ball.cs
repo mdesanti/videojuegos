@@ -13,6 +13,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rigidbody.AddForce(1000,-1000,0);
+		//Physics.gravity = Vector3(0, -1.0, 0);
     }
 	
 	void OnCollisionEnter(Collision collision) 
