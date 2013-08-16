@@ -10,7 +10,10 @@ public class Ball : MonoBehaviour
 
     void Start()
     {
-        rigidbody.AddForce(1000,-1000,0);
+		//random + or - sign
+		float sign = Random.value;
+		
+        rigidbody.AddForce(1000,sign*1000,0);
 		Debug.Log("Instanciated!!");
     }
 
