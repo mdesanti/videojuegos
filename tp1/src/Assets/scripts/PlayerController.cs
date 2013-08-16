@@ -6,7 +6,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-	public float speed = 9.0f;
+	public float speed = 13.0f;
 
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
             //Set the bullet in it's initial position and rotation
             //bullet.position = transform.position;
-			Vector3 move = new Vector3(transform.position.x, transform.position.y + 10, transform.position.z);
+			Vector3 move = new Vector3(transform.position.x, (float)(transform.position.y + 3), transform.position.z);
 			bullet.position = move;
             bullet.transform.Rotate(0,0,0);
         }

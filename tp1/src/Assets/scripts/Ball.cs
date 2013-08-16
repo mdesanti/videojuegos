@@ -6,34 +6,29 @@ public class Ball : MonoBehaviour
 {
     public float jumpSpeed = 15.0f;
 	public float gravity = 20.0f;
-
-	private Vector3 moveDirection = Vector3.zero;
-    private CharacterController controller;
+	public Transform childBall;
 
     void Start()
     {
         rigidbody.AddForce(1000,-1000,0);
-		//Physics.gravity = Vector3(0, -1.0, 0);
+		Debug.Log("Instanciated!!");
     }
-	
-	void OnCollisionEnter(Collision collision) 
+
+    void OnCollisionEnter(Collision collision) 
     {
         Debug.Log("Hit a " + collision.collider.gameObject.name);
+		if(collision.collider.gameObject.tag == "Bullet") {
+			if(childBall != null) {
+				Transform ball1 = (Transform)GameObject.Instantiate(childBall);
+				Transform ball2 = (Transform)GameObject.Instantiate(childBall);
+				Vector3 move1 = new Vector3(transform.position.x + 5, (float)(transform.position.y), transform.position.z);
+				Vector3 move2 = new Vector3(transform.position.x - 5, (float)(transform.position.y), transform.position.z);
+				ball1.position = move1;
+				ball2.position = move2;
+				ball1.renderer.enabled = true;
+				ball2.renderer.enabled = true;
+			}
+			GameObject.Destroy(gameObject);
+		}
     }
-
-    void FixedUpdate() {
-
-        //Ask the controller if we are in mid air, if not, then act
-		//if (controller.isGrounded) {
-		//	moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
-        //    moveDirection.Normalize();
-		//	moveDirection.y = jumpSpeed;
-		//}
-
-		//moveDirection.y -= gravity * Time.deltaTime;
-		//moveDirection.x = 50;
-
-        //Just tell the controller where we want to move, it will handle collisions itself
-		//controller.Move(moveDirection * Time.deltaTime);
-	}
 }
