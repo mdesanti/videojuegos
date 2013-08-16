@@ -2,7 +2,6 @@ using UnityEngine;
 
 // The RequireComponent attribute ensures a CharacterController is added to the
 // GameObject whenever a PlayerController is added
-[RequireComponent(typeof(CharacterController))]
 public class Ball : MonoBehaviour
 {
     public float jumpSpeed = 15.0f;
@@ -13,9 +12,7 @@ public class Ball : MonoBehaviour
 
     void Start()
     {
-        controller = GetComponent<CharacterController>();
         rigidbody.AddForce(1000,-1000,0);
-		Physics.IgnoreCollision(collider, collider);
     }
 	
 	void OnCollisionEnter(Collision collision) 
