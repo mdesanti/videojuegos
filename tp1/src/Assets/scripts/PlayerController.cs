@@ -44,4 +44,12 @@ public class PlayerController : MonoBehaviour
             bullet.transform.Rotate(0,0,0);
         }
 	}
+	
+	void OnCollisionEnter(Collision collision) 
+    {
+        Debug.Log("Hit a " + collision.collider.gameObject.name);
+		if(collision.collider.gameObject.tag == "Ball") {
+			GameObject.Destroy(gameObject);
+		}
+    }
 }
