@@ -47,9 +47,9 @@ public class PlayerController : MonoBehaviour
 			Vector3 move = new Vector3(transform.position.x, (float)(transform.position.y - 2), transform.position.z);
 			bullet.position = move;
             bullet.transform.Rotate(0,0,0);
-            //GameObject player = GameObject.FindWithTag("Player");
-            //Physics.IgnoreCollision(bullet.collider, player.collider);
-            Physics.IgnoreLayerCollision(8, 9); //layer 8 is Bullet layer, layer 9 is Player layer
+            int bulletLayer = LayerMask.NameToLayer("Bullet");
+			int playerLayer = LayerMask.NameToLayer("Player");
+            Physics.IgnoreLayerCollision(bulletLayer, playerLayer); //layer 8 is Bullet layer, layer 9 is Player layer
             Debug.Log("Bullet Instanciated!!");
 
         }
