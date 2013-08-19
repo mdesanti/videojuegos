@@ -4,35 +4,40 @@ using UnityEngine;
 // GameObject whenever a PlayerController is added
 public class Ball : MonoBehaviour
 {
-    public float jumpSpeed = 15.0f;
-	public float gravity = 20.0f;
+    //public float jumpSpeed = 15.0f;
+	//public float gravity = 20.0f;
+	
 	public Transform childBall;
 
     void Start()
     {
 		//random + or - sign
-		float y = Random.value;
-		float x = Random.value;
+		//float y = Random.value;
+		//float x = Random.value;
 		
-        rigidbody.AddForce(x*1000,y*1000,0);
-		Debug.Log("Instanciated!!");
+        rigidbody.AddForce(500,200,0);
+		Debug.Log("Ball Instanciated!!");
     }
 
     void OnCollisionEnter(Collision collision) 
     {
-        Debug.Log("Hit a " + collision.collider.gameObject.name);
+        //Debug.Log("Hit a " + collision.collider.gameObject.name);
 		if(collision.collider.gameObject.tag == "Bullet") {
 			if(childBall != null) {
 				Transform ball1 = (Transform)GameObject.Instantiate(childBall);
 				Transform ball2 = (Transform)GameObject.Instantiate(childBall);
-				Vector3 move1 = new Vector3(transform.position.x + 5, (float)(transform.position.y), transform.position.z);
-				Vector3 move2 = new Vector3(transform.position.x - 5, (float)(transform.position.y), transform.position.z);
-				ball1.position = move1;
-				ball2.position = move2;
+				ball1.position = transform.position;
+				ball2.position = transform.position;
 				ball1.renderer.enabled = true;
 				ball2.renderer.enabled = true;
+				ball2.rigidbody.AddForce(-1000,0,0);
+				Physics.IgnoreCollision(ball1.collider, ball2.collider);
+
 			}
 			GameObject.Destroy(gameObject);
 		}
+		//if(collision.collider.gameObject.tag == "Ball"){
+		//	collision.collider.enabled = false;
+		//}
     }
 }
