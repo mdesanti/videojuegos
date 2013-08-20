@@ -23,7 +23,9 @@ public class Bullet : MonoBehaviour {
         //Debug.Log(transform.localScale.y);
         if(transform.position.x > -80) {
             transform.localScale = new Vector3(transform.localScale.x, (float) transform.localScale.y + growthFactor, transform.localScale.z);
-            transform.position = new Vector3(transform.position.x, (float)(transform.position.y + growthFactor), transform.position.z);
+            transform.position = new Vector3(transform.position.x, (float)(transform.position.y + growthFactor) , transform.position.z);
+            Vector2 tiling = new Vector2(2, transform.localScale.y / 4);
+            renderer.material.SetTextureScale ("_MainTex", tiling);
         }
         //if (time > 0.5f) {
             //GameObject.Destroy(gameObject);

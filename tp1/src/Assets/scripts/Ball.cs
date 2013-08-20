@@ -16,6 +16,8 @@ public class Ball : MonoBehaviour
 		//float x = Random.value;
 		
         rigidbody.AddForce(500,200,0);
+        int ballLayer = LayerMask.NameToLayer("Ball");
+        Physics.IgnoreLayerCollision(ballLayer, ballLayer);
 		Debug.Log("Ball Instanciated!!");
     }
 
