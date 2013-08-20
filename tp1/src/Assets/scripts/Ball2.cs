@@ -5,7 +5,7 @@ public class Ball2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rigidbody.AddForce(-500,200,0);
+		rigidbody.AddForce(-1000,0,0);
 	}
 	
 	// Update is called once per frame
