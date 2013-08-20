@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
             bullet.transform.Rotate(0,0,0);
             int bulletLayer = LayerMask.NameToLayer("Bullet");
 			int playerLayer = LayerMask.NameToLayer("Player");
-            Physics.IgnoreLayerCollision(bulletLayer, playerLayer); //layer 8 is Bullet layer, layer 9 is Player layer
+            Physics.IgnoreLayerCollision(bulletLayer, playerLayer);
             Debug.Log("Bullet Instanciated!!");
 
         }
