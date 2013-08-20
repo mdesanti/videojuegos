@@ -41,10 +41,7 @@ public class PlayerController : MonoBehaviour
             // Copy the prefab. the returned type of Instantiate is allways the same 
             // type as the parameter, so it's safe to cast
             Transform bullet = (Transform)GameObject.Instantiate(bulletPrototype);
-
-            //Set the bullet in it's initial position and rotation
-            //bullet.position = transform.position;
-			Vector3 move = new Vector3(transform.position.x, (float)(transform.position.y - 2), transform.position.z);
+			Vector3 move = new Vector3(transform.position.x, (float)(transform.position.y), transform.position.z);
 			bullet.position = move;
             bullet.transform.Rotate(0,0,0);
             int bulletLayer = LayerMask.NameToLayer("Bullet");
