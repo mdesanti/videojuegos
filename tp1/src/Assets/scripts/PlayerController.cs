@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
             //Set the bullet in it's initial position and rotation
             //bullet.position = transform.position;
-			Vector3 move = new Vector3(transform.position.x, (float)(transform.position.y - 2.5), transform.position.z);
+			Vector3 move = new Vector3(transform.position.x, (float)(transform.position.y), transform.position.z);
 			bullet.position = move;
             bullet.transform.Rotate(0,0,0);
             int bulletLayer = LayerMask.NameToLayer("Bullet");
