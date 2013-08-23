@@ -56,6 +56,7 @@ tp1/src/Library/AssetImportState
 tp1/src/Library/AssetVersioning.db
 tp1/src/Library/BuildPlayer.prefs
 tp1/src/Library/ScriptMapper
+tp1/src/Library/AssetServerCacheV3
 tp1/src/Library/assetservercachev3
 tp1/src/Library/expandedItems
 tp1/src/Library/guidmapper
@@ -71,6 +72,8 @@ tp1/src/Assembly-CSharp-Editor.csproj
 tp1/src/Assembly-CSharp-Editor.pidb
 tp1/src/Assembly-CSharp-Editor-vs.csproj
 tp1/src/Assembly-CSharp-firstpass.csproj
+tp1/src/Assembly-UnityScript-vs.unityproj
+tp1/src/Assembly-UnityScript.unityproj
 tp1/src/Assembly-CSharp-firstpass.pidb
 tp1/src/Assembly-CSharp-firstpass-vs.csproj
 tp1/src/Assembly-CSharp-vs.csproj
@@ -80,3 +83,4 @@ tp1/src/Assembly-UnityScript-firstpass-vs.unityproj
 tp1/src/Project.suo
 tp1/src/src.sln
 tp1/src/src-csharp.sln
+tp1/src/src.userprefs
