@@ -5,12 +5,9 @@ using UnityEngine;
 public class BallManager : MonoBehaviour
 {	
 	private static int CHILD_QTY = 2;
-	public Transform bigBall;
 	private int ballCount;
 	
-	void Start() {
-		Transform mainBall = (Transform)GameObject.Instantiate(bigBall);
-		mainBall.position = new Vector3((float)-16.39134, (float)50.20382, (float)100);
+	public void registerBall() {
 		ballCount++;
 	}
 	

@@ -10,6 +10,7 @@ public class Ball : MonoBehaviour
     {
         int ballLayer = LayerMask.NameToLayer("Ball");
         Physics.IgnoreLayerCollision(ballLayer, ballLayer);
+		GameObject.Find("Ball Manager").GetComponent<BallManager>().registerBall();
     }
 
     void OnCollisionEnter(Collision collision) 
