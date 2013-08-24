@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69770e55a0307465e92ef146f768a1be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballCount: 0
 --- !u!1 &9277607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,9 +2937,9 @@ GameObject:
   - 4: {fileID: 751907755}
   - 95: {fileID: 751907756}
   - 33: {fileID: 751907757}
-  - 135: {fileID: 751907758}
   - 143: {fileID: 751907760}
   - 114: {fileID: 751907759}
+  - 136: {fileID: 751907758}
   m_Layer: 10
   m_Name: RedDragon
   m_TagString: Player
@@ -2980,19 +2981,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1573401288}
   m_GameObject: {fileID: 751907754}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &751907758
-SphereCollider:
+--- !u!136 &751907758
+CapsuleCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13500000, guid: d29f348d5cfc3ce48943273b8891bf68,
+  m_PrefabParentObject: {fileID: 13600000, guid: d29f348d5cfc3ce48943273b8891bf68,
     type: 2}
   m_PrefabInternal: {fileID: 1573401288}
   m_GameObject: {fileID: 751907754}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .500000119
-  m_Center: {x: 5.96046448e-08, y: 0, z: -8.94069672e-08}
+  m_Radius: 4
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 5.96046448e-08, y: 3, z: -8.94069672e-08}
 --- !u!114 &751907759
 MonoBehaviour:
   m_ObjectHideFlags: 0

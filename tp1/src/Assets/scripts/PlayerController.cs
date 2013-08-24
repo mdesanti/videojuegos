@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Hit a " + collision.collider.gameObject.name);
 		if(collision.collider.gameObject.tag == "Ball") {
-			GameObject.Destroy(gameObject);
+			Application.LoadLevel ("GameOver");
 		}
     }
 }

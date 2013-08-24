@@ -5,18 +5,21 @@ using UnityEngine;
 public class BallManager : MonoBehaviour
 {	
 	private static int CHILD_QTY = 2;
-	public int ballCount;
+	public int ballCount=0;
 	
 	void Start() {
 		int ballLayerNumber = LayerMask.NameToLayer("Ball");
 		Physics.IgnoreLayerCollision(ballLayerNumber, ballLayerNumber, true);
+		
+		GameObject[] aux = GameObject.FindGameObjectsWithTag("Ball");
+		ballCount = aux.Length;
 	}
 	
 	public void OnBallDestroyed(Ball destroyedBall) {
 		Transform childBall = destroyedBall.getChildBall();
 		if(childBall != null) {
 			for(int i = 0; i < CHILD_QTY; i++) {
-				Transform ball1 = (Transform)GameObject.Instantiate(destroyedBall.getChildBall());	
+				Transform ball1 = (Transform)GameObject.Instantiate(childBall);	
 				ball1.position = destroyedBall.transform.position;
 				ball1.renderer.enabled = true;
 				if(i % 2 == 0) {
@@ -29,5 +32,13 @@ public class BallManager : MonoBehaviour
 		}
 		GameObject.Destroy(destroyedBall.gameObject);
 		ballCount--;
+		
+		if(ballCount == 0){
+			if( Application.loadedLevel + 1 < Application.levelCount ){
+    			Application.LoadLevel( Application.loadedLevel + 1 );
+			}else{
+				Application.LoadLevel ("WinScene");
+			}
+		}
 	}
 }
