@@ -27,7 +27,9 @@ tp1/src/obj/
 !tp1/src/Library/unity default resources
 !tp1/src/Library/unity editor resources
 
-tp1/src/Library/
+tp1/src/Library/metadata
+tp1/src/Library/ScriptAssemblies/
+tp1/src/Library/assetDatabase3
 
 tp1/src/Project.userprefs
 tp1/src/Assembly-CSharp.csproj
