@@ -32,6 +32,8 @@ tp1/src/Library/AnnotationManager
 tp1/src/Library/metadata
 tp1/src/Library/ScriptAssemblies/
 tp1/src/Library/assetDatabase3
+tp1/src/Library/guidmapper
+tp1/src/Library/InspectorExpandedItems.asset
 
 tp1/src/Project.userprefs
 tp1/src/Assembly-CSharp.csproj
