@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 		//bullets = FindObjectsOfType(Bullet);
 		//GameObject bullets = GameObject.FindWithTag("Bullet");
 		bullets =  GameObject.FindGameObjectsWithTag ("Bullet");
-		if (Input.GetKeyDown(KeyCode.Space) && bullets.Length < 2) {
+		if (Input.GetKeyDown(KeyCode.Space) && bullets.Length < 1) {
             // Copy the prefab. the returned type of Instantiate is allways the same 
             // type as the parameter, so it's safe to cast
             Transform bullet = (Transform)GameObject.Instantiate(bulletPrototype);

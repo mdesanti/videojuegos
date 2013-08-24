@@ -1,40 +1,7 @@
-# =============== #
-# Unity generated #
-# =============== #
-# … you MUST convert Unity to using Metafiles *before* you start using this
+# Warning: You MUST convert Unity to using Metafiles and ForceText *before* you start using this
 #  .gitignore file, or you WILL lose data!
 #
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-Temp
-Library
-build
-tp1/src/Temp
-tp1/src/Obj
-tp1/src/Library
- 
-# ===================================== #
-# Visual Studio / MonoDevelop generated #
-# ===================================== #
-ExportedObj/
-*.svd
-*.userprefs
-*.csproj
-*.pidb
-*.suo
-*.sln
-*.user
-*.unityproj
-*.booproj
-*.vcproject
-*.so
-*.dll
-*.exe
- 
-# ============ #
-# OS generated #
-# ============ #
+
 .DS_Store
 .DS_Store?
 ._*
@@ -43,3 +10,39 @@ ExportedObj/
 Icon?
 ehthumbs.db
 Thumbs.db
+
+tp1/src/Temp/
+tp1/src/Library/
+tp1/src/obj/
+*.svd
+*.dll
+
+!tp1/src/Library/*.asset
+!tp1/src/Library/AssetImportState
+!tp1/src/Library/AssetVersioning.db
+!tp1/src/Library/BuildPlayer.prefs
+!tp1/src/Library/ScriptMapper
+!tp1/src/Library/AssetServerCacheV3
+!tp1/src/Library/assetservercachev3
+!tp1/src/Library/expandedItems
+!tp1/src/Library/guidmapper
+!tp1/src/Library/unity default resources
+!tp1/src/Library/unity editor resources
+
+
+tp1/src/Project.userprefs
+tp1/src/Assembly-CSharp.csproj
+tp1/src/Assembly-CSharp.pidb
+tp1/src/Assembly-CSharp-Editor.csproj
+tp1/src/Assembly-CSharp-Editor.pidb
+tp1/src/Assembly-CSharp-Editor-vs.csproj
+tp1/src/Assembly-CSharp-firstpass.csproj
+tp1/src/Assembly-UnityScript-vs.unityproj
+tp1/src/Assembly-UnityScript.unityproj
+tp1/src/Assembly-CSharp-firstpass.pidb
+tp1/src/Assembly-CSharp-firstpass-vs.csproj
+tp1/src/Assembly-CSharp-vs.csproj
+tp1/src/Assembly-UnityScript-firstpass.pidb
+tp1/src/Assembly-UnityScript-firstpass.unityproj
+tp1/src/Assembly-UnityScript-firstpass-vs.unityproj
+tp1/src/Project.suo
