@@ -3917,9 +3917,9 @@ GameObject:
   - 4: {fileID: 880975984}
   - 95: {fileID: 880975989}
   - 33: {fileID: 880975988}
-  - 135: {fileID: 880975987}
   - 143: {fileID: 880975986}
   - 114: {fileID: 880975985}
+  - 136: {fileID: 880975990}
   m_Layer: 10
   m_Name: RedDragon
   m_TagString: Player
@@ -3970,19 +3970,6 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &880975987
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13500000, guid: a4912ea3602574d40b49da4ce142fcfc,
-    type: 2}
-  m_PrefabInternal: {fileID: 993923494}
-  m_GameObject: {fileID: 880975983}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .500000119
-  m_Center: {x: 5.96046448e-08, y: 0, z: -8.94069672e-08}
 --- !u!33 &880975988
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4004,6 +3991,19 @@ Animator:
   m_CullingMode: 1
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
+--- !u!136 &880975990
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880975983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4
+  m_Height: 1
+  m_Direction: 0
+  m_Center: {x: 5.96046448e-08, y: 3, z: -8.94069672e-08}
 --- !u!1 &918555191
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,7 +4653,24 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .323305547
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 13500000, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 13500000, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
   m_RootGameObject: {fileID: 880975983}
   m_IsPrefabParent: 0
