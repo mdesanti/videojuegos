@@ -1,2 +1,45 @@
-tp1/src/Temp/
-tp1/src/Library/metadata/
+# =============== #
+# Unity generated #
+# =============== #
+# … you MUST convert Unity to using Metafiles *before* you start using this
+#  .gitignore file, or you WILL lose data!
+#
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+Temp
+Library
+build
+tp1/src/Temp
+tp1/src/Obj
+tp1/src/Library
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+*.vcproject
+*.so
+*.dll
+*.exe
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
