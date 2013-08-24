@@ -5,13 +5,9 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {	
 	public Transform childBall;
-
-    void Start()
-    {
-        int ballLayer = LayerMask.NameToLayer("Ball");
-        Physics.IgnoreLayerCollision(ballLayer, ballLayer);
-		GameObject.Find("Ball Manager").GetComponent<BallManager>().registerBall();
-    }
+	
+	void Start() {
+	}
 
     void OnCollisionEnter(Collision collision) 
     {
