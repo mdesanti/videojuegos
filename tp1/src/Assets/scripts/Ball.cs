@@ -5,10 +5,13 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {	
 	public Transform childBall;
+	
+	void Start() {
+	}
 
     void OnCollisionEnter(Collision collision) 
     {
-        Debug.Log("Hit a " + collision.collider.gameObject.name);
+        //Debug.Log("Hit a " + collision.collider.gameObject.name);
 		if(collision.collider.gameObject.tag == "Bullet") {
 			GameObject.Find("Ball Manager").GetComponent<BallManager>().OnBallDestroyed(this);
 		}

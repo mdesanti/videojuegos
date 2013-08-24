@@ -539,7 +539,7 @@ GameObject:
   - 4: {fileID: 79992545}
   - 114: {fileID: 79992546}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Ball Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6578,6 +6578,10 @@ Prefab:
     - target: {fileID: 400000, guid: a218efa35ba37714f978daa76b58afab, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a218efa35ba37714f978daa76b58afab, type: 2}
+      propertyPath: m_Name
+      value: Ball Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a218efa35ba37714f978daa76b58afab, type: 2}
