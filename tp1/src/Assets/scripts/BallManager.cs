@@ -5,10 +5,11 @@ using UnityEngine;
 public class BallManager : MonoBehaviour
 {	
 	private static int CHILD_QTY = 2;
-	private int ballCount;
+	public int ballCount;
 	
-	public void registerBall() {
-		ballCount++;
+	void Start() {
+		int ballLayerNumber = LayerMask.NameToLayer("Ball");
+		Physics.IgnoreLayerCollision(ballLayerNumber, ballLayerNumber, true);
 	}
 	
 	public void OnBallDestroyed(Ball destroyedBall) {
@@ -28,6 +29,5 @@ public class BallManager : MonoBehaviour
 		}
 		GameObject.Destroy(destroyedBall.gameObject);
 		ballCount--;
-		//Physics.IgnoreCollision(ball1.collider, ball2.collider);
 	}
 }
