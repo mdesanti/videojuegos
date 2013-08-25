@@ -15,6 +15,12 @@ public class ExtrasManager : MonoBehaviour
 	private float extraSpeedTime = 0;
 	private float extraShootingSpeedTime = 0;
 	
+	void Start() {
+		int ballLayerNumber = LayerMask.NameToLayer("Bullet");
+		int extrasLayerNumber = LayerMask.NameToLayer("Extras");
+		Physics.IgnoreLayerCollision(ballLayerNumber, extras, true);
+	}
+	
 	public void OnBallDestroyed(Transform position) {
 		float rand = Random.value;
 		if(rand >= 0.25) {
