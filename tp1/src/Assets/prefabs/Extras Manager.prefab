@@ -8,8 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Body
+  m_Name: Extras Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,6 +27,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb83a9c22d2b44413b41314e46071090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraSpeed: {fileID: 400000, guid: cfffbff2c4c4d490887ba5f30a43ae10, type: 2}
+  extraShootingSpeed: {fileID: 400000, guid: 41eac217300754031b00520eebb40af0, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
