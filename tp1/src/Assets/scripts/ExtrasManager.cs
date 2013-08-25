@@ -14,7 +14,7 @@ public class ExtrasManager : MonoBehaviour
 		}
 		rand = Random.value;
 		Transform prototype = null;
-		if(rand < 0.5) {
+		if(rand < 0) {
 			prototype = extraSpeed;
 		} else {
 			prototype = extraShootingSpeed;
