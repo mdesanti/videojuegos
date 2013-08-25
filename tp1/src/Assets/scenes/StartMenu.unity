@@ -217,7 +217,7 @@ GUIText:
   m_GameObject: {fileID: 991688796}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Bubble Strugger
+  m_Text: Bubble Struggle
   m_Anchor: 1
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
