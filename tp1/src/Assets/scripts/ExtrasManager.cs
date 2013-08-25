@@ -9,15 +9,17 @@ public class ExtrasManager : MonoBehaviour
 	
 	public void OnBallDestroyed(Transform position) {
 		float rand = Random.value;
-		if(rand >= 0.2) {
+		if(rand >= 1) {
 			return;
 		}
 		rand = Random.value;
 		Transform prototype = null;
 		if(rand < 0.5) {
 			prototype = extraSpeed;
+			Debug.Log("Created an extra speed");
 		} else {
 			prototype = extraShootingSpeed;
+			Debug.Log("Created an extra shooting speed");
 		}
 		Transform extra = (Transform)GameObject.Instantiate(prototype);
 		extra.position = position.position;
