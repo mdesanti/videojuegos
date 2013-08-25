@@ -9,12 +9,12 @@ public class ExtrasManager : MonoBehaviour
 	
 	public void OnBallDestroyed(Transform position) {
 		float rand = Random.value;
-		if(rand >= 1) {
+		if(rand >= 0.2) {
 			return;
 		}
 		rand = Random.value;
 		Transform prototype = null;
-		if(rand < 0) {
+		if(rand < 0.5) {
 			prototype = extraSpeed;
 		} else {
 			prototype = extraShootingSpeed;
