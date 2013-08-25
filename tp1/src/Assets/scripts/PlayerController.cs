@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
             //Set the bullet in it's initial position and rotation
             //bullet.position = transform.position;
-			Vector3 move = new Vector3(transform.position.x, (float)(transform.position.y), transform.position.z);
+			Vector3 move = new Vector3(transform.position.x, (transform.position.y) + 1, transform.position.z);
 			bullet.position = move;
             bullet.transform.Rotate(0,0,0);
             int bulletLayer = LayerMask.NameToLayer("Bullet");
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Hit a " + collision.collider.gameObject.name);
 		if(collision.collider.gameObject.tag == "Ball") {
-			Application.LoadLevel ("GameOver");
+			//Application.LoadLevel ("GameOver");
 		}
     }
 }
