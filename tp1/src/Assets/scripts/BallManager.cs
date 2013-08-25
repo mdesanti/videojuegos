@@ -42,6 +42,8 @@ public class BallManager : MonoBehaviour
 			}else{
 				Application.LoadLevel ("WinScene");
 			}
+		} else {
+			GameObject.Find("Extras Manager").GetComponent<ExtrasManager>().OnBallDestroyed(destroyedBall.transform);
 		}
 	}
 }
