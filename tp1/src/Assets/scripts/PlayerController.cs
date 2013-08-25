@@ -51,7 +51,6 @@ public class PlayerController : MonoBehaviour
 	
 	void OnCollisionEnter(Collision collision) 
     {
-        Debug.Log("Hit a " + collision.collider.gameObject.name);
 		if(collision.collider.gameObject.tag == "Ball") {
 			Application.LoadLevel ("GameOver");
 		}
