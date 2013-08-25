@@ -7,7 +7,8 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	public float speed = 35.0f;
-
+	public static float STARTING_SPEED = 35.0f;
+	
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
 	public Transform bulletPrototype;

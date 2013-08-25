@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 	public float detonationForce = 2000.0f;
     public static float growthFactor = 0.5f;
+	public static float ORIGINAL_GROWTH_FACTOR = 0.5f;
 
     void Start()
     {

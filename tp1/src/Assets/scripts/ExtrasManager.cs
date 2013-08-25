@@ -21,6 +21,9 @@ public class ExtrasManager : MonoBehaviour
 		int ballLayerNumber = LayerMask.NameToLayer("Ball");
 		Physics.IgnoreLayerCollision(ballLayerNumber, extrasLayerNumber, true);
 		Physics.IgnoreLayerCollision(bulletLayerNumber, extrasLayerNumber, true);
+		PlayerController controller = GameObject.Find("Player").GetComponent<PlayerController>();
+		controller.speed = PlayerController.STARTING_SPEED;
+		Bullet.growthFactor = Bullet.ORIGINAL_GROWTH_FACTOR;
 	}
 	
 	public void OnBallDestroyed(Transform position) {
