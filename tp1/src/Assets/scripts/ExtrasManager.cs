@@ -17,7 +17,7 @@ public class ExtrasManager : MonoBehaviour
 	
 	public void OnBallDestroyed(Transform position) {
 		float rand = Random.value;
-		if(rand >= 1) {
+		if(rand >= 0.25) {
 			return;
 		}
 		rand = Random.value;
@@ -25,11 +25,9 @@ public class ExtrasManager : MonoBehaviour
 		if(rand < 0.5) {
 			prototype = extraSpeed;
 			extraSpeedEnabled = true;
-			Debug.Log("Created an extra speed");
 		} else {
 			prototype = extraShootingSpeed;
 			extraShootingSpeedEnabled = true;
-			Debug.Log("Created an extra shooting speed");
 		}
 		Transform extra = (Transform)GameObject.Instantiate(prototype);
 		extra.position = position.position;
@@ -47,7 +45,7 @@ public class ExtrasManager : MonoBehaviour
 		extraSpeedTime += Time.deltaTime;
 		if(extraSpeedTime > MAX_TIME) {
 			extraSpeedTime = 0;
-			collision.collider.gameObject.GetComponent<PlayerController>().speed /= (float)2;
+			GameObject.Find("Player").GetComponent<PlayerController>().speed /= (float)2;
 			extraSpeedEnabled = false;
 		}
 	}
