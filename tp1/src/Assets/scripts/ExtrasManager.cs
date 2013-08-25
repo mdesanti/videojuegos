@@ -21,8 +21,15 @@ public class ExtrasManager : MonoBehaviour
 		int ballLayerNumber = LayerMask.NameToLayer("Ball");
 		Physics.IgnoreLayerCollision(ballLayerNumber, extrasLayerNumber, true);
 		Physics.IgnoreLayerCollision(bulletLayerNumber, extrasLayerNumber, true);
-		PlayerController controller = GameObject.Find("Player").GetComponent<PlayerController>();
-		controller.speed = PlayerController.STARTING_SPEED;
+		resetSpeeds();
+	}
+	
+	private void resetSpeeds() {
+		GameObject go = GameObject.Find("Player");
+		if(go != null) {
+			PlayerController controller = go.GetComponent<PlayerController>();
+			controller.speed = PlayerController.STARTING_SPEED;
+		}
 		Bullet.growthFactor = Bullet.ORIGINAL_GROWTH_FACTOR;
 	}
 	
@@ -56,7 +63,10 @@ public class ExtrasManager : MonoBehaviour
 		extraSpeedTime += Time.deltaTime;
 		if(extraSpeedTime > MAX_TIME) {
 			extraSpeedTime = 0;
-			GameObject.Find("Player").GetComponent<PlayerController>().speed /= (float)2;
+			GameObject go = GameObject.Find("Player");
+			if(go != null) {
+				go.GetComponent<PlayerController>().speed /= (float)2;
+			}
 			extraSpeedEnabled = false;
 		}
 	}
