@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childBall: {fileID: 0}
-  score: 0
+  score: 30
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

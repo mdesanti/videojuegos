@@ -4192,7 +4192,6 @@ GameObject:
   - 54: {fileID: 973924698}
   - 114: {fileID: 973924697}
   - 114: {fileID: 973924696}
-  - 114: {fileID: 973924695}
   m_Layer: 11
   m_Name: Ball3
   m_TagString: Ball
@@ -4200,21 +4199,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &973924695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 56e6a18d601be84468e286100727eeeb,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 973924694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c23577e102b84776940cc805abf6a94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EditorClassIdentifier: 
-  m_EditorClassIdentifier: 
-  m_EditorClassIdentifier: 
 --- !u!114 &973924696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7760,7 +7744,6 @@ GameObject:
   - 54: {fileID: 1799154307}
   - 114: {fileID: 1799154306}
   - 114: {fileID: 1799154305}
-  - 114: {fileID: 1799154304}
   m_Layer: 11
   m_Name: Ball3
   m_TagString: Ball
@@ -7768,21 +7751,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1799154304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 56e6a18d601be84468e286100727eeeb,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1799154303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c23577e102b84776940cc805abf6a94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EditorClassIdentifier: 
-  m_EditorClassIdentifier: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1799154305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8048,19 +8016,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400492, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
       propertyPath: m_LocalRotation.x
-      value: .628866851
+      value: .628866911
       objectReference: {fileID: 0}
     - target: {fileID: 400492, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .323305547
+      value: .323305577
       objectReference: {fileID: 0}
     - target: {fileID: 400492, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.628866851
+      value: -.628866911
       objectReference: {fileID: 0}
     - target: {fileID: 400492, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .323305547
+      value: .323305577
       objectReference: {fileID: 0}
     - target: {fileID: 13500000, guid: a4912ea3602574d40b49da4ce142fcfc, type: 2}
       propertyPath: m_Center.x
@@ -8122,6 +8090,7 @@ GameObject:
   - 33: {fileID: 1871747536}
   - 143: {fileID: 1871747535}
   - 114: {fileID: 1871747534}
+  - 54: {fileID: 1871747538}
   - 136: {fileID: 1871747533}
   m_Layer: 10
   m_Name: RedDragon
@@ -8208,7 +8177,23 @@ Animator:
   m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
+  m_AnimatePhysics: 1
+--- !u!54 &1871747538
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: a4912ea3602574d40b49da4ce142fcfc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1867867807}
+  m_GameObject: {fileID: 1871747531}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 124
+  m_CollisionDetection: 0
 --- !u!1 &1873981488
 GameObject:
   m_ObjectHideFlags: 0

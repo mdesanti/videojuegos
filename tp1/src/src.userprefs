@@ -7,7 +7,7 @@
       <File FileName="Assets/scripts/BallManager.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Bullet.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/ExtrasManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/ExtraShootingSpeed.cs" Line="9" Column="31" />
+      <File FileName="Assets/scripts/ExtraShootingSpeed.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

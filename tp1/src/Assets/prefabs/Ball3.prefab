@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childBall: {fileID: 400000, guid: 029ac32a72852f348905f25f2e7ae3b8, type: 2}
-  score: 0
+  score: 10
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
