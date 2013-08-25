@@ -2774,6 +2774,7 @@ GameObject:
   - 23: {fileID: 637586176}
   - 54: {fileID: 637586175}
   - 114: {fileID: 637586174}
+  - 114: {fileID: 637586173}
   - 114: {fileID: 637586180}
   m_Layer: 11
   m_Name: Ball3
@@ -2782,6 +2783,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &637586173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 56e6a18d601be84468e286100727eeeb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1847155558}
+  m_GameObject: {fileID: 637586172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c23577e102b84776940cc805abf6a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &637586174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2795,6 +2808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childBall: {fileID: 400000, guid: 029ac32a72852f348905f25f2e7ae3b8, type: 2}
+  score: 10
 --- !u!54 &637586175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3955,6 +3969,8 @@ MonoBehaviour:
   speed: 13
   bulletPrototype: {fileID: 400000, guid: f1c0defae5b4b90458b21d8f40e3dbbd, type: 2}
   bullets: []
+  points: 0
+  score: 0
 --- !u!143 &880975986
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5043,6 +5059,7 @@ GameObject:
   - 23: {fileID: 1138139492}
   - 54: {fileID: 1138139491}
   - 114: {fileID: 1138139490}
+  - 114: {fileID: 1138139496}
   - 114: {fileID: 1138139489}
   m_Layer: 11
   m_Name: Ball3
@@ -5075,6 +5092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childBall: {fileID: 400000, guid: 029ac32a72852f348905f25f2e7ae3b8, type: 2}
+  score: 10
 --- !u!54 &1138139491
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5142,6 +5160,18 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1138139496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 56e6a18d601be84468e286100727eeeb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1545409326}
+  m_GameObject: {fileID: 1138139488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c23577e102b84776940cc805abf6a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1171820444
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,6 +6837,7 @@ GameObject:
   - 92: {fileID: 1541884992}
   - 124: {fileID: 1541884991}
   - 81: {fileID: 1541884990}
+  - 114: {fileID: 1541884995}
   m_Layer: 4
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6874,6 +6905,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1541884995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541884989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359d973485a214e93bee75cc5eb7cd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1545409326
 Prefab:
   m_ObjectHideFlags: 0

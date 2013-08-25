@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {	
 	public Transform childBall;
+	public int score;
 	
 	void Start() {
 	}
@@ -20,4 +21,5 @@ public class Ball : MonoBehaviour
 	public Transform getChildBall() {
 		return childBall;
 	}
+		
 }

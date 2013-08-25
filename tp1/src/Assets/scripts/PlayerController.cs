@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
 	public Transform bulletPrototype;
 	public GameObject[] bullets;
+	public int points = 0;
+	public float score;
 
     void Start()
     {

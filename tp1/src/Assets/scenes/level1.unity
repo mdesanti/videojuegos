@@ -2095,6 +2095,7 @@ GameObject:
   - 92: {fileID: 536178453}
   - 124: {fileID: 536178452}
   - 81: {fileID: 536178451}
+  - 114: {fileID: 536178456}
   m_Layer: 4
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2162,6 +2163,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &536178456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536178450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359d973485a214e93bee75cc5eb7cd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &538908824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,6 +3022,8 @@ MonoBehaviour:
   speed: 13
   bulletPrototype: {fileID: 400000, guid: f1c0defae5b4b90458b21d8f40e3dbbd, type: 2}
   bullets: []
+  points: 0
+  score: 0
 --- !u!143 &751907760
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5361,6 +5375,7 @@ GameObject:
   - 54: {fileID: 1355929792}
   - 114: {fileID: 1355929791}
   - 114: {fileID: 1355929790}
+  - 114: {fileID: 1355929797}
   m_Layer: 11
   m_Name: Ball3
   m_TagString: Ball
@@ -5393,6 +5408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childBall: {fileID: 400000, guid: 029ac32a72852f348905f25f2e7ae3b8, type: 2}
+  score: 10
 --- !u!54 &1355929792
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5460,6 +5476,19 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1355929797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 56e6a18d601be84468e286100727eeeb,
+    type: 2}
+  m_PrefabInternal: {fileID: 699897915}
+  m_GameObject: {fileID: 1355929789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c23577e102b84776940cc805abf6a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1363082544
 GameObject:
   m_ObjectHideFlags: 0

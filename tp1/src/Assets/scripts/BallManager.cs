@@ -30,6 +30,9 @@ public class BallManager : MonoBehaviour
 			}
 			ballCount += CHILD_QTY;
 		}
+		int score = PlayerPrefs.GetInt("Score");
+		Debug.Log(score+ destroyedBall.score);
+		PlayerPrefs.SetInt("Score",score + destroyedBall.score);
 		GameObject.Destroy(destroyedBall.gameObject);
 		ballCount--;
 		
