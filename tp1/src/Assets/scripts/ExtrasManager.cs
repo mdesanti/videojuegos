@@ -18,7 +18,7 @@ public class ExtrasManager : MonoBehaviour
 	void Start() {
 		int ballLayerNumber = LayerMask.NameToLayer("Bullet");
 		int extrasLayerNumber = LayerMask.NameToLayer("Extras");
-		Physics.IgnoreLayerCollision(ballLayerNumber, extras, true);
+		Physics.IgnoreLayerCollision(ballLayerNumber, extrasLayerNumber, true);
 	}
 	
 	public void OnBallDestroyed(Transform position) {
