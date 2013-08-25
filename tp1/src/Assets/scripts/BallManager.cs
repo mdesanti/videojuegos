@@ -23,15 +23,14 @@ public class BallManager : MonoBehaviour
 				ball1.position = destroyedBall.transform.position;
 				ball1.renderer.enabled = true;
 				if(i % 2 == 0) {
-					ball1.rigidbody.AddForce(600,200,0);
+					ball1.rigidbody.AddForce(600,350,0);
 				} else {
-					ball1.rigidbody.AddForce(-600,200,0);
+					ball1.rigidbody.AddForce(-600,350,0);
 				}
 			}
 			ballCount += CHILD_QTY;
 		}
 		int score = PlayerPrefs.GetInt("Score");
-		Debug.Log(score+ destroyedBall.score);
 		PlayerPrefs.SetInt("Score",score + destroyedBall.score);
 		GameObject.Destroy(destroyedBall.gameObject);
 		ballCount--;

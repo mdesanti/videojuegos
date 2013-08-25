@@ -6,7 +6,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-	public float speed = 13.0f;
+	public float speed = 25.0f;
 
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
