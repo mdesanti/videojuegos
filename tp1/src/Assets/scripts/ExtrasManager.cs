@@ -16,9 +16,11 @@ public class ExtrasManager : MonoBehaviour
 	private float extraShootingSpeedTime = 0;
 	
 	void Start() {
-		int ballLayerNumber = LayerMask.NameToLayer("Bullet");
+		int bulletLayerNumber = LayerMask.NameToLayer("Bullet");
 		int extrasLayerNumber = LayerMask.NameToLayer("Extras");
+		int ballLayerNumber = LayerMask.NameToLayer("Ball");
 		Physics.IgnoreLayerCollision(ballLayerNumber, extrasLayerNumber, true);
+		Physics.IgnoreLayerCollision(bulletLayerNumber, extrasLayerNumber, true);
 	}
 	
 	public void OnBallDestroyed(Transform position) {
