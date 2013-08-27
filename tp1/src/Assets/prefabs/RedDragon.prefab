@@ -7541,9 +7541,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256c8a7175240404ca6b947ac5db78fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 13
+  speed: 5
   bulletPrototype: {fileID: 400000, guid: f1c0defae5b4b90458b21d8f40e3dbbd, type: 2}
   bullets: []
+  points: 0
+  score: 0
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

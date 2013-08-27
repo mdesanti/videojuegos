@@ -6,7 +6,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-	public float speed = 13.0f;
+	public float speed = 5.0f;
 
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
@@ -22,9 +22,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate() {
 		loadGun();
-		moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-        moveDirection.Normalize();
-		moveDirection *= speed;
+		moveDirection = new Vector3(Input.GetAxis("Horizontal") * speed, 0, 0);
+        //moveDirection.Normalize();
+        Debug.Log(moveDirection);
+		moveDirection = moveDirection * speed;
 
          if (moveDirection != Vector3.zero)
              transform.forward = Vector3.Slerp(transform.forward, moveDirection, 0.3f);
