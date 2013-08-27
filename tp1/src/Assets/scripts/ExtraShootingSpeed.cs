@@ -10,7 +10,7 @@ public class ExtraShootingSpeed : MonoBehaviour
 		if(collision.collider.gameObject.tag == "Player") {
 			int playerScore = PlayerPrefs.GetInt("Score");
 			PlayerPrefs.SetInt("Score",playerScore + score);
-			Debug.Log("Hit a player!");
+			Debug.Log("Extra shooting speed Hit a player!");
 			Bullet.growthFactor *= (float)1.5;
 			GameObject.Destroy(gameObject);
 		}

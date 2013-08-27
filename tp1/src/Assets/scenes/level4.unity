@@ -2679,7 +2679,7 @@ GameObject:
   - 4: {fileID: 618251147}
   m_Layer: 10
   m_Name: rig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3126,6 +3126,7 @@ GameObject:
   - 143: {fileID: 751907760}
   - 114: {fileID: 751907759}
   - 136: {fileID: 751907758}
+  - 54: {fileID: 751907761}
   m_Layer: 10
   m_Name: RedDragon
   m_TagString: Player
@@ -3193,7 +3194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256c8a7175240404ca6b947ac5db78fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 13
+  speed: 20
   bulletPrototype: {fileID: 400000, guid: f1c0defae5b4b90458b21d8f40e3dbbd, type: 2}
   bullets: []
   points: 0
@@ -3213,6 +3214,22 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &751907761
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: d29f348d5cfc3ce48943273b8891bf68,
+    type: 2}
+  m_PrefabInternal: {fileID: 1573401288}
+  m_GameObject: {fileID: 751907754}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 124
+  m_CollisionDetection: 0
 --- !u!1 &763431524
 GameObject:
   m_ObjectHideFlags: 0
@@ -6747,6 +6764,18 @@ Prefab:
       propertyPath: m_Center.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d29f348d5cfc3ce48943273b8891bf68, type: 2}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 100550, guid: d29f348d5cfc3ce48943273b8891bf68, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100552, guid: d29f348d5cfc3ce48943273b8891bf68, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d29f348d5cfc3ce48943273b8891bf68, type: 2}
   m_RootGameObject: {fileID: 751907754}
@@ -7703,7 +7732,7 @@ GameObject:
   - 137: {fileID: 1752502126}
   m_Layer: 10
   m_Name: Sphere_002
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8258,7 +8287,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400516, guid: d29f348d5cfc3ce48943273b8891bf68, type: 2}
   m_PrefabInternal: {fileID: 1573401288}
   m_GameObject: {fileID: 1859907821}
-  m_LocalRotation: {x: .628866911, y: .323305577, z: -.628866911, w: .323305577}
+  m_LocalRotation: {x: .628866851, y: .323305547, z: -.628866851, w: .323305547}
   m_LocalPosition: {x: .253155828, y: 1.63916731, z: 2.16737342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

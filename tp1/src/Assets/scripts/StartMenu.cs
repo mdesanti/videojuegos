@@ -10,8 +10,5 @@ public class StartMenu : MonoBehaviour {
 			PlayerPrefs.SetInt("Score",0);
 			Application.LoadLevel("level1");
 		}
-		if (GUI.Button (new Rect (Screen.width/2-70,330,150,50), "Exit")) {
-			 Application.Quit();
-		}
 	}
 }

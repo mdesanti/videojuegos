@@ -6,8 +6,8 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-	public float speed = 35.0f;
-	public static float STARTING_SPEED = 35.0f;
+	public static float STARTING_SPEED = 50.0f;
+	public float speed = STARTING_SPEED;
 	
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
@@ -36,11 +36,12 @@ public class PlayerController : MonoBehaviour
 	
 	void loadGun() {
 		bullets =  GameObject.FindGameObjectsWithTag ("Bullet");
-		if (Input.GetKeyDown(KeyCode.Space) && bullets.Length < 1) {
+		//if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space)) && bullets.Length < 1) {
+		if (Input.GetKey(KeyCode.Space) && bullets.Length < 1) {
             Transform bullet = (Transform)GameObject.Instantiate(bulletPrototype);
 
             //Set the bullet in it's initial position and rotation
-			Vector3 move = new Vector3(transform.position.x, (transform.position.y) + 2, 0);
+			Vector3 move = new Vector3(transform.position.x, (transform.position.y) + 1, 0);
 			bullet.position = move;
             bullet.transform.Rotate(0,0,0);
             int bulletLayer = LayerMask.NameToLayer("Bullet");

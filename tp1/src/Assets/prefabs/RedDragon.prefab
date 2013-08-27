@@ -1165,7 +1165,7 @@ GameObject:
   - 4: {fileID: 400154}
   m_Layer: 10
   m_Name: rig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3452,7 +3452,7 @@ GameObject:
   - 137: {fileID: 13700000}
   m_Layer: 10
   m_Name: Sphere_002
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7557,7 +7557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256c8a7175240404ca6b947ac5db78fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 20
   bulletPrototype: {fileID: 400000, guid: f1c0defae5b4b90458b21d8f40e3dbbd, type: 2}
   bullets: []
   points: 0

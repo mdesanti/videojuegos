@@ -11,6 +11,7 @@ public class ExtraSpeed : MonoBehaviour
 			int playerScore = PlayerPrefs.GetInt("Score");
 			PlayerPrefs.SetInt("Score",playerScore + score);
 			collision.collider.gameObject.GetComponent<PlayerController>().speed *= (float)2;
+			Debug.Log("Extra speed shoot player");
 			GameObject.Destroy(gameObject);
 		}
     }		
