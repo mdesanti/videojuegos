@@ -6,8 +6,9 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-	public float speed = 5.0f;
-
+	public float speed = 35.0f;
+	public static float STARTING_SPEED = 35.0f;
+	
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
 	public Transform bulletPrototype;
@@ -22,10 +23,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate() {
 		loadGun();
-		moveDirection = new Vector3(Input.GetAxis("Horizontal") * speed, 0, 0);
-        //moveDirection.Normalize();
-        Debug.Log(moveDirection);
-		moveDirection = moveDirection * speed;
+		moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        moveDirection.Normalize();
+		moveDirection *= speed;
 
          if (moveDirection != Vector3.zero)
              transform.forward = Vector3.Slerp(transform.forward, moveDirection, 0.3f);
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
             Transform bullet = (Transform)GameObject.Instantiate(bulletPrototype);
 
             //Set the bullet in it's initial position and rotation
-			Vector3 move = new Vector3(transform.position.x, (transform.position.y) + 1, transform.position.z);
+			Vector3 move = new Vector3(transform.position.x, (transform.position.y) + 2, 0);
 			bullet.position = move;
             bullet.transform.Rotate(0,0,0);
             int bulletLayer = LayerMask.NameToLayer("Bullet");
@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour
 	
 	void OnCollisionEnter(Collision collision) 
     {
-        Debug.Log("Hit a " + collision.collider.gameObject.name);
 		if(collision.collider.gameObject.tag == "Ball") {
 			Application.LoadLevel ("GameOver");
 		}

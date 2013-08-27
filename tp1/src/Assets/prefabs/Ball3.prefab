@@ -14,7 +14,6 @@ GameObject:
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400004}
   m_Layer: 11
   m_Name: Ball3
   m_TagString: Ball
@@ -71,7 +70,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 120
   m_CollisionDetection: 2
 --- !u!114 &11400000
 MonoBehaviour:
@@ -97,18 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cef31735d6623b4c9d53073a126da0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c23577e102b84776940cc805abf6a94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: 10
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

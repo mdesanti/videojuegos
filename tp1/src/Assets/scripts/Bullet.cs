@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 	public float detonationForce = 2000.0f;
     public static float growthFactor = 0.5f;
+	public static float ORIGINAL_GROWTH_FACTOR = 0.5f;
 
     void Start()
     {
@@ -11,8 +12,8 @@ public class Bullet : MonoBehaviour {
 
     void FixedUpdate()
     {
-            transform.localScale = new Vector3(transform.localScale.x, (float) transform.localScale.y + growthFactor, transform.localScale.z);
-            transform.position = new Vector3(transform.position.x, (float)(transform.position.y + growthFactor) , transform.position.z);
+            transform.localScale = new Vector3(transform.localScale.x, (float) transform.localScale.y + growthFactor,0);
+            transform.position = new Vector3(transform.position.x, (float)(transform.position.y + growthFactor) ,0);
             Vector2 tiling = new Vector2(2, transform.localScale.y / 4);
             renderer.material.SetTextureScale ("_MainTex", tiling);
     }
@@ -20,6 +21,5 @@ public class Bullet : MonoBehaviour {
     void OnCollisionEnter(Collision collision) 
     {
         GameObject.Destroy(gameObject);
-        //Debug.Log("Bullet hit " + collision.collider.gameObject.name);
     }
 }

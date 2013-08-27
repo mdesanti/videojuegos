@@ -20,18 +20,18 @@ public class BallManager : MonoBehaviour
 		if(childBall != null) {
 			for(int i = 0; i < CHILD_QTY; i++) {
 				Transform ball1 = (Transform)GameObject.Instantiate(childBall);	
-				ball1.position = destroyedBall.transform.position;
+				Vector3 move = new Vector3(destroyedBall.transform.position.x, (destroyedBall.transform.position.y), 0);
+				ball1.position = move;
 				ball1.renderer.enabled = true;
 				if(i % 2 == 0) {
-					ball1.rigidbody.AddForce(400,200,0);
+					ball1.rigidbody.AddForce(600,350,0);
 				} else {
-					ball1.rigidbody.AddForce(-400,200,0);
+					ball1.rigidbody.AddForce(-600,350,0);
 				}
 			}
 			ballCount += CHILD_QTY;
 		}
 		int score = PlayerPrefs.GetInt("Score");
-		Debug.Log(score+ destroyedBall.score);
 		PlayerPrefs.SetInt("Score",score + destroyedBall.score);
 		GameObject.Destroy(destroyedBall.gameObject);
 		ballCount--;
