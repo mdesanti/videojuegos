@@ -11,45 +11,45 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-tp1/src/Temp/
-tp1/src/obj/
+tp*/src/Temp/
+tp*/src/obj/
 *.svd
 
-!tp1/src/Library/*.asset
-!tp1/src/Library/AssetImportState
-!tp1/src/Library/AssetVersioning.db
-!tp1/src/Library/BuildPlayer.prefs
-!tp1/src/Library/ScriptMapper
-!tp1/src/Library/AssetServerCacheV3
-!tp1/src/Library/assetservercachev3
-!tp1/src/Library/expandedItems
-!tp1/src/Library/guidmapper
-!tp1/src/Library/unity default resources
-!tp1/src/Library/unity editor resources
+!tp*/src/Library/*.asset
+!tp*/src/Library/AssetImportState
+!tp*/src/Library/AssetVersioning.db
+!tp*/src/Library/BuildPlayer.prefs
+!tp*/src/Library/ScriptMapper
+!tp*/src/Library/AssetServerCacheV3
+!tp*/src/Library/assetservercachev3
+!tp*/src/Library/expandedItems
+!tp*/src/Library/guidmapper
+!tp*/src/Library/unity default resources
+!tp*/src/Library/unity editor resources
 
-tp1/src/Library/FailedAssetImports.txt
-tp1/src/Library/AnnotationManager
-tp1/src/Library/metadata
-tp1/src/Library/ScriptAssemblies/
-tp1/src/Library/assetDatabase3
-tp1/src/Library/guidmapper
-tp1/src/Library/InspectorExpandedItems.asset
+tp*/src/Library/FailedAssetImports.txt
+tp*/src/Library/AnnotationManager
+tp*/src/Library/metadata
+tp*/src/Library/ScriptAssemblies/
+tp*/src/Library/assetDatabase3
+tp*/src/Library/guidmapper
+tp*/src/Library/InspectorExpandedItems.asset
 
-tp1/src/Project.userprefs
-tp1/src/Assembly-CSharp.csproj
-tp1/src/Assembly-CSharp.pidb
-tp1/src/Assembly-CSharp-Editor.csproj
-tp1/src/Assembly-CSharp-Editor.pidb
-tp1/src/Assembly-CSharp-Editor-vs.csproj
-tp1/src/Assembly-CSharp-firstpass.csproj
-tp1/src/Assembly-UnityScript-vs.unityproj
-tp1/src/Assembly-UnityScript.unityproj
-tp1/src/Assembly-CSharp-firstpass.pidb
-tp1/src/Assembly-CSharp-firstpass-vs.csproj
-tp1/src/Assembly-CSharp-vs.csproj
-tp1/src/Assembly-UnityScript-firstpass.pidb
-tp1/src/Assembly-UnityScript-firstpass.unityproj
-tp1/src/Assembly-UnityScript-firstpass-vs.unityproj
-tp1/src/Project.suo
-tp1/src/src-csharp.sln
-tp1/src/src.sln
+tp*/src/Project.userprefs
+tp*/src/Assembly-CSharp.csproj
+tp*/src/Assembly-CSharp.pidb
+tp*/src/Assembly-CSharp-Editor.csproj
+tp*/src/Assembly-CSharp-Editor.pidb
+tp*/src/Assembly-CSharp-Editor-vs.csproj
+tp*/src/Assembly-CSharp-firstpass.csproj
+tp*/src/Assembly-UnityScript-vs.unityproj
+tp*/src/Assembly-UnityScript.unityproj
+tp*/src/Assembly-CSharp-firstpass.pidb
+tp*/src/Assembly-CSharp-firstpass-vs.csproj
+tp*/src/Assembly-CSharp-vs.csproj
+tp*/src/Assembly-UnityScript-firstpass.pidb
+tp*/src/Assembly-UnityScript-firstpass.unityproj
+tp*/src/Assembly-UnityScript-firstpass-vs.unityproj
+tp*/src/Project.suo
+tp*/src/src-csharp.sln
+tp*/src/src.sln
