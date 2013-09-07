@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
 	
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
-	//public Transform bulletPrototype;
-	public GameObject[] bullets;
+	public Transform bombPrototype;
+	public int bombCount = 0;
 	public int points = 0;
 	public float score;
 
@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update() {
+		plantBomb();
     	moveDirection = new Vector3(0,0,0);
     	if(Input.GetKey(KeyCode.LeftArrow)) {
 			moveDirection = new Vector3(-10, 0, 0);
@@ -53,20 +54,13 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 	
-	void loadGun() {
-		//bullets =  GameObject.FindGameObjectsWithTag ("Bullet");
-		//if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space)) && bullets.Length < 1) {
-		if (Input.GetKey(KeyCode.Space) && bullets.Length < 1) {
-            //Transform bullet = (Transform)GameObject.Instantiate(bulletPrototype);
+	void plantBomb() {
+		if (Input.GetKey(KeyCode.Space) && bombCount > 0) {
+            Transform bomb = (Transform)GameObject.Instantiate(bombPrototype);
 
-            //Set the bullet in it's initial position and rotation
-			Vector3 move = new Vector3(transform.position.x, (transform.position.y) + 1, 0);
-			//bullet.position = move;
-            //bullet.transform.Rotate(0,0,0);
-            int bulletLayer = LayerMask.NameToLayer("Bullet");
-			int playerLayer = LayerMask.NameToLayer("Player");
-            Physics.IgnoreLayerCollision(bulletLayer, playerLayer);
-
+			Vector3 move = new Vector3(transform.position.x, (transform.position.y), 0.5f);
+			bomb.position = move;
+			bombCount--;
         }
 	}
 	
