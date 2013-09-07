@@ -167,6 +167,7 @@ GameObject:
   - 33: {fileID: 11302467}
   - 65: {fileID: 11302466}
   - 23: {fileID: 11302465}
+  - 114: {fileID: 11302464}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -174,6 +175,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &11302464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1061520050}
+  m_GameObject: {fileID: 11302463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &11302465
 Renderer:
   m_ObjectHideFlags: 0
@@ -342,6 +355,7 @@ GameObject:
   - 33: {fileID: 27210873}
   - 65: {fileID: 27210872}
   - 23: {fileID: 27210871}
+  - 114: {fileID: 27210870}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -349,6 +363,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &27210870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1153518772}
+  m_GameObject: {fileID: 27210869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &27210871
 Renderer:
   m_ObjectHideFlags: 0
@@ -517,6 +543,7 @@ GameObject:
   - 33: {fileID: 43355346}
   - 65: {fileID: 43355345}
   - 23: {fileID: 43355344}
+  - 114: {fileID: 43355348}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -575,6 +602,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &43355348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 716140557}
+  m_GameObject: {fileID: 43355343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &48160596
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +931,7 @@ GameObject:
   - 33: {fileID: 85962642}
   - 65: {fileID: 85962641}
   - 23: {fileID: 85962640}
+  - 114: {fileID: 85962639}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -899,6 +939,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &85962639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1494273323}
+  m_GameObject: {fileID: 85962638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &85962640
 Renderer:
   m_ObjectHideFlags: 0
@@ -1340,6 +1392,7 @@ GameObject:
   - 33: {fileID: 132161568}
   - 65: {fileID: 132161567}
   - 23: {fileID: 132161566}
+  - 114: {fileID: 132161570}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -1398,6 +1451,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &132161570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 717112197}
+  m_GameObject: {fileID: 132161565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &132570105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,6 +1581,7 @@ GameObject:
   - 33: {fileID: 147251466}
   - 65: {fileID: 147251465}
   - 23: {fileID: 147251464}
+  - 114: {fileID: 147251468}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -1574,6 +1640,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &147251468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1764176582}
+  m_GameObject: {fileID: 147251463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &150298723
 Prefab:
   m_ObjectHideFlags: 0
@@ -1731,6 +1809,7 @@ GameObject:
   - 33: {fileID: 154158393}
   - 65: {fileID: 154158392}
   - 23: {fileID: 154158391}
+  - 114: {fileID: 154158390}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -1738,6 +1817,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &154158390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1210906074}
+  m_GameObject: {fileID: 154158389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &154158391
 Renderer:
   m_ObjectHideFlags: 0
@@ -2000,6 +2091,7 @@ GameObject:
   - 33: {fileID: 171542963}
   - 65: {fileID: 171542962}
   - 23: {fileID: 171542961}
+  - 114: {fileID: 171542960}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -2007,6 +2099,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &171542960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 765549577}
+  m_GameObject: {fileID: 171542959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &171542961
 Renderer:
   m_ObjectHideFlags: 0
@@ -2069,6 +2173,7 @@ GameObject:
   - 33: {fileID: 172050595}
   - 65: {fileID: 172050594}
   - 23: {fileID: 172050593}
+  - 114: {fileID: 172050592}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -2076,6 +2181,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &172050592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 627111143}
+  m_GameObject: {fileID: 172050591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &172050593
 Renderer:
   m_ObjectHideFlags: 0
@@ -2403,6 +2520,7 @@ GameObject:
   - 33: {fileID: 209621599}
   - 65: {fileID: 209621598}
   - 23: {fileID: 209621597}
+  - 114: {fileID: 209621596}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -2410,6 +2528,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &209621596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 842768580}
+  m_GameObject: {fileID: 209621595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &209621597
 Renderer:
   m_ObjectHideFlags: 0
@@ -2561,6 +2691,7 @@ GameObject:
   - 135: {fileID: 214449606}
   - 143: {fileID: 214449605}
   - 54: {fileID: 214449603}
+  - 114: {fileID: 214449609}
   - 114: {fileID: 214449604}
   m_Layer: 0
   m_Name: RedDragon
@@ -2610,7 +2741,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  bullets: []
+  bombPrototype: {fileID: 0}
+  bombCount: 0
   points: 0
   score: 0
 --- !u!143 &214449605
@@ -2639,7 +2771,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 5
   m_Center: {x: 0, y: 5, z: 0}
 --- !u!33 &214449607
 MeshFilter:
@@ -2662,6 +2794,23 @@ Animator:
   m_CullingMode: 1
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 1
+--- !u!114 &214449609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: d6e19742c981d4d4e8c3eb36dc3aff06,
+    type: 2}
+  m_PrefabInternal: {fileID: 1442102619}
+  m_GameObject: {fileID: 214449601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15cc8ca1279232a4199b54d963dc86ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  bombPrototype: {fileID: 400000, guid: c2f7998e178954eebbc3e712ddf189d3, type: 2}
+  bombCount: 1
+  points: 0
+  score: 0
 --- !u!1 &215652465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,7 +3073,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400026, guid: 3b031d1c8e287114d82bbe6f7debe848, type: 2}
   m_PrefabInternal: {fileID: 447727144}
   m_GameObject: {fileID: 246052309}
-  m_LocalRotation: {x: .734158218, y: -.19756636, z: .537462175, w: -.36484766}
+  m_LocalRotation: {x: .734158218, y: -.197566345, z: .537462175, w: -.36484766}
   m_LocalPosition: {x: .144757569, y: .784989059, z: 3.02156568}
   m_LocalScale: {x: 1, y: .999999881, z: .999999881}
   m_Children:
@@ -3261,6 +3410,7 @@ GameObject:
   - 33: {fileID: 293464986}
   - 65: {fileID: 293464985}
   - 23: {fileID: 293464984}
+  - 114: {fileID: 293464983}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -3268,6 +3418,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &293464983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1951044236}
+  m_GameObject: {fileID: 293464982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &293464984
 Renderer:
   m_ObjectHideFlags: 0
@@ -3769,6 +3931,7 @@ GameObject:
   - 33: {fileID: 332148523}
   - 65: {fileID: 332148522}
   - 23: {fileID: 332148521}
+  - 114: {fileID: 332148520}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -3776,6 +3939,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &332148520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1807979873}
+  m_GameObject: {fileID: 332148519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &332148521
 Renderer:
   m_ObjectHideFlags: 0
@@ -3920,6 +4095,7 @@ GameObject:
   - 33: {fileID: 339619899}
   - 65: {fileID: 339619898}
   - 23: {fileID: 339619897}
+  - 114: {fileID: 339619901}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -3978,6 +4154,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &339619901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1077618125}
+  m_GameObject: {fileID: 339619896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &339980200
 GameObject:
   m_ObjectHideFlags: 0
@@ -4015,6 +4203,7 @@ GameObject:
   - 33: {fileID: 343728126}
   - 65: {fileID: 343728125}
   - 23: {fileID: 343728124}
+  - 114: {fileID: 343728123}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4022,6 +4211,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &343728123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311798467}
+  m_GameObject: {fileID: 343728122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &343728124
 Renderer:
   m_ObjectHideFlags: 0
@@ -4206,6 +4407,7 @@ GameObject:
   - 33: {fileID: 353754486}
   - 65: {fileID: 353754485}
   - 23: {fileID: 353754484}
+  - 114: {fileID: 353754483}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4213,6 +4415,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &353754483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1944136737}
+  m_GameObject: {fileID: 353754482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &353754484
 Renderer:
   m_ObjectHideFlags: 0
@@ -4355,6 +4569,7 @@ GameObject:
   - 33: {fileID: 365737528}
   - 65: {fileID: 365737527}
   - 23: {fileID: 365737526}
+  - 114: {fileID: 365737525}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4362,6 +4577,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &365737525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 730612572}
+  m_GameObject: {fileID: 365737524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &365737526
 Renderer:
   m_ObjectHideFlags: 0
@@ -4503,6 +4730,7 @@ GameObject:
   - 33: {fileID: 375459730}
   - 65: {fileID: 375459729}
   - 23: {fileID: 375459728}
+  - 114: {fileID: 375459727}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4510,6 +4738,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &375459727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1183936012}
+  m_GameObject: {fileID: 375459726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &375459728
 Renderer:
   m_ObjectHideFlags: 0
@@ -4677,6 +4917,7 @@ GameObject:
   - 33: {fileID: 389963177}
   - 65: {fileID: 389963176}
   - 23: {fileID: 389963175}
+  - 114: {fileID: 389963179}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -4735,6 +4976,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &389963179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 2088928837}
+  m_GameObject: {fileID: 389963174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &391457319
 Prefab:
   m_ObjectHideFlags: 0
@@ -4878,6 +5131,7 @@ GameObject:
   - 33: {fileID: 408412713}
   - 65: {fileID: 408412712}
   - 23: {fileID: 408412711}
+  - 114: {fileID: 408412710}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4885,6 +5139,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &408412710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1884862837}
+  m_GameObject: {fileID: 408412709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &408412711
 Renderer:
   m_ObjectHideFlags: 0
@@ -5240,6 +5506,7 @@ GameObject:
   - 33: {fileID: 437884333}
   - 65: {fileID: 437884332}
   - 23: {fileID: 437884331}
+  - 114: {fileID: 437884335}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -5298,6 +5565,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &437884335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1035553574}
+  m_GameObject: {fileID: 437884330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &438340004
 GameObject:
   m_ObjectHideFlags: 0
@@ -5309,6 +5588,7 @@ GameObject:
   - 33: {fileID: 438340008}
   - 65: {fileID: 438340007}
   - 23: {fileID: 438340006}
+  - 114: {fileID: 438340005}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -5316,6 +5596,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &438340005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 832836362}
+  m_GameObject: {fileID: 438340004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &438340006
 Renderer:
   m_ObjectHideFlags: 0
@@ -5570,6 +5862,7 @@ GameObject:
   - 33: {fileID: 448499871}
   - 65: {fileID: 448499870}
   - 23: {fileID: 448499869}
+  - 114: {fileID: 448499868}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -5577,6 +5870,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &448499868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1157001327}
+  m_GameObject: {fileID: 448499867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &448499869
 Renderer:
   m_ObjectHideFlags: 0
@@ -5830,6 +6135,7 @@ GameObject:
   - 33: {fileID: 466564787}
   - 65: {fileID: 466564786}
   - 23: {fileID: 466564785}
+  - 114: {fileID: 466564784}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -5837,6 +6143,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &466564784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1897100395}
+  m_GameObject: {fileID: 466564783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &466564785
 Renderer:
   m_ObjectHideFlags: 0
@@ -6059,6 +6377,7 @@ GameObject:
   - 33: {fileID: 485798506}
   - 65: {fileID: 485798505}
   - 23: {fileID: 485798504}
+  - 114: {fileID: 485798503}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -6066,6 +6385,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &485798503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 808566949}
+  m_GameObject: {fileID: 485798502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &485798504
 Renderer:
   m_ObjectHideFlags: 0
@@ -6275,6 +6606,7 @@ GameObject:
   - 33: {fileID: 497194457}
   - 65: {fileID: 497194456}
   - 23: {fileID: 497194455}
+  - 114: {fileID: 497194459}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -6333,6 +6665,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &497194459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1492281087}
+  m_GameObject: {fileID: 497194454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &502505764
 GameObject:
   m_ObjectHideFlags: 0
@@ -6371,6 +6715,7 @@ GameObject:
   - 33: {fileID: 504195732}
   - 65: {fileID: 504195731}
   - 23: {fileID: 504195730}
+  - 114: {fileID: 504195729}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -6378,6 +6723,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &504195729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 482527040}
+  m_GameObject: {fileID: 504195728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &504195730
 Renderer:
   m_ObjectHideFlags: 0
@@ -6803,6 +7160,7 @@ GameObject:
   - 33: {fileID: 556727578}
   - 65: {fileID: 556727577}
   - 23: {fileID: 556727576}
+  - 114: {fileID: 556727580}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -6861,6 +7219,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &556727580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 575847089}
+  m_GameObject: {fileID: 556727575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &558519405
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,6 +7269,7 @@ GameObject:
   - 33: {fileID: 564791684}
   - 65: {fileID: 564791683}
   - 23: {fileID: 564791682}
+  - 114: {fileID: 564791686}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -6957,6 +7328,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &564791686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 126739390}
+  m_GameObject: {fileID: 564791681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &566261272
 GameObject:
   m_ObjectHideFlags: 0
@@ -7145,6 +7528,7 @@ GameObject:
   - 33: {fileID: 579929010}
   - 65: {fileID: 579929009}
   - 23: {fileID: 579929008}
+  - 114: {fileID: 579929012}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -7203,6 +7587,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &579929012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1763052243}
+  m_GameObject: {fileID: 579929007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &580012548
 GameObject:
   m_ObjectHideFlags: 0
@@ -7952,6 +8348,7 @@ GameObject:
   - 33: {fileID: 642891214}
   - 65: {fileID: 642891213}
   - 23: {fileID: 642891212}
+  - 114: {fileID: 642891216}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -8010,6 +8407,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &642891216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1296607742}
+  m_GameObject: {fileID: 642891211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &645524683
 GameObject:
   m_ObjectHideFlags: 0
@@ -8047,6 +8456,7 @@ GameObject:
   - 33: {fileID: 652086811}
   - 65: {fileID: 652086810}
   - 23: {fileID: 652086809}
+  - 114: {fileID: 652086808}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -8054,6 +8464,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &652086808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 430106586}
+  m_GameObject: {fileID: 652086807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &652086809
 Renderer:
   m_ObjectHideFlags: 0
@@ -8116,6 +8538,7 @@ GameObject:
   - 33: {fileID: 653229850}
   - 65: {fileID: 653229849}
   - 23: {fileID: 653229848}
+  - 114: {fileID: 653229847}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -8123,6 +8546,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &653229847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 979576279}
+  m_GameObject: {fileID: 653229846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &653229848
 Renderer:
   m_ObjectHideFlags: 0
@@ -8473,6 +8908,7 @@ GameObject:
   - 33: {fileID: 671387946}
   - 65: {fileID: 671387945}
   - 23: {fileID: 671387944}
+  - 114: {fileID: 671387948}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -8531,6 +8967,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &671387948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1352800716}
+  m_GameObject: {fileID: 671387943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &671813087
 GameObject:
   m_ObjectHideFlags: 0
@@ -8569,6 +9017,7 @@ GameObject:
   - 33: {fileID: 673376603}
   - 65: {fileID: 673376602}
   - 23: {fileID: 673376601}
+  - 114: {fileID: 673376600}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -8576,6 +9025,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &673376600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1396078388}
+  m_GameObject: {fileID: 673376599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &673376601
 Renderer:
   m_ObjectHideFlags: 0
@@ -8716,6 +9177,7 @@ GameObject:
   - 33: {fileID: 681773930}
   - 65: {fileID: 681773929}
   - 23: {fileID: 681773928}
+  - 114: {fileID: 681773927}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -8723,6 +9185,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &681773927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 587397694}
+  m_GameObject: {fileID: 681773926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &681773928
 Renderer:
   m_ObjectHideFlags: 0
@@ -8785,6 +9259,7 @@ GameObject:
   - 33: {fileID: 682344948}
   - 65: {fileID: 682344947}
   - 23: {fileID: 682344946}
+  - 114: {fileID: 682344950}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -8843,6 +9318,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &682344950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1776090347}
+  m_GameObject: {fileID: 682344945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &685780165
 GameObject:
   m_ObjectHideFlags: 0
@@ -9477,6 +9964,7 @@ GameObject:
   - 33: {fileID: 754593139}
   - 65: {fileID: 754593138}
   - 23: {fileID: 754593137}
+  - 114: {fileID: 754593136}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -9484,6 +9972,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &754593136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1628737812}
+  m_GameObject: {fileID: 754593135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &754593137
 Renderer:
   m_ObjectHideFlags: 0
@@ -9628,6 +10128,7 @@ GameObject:
   - 33: {fileID: 755821581}
   - 65: {fileID: 755821580}
   - 23: {fileID: 755821579}
+  - 114: {fileID: 755821578}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -9635,6 +10136,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &755821578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 150298723}
+  m_GameObject: {fileID: 755821577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &755821579
 Renderer:
   m_ObjectHideFlags: 0
@@ -9723,6 +10236,7 @@ GameObject:
   - 33: {fileID: 758777538}
   - 65: {fileID: 758777537}
   - 23: {fileID: 758777536}
+  - 114: {fileID: 758777535}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -9730,6 +10244,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &758777535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 422445088}
+  m_GameObject: {fileID: 758777534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &758777536
 Renderer:
   m_ObjectHideFlags: 0
@@ -9914,6 +10440,7 @@ GameObject:
   - 33: {fileID: 767538730}
   - 65: {fileID: 767538729}
   - 23: {fileID: 767538728}
+  - 114: {fileID: 767538727}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -9921,6 +10448,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &767538727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 61114389}
+  m_GameObject: {fileID: 767538726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &767538728
 Renderer:
   m_ObjectHideFlags: 0
@@ -10009,6 +10548,7 @@ GameObject:
   - 33: {fileID: 775957764}
   - 65: {fileID: 775957763}
   - 23: {fileID: 775957762}
+  - 114: {fileID: 775957761}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -10016,6 +10556,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &775957761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1721476100}
+  m_GameObject: {fileID: 775957760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &775957762
 Renderer:
   m_ObjectHideFlags: 0
@@ -10158,6 +10710,7 @@ GameObject:
   - 33: {fileID: 781202294}
   - 65: {fileID: 781202293}
   - 23: {fileID: 781202292}
+  - 114: {fileID: 781202296}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -10216,6 +10769,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &781202296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 700060228}
+  m_GameObject: {fileID: 781202291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &783654147
 Prefab:
   m_ObjectHideFlags: 0
@@ -10822,6 +11387,7 @@ GameObject:
   - 33: {fileID: 827846918}
   - 65: {fileID: 827846917}
   - 23: {fileID: 827846916}
+  - 114: {fileID: 827846915}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -10829,6 +11395,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &827846915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1038331051}
+  m_GameObject: {fileID: 827846914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &827846916
 Renderer:
   m_ObjectHideFlags: 0
@@ -10917,6 +11495,7 @@ GameObject:
   - 33: {fileID: 831931003}
   - 65: {fileID: 831931002}
   - 23: {fileID: 831931001}
+  - 114: {fileID: 831931000}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -10924,6 +11503,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &831931000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1405462701}
+  m_GameObject: {fileID: 831930999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &831931001
 Renderer:
   m_ObjectHideFlags: 0
@@ -11174,6 +11765,7 @@ GameObject:
   - 33: {fileID: 843545166}
   - 65: {fileID: 843545165}
   - 23: {fileID: 843545164}
+  - 114: {fileID: 843545168}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -11232,6 +11824,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &843545168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 457204271}
+  m_GameObject: {fileID: 843545163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &843720580
 GameObject:
   m_ObjectHideFlags: 0
@@ -11363,6 +11967,7 @@ GameObject:
   - 33: {fileID: 873490742}
   - 65: {fileID: 873490741}
   - 23: {fileID: 873490740}
+  - 114: {fileID: 873490739}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -11370,6 +11975,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &873490739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 282184033}
+  m_GameObject: {fileID: 873490738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &873490740
 Renderer:
   m_ObjectHideFlags: 0
@@ -11432,6 +12049,7 @@ GameObject:
   - 33: {fileID: 877143311}
   - 65: {fileID: 877143310}
   - 23: {fileID: 877143309}
+  - 114: {fileID: 877143308}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -11439,6 +12057,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &877143308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 958577806}
+  m_GameObject: {fileID: 877143307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &877143309
 Renderer:
   m_ObjectHideFlags: 0
@@ -11501,6 +12131,7 @@ GameObject:
   - 33: {fileID: 882978392}
   - 65: {fileID: 882978391}
   - 23: {fileID: 882978390}
+  - 114: {fileID: 882978389}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -11508,6 +12139,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &882978389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2044605227}
+  m_GameObject: {fileID: 882978388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &882978390
 Renderer:
   m_ObjectHideFlags: 0
@@ -11731,6 +12374,7 @@ GameObject:
   - 33: {fileID: 911813712}
   - 65: {fileID: 911813711}
   - 23: {fileID: 911813710}
+  - 114: {fileID: 911813714}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -11789,6 +12433,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &911813714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 153205295}
+  m_GameObject: {fileID: 911813709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &913359450
 GameObject:
   m_ObjectHideFlags: 0
@@ -11944,7 +12600,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925498600}
-  m_LocalRotation: {x: .965925813, y: -5.49807908e-11, z: -1.46055953e-07, w: .258819044}
+  m_LocalRotation: {x: .965925872, y: -5.49807942e-11, z: -1.46055967e-07, w: .258819073}
   m_LocalPosition: {x: -.848941803, y: 148.162079, z: 247.125244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -12591,6 +13247,7 @@ GameObject:
   - 33: {fileID: 979210632}
   - 65: {fileID: 979210631}
   - 23: {fileID: 979210630}
+  - 114: {fileID: 979210629}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -12598,6 +13255,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &979210629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 62238996}
+  m_GameObject: {fileID: 979210628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &979210630
 Renderer:
   m_ObjectHideFlags: 0
@@ -12727,6 +13396,7 @@ GameObject:
   - 33: {fileID: 988274596}
   - 65: {fileID: 988274595}
   - 23: {fileID: 988274594}
+  - 114: {fileID: 988274593}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -12734,6 +13404,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &988274593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1293970684}
+  m_GameObject: {fileID: 988274592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &988274594
 Renderer:
   m_ObjectHideFlags: 0
@@ -12920,6 +13602,7 @@ GameObject:
   - 33: {fileID: 995974714}
   - 65: {fileID: 995974713}
   - 23: {fileID: 995974712}
+  - 114: {fileID: 995974716}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -12978,6 +13661,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &995974716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 999313819}
+  m_GameObject: {fileID: 995974711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &997506589
 Prefab:
   m_ObjectHideFlags: 0
@@ -13121,6 +13816,7 @@ GameObject:
   - 33: {fileID: 1001810529}
   - 65: {fileID: 1001810528}
   - 23: {fileID: 1001810527}
+  - 114: {fileID: 1001810526}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -13128,6 +13824,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1001810526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1858983974}
+  m_GameObject: {fileID: 1001810525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1001810527
 Renderer:
   m_ObjectHideFlags: 0
@@ -13418,6 +14126,7 @@ GameObject:
   - 33: {fileID: 1024284892}
   - 65: {fileID: 1024284891}
   - 23: {fileID: 1024284890}
+  - 114: {fileID: 1024284889}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -13425,6 +14134,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1024284889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2049608119}
+  m_GameObject: {fileID: 1024284888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1024284890
 Renderer:
   m_ObjectHideFlags: 0
@@ -13624,6 +14345,7 @@ GameObject:
   - 33: {fileID: 1031874332}
   - 65: {fileID: 1031874331}
   - 23: {fileID: 1031874330}
+  - 114: {fileID: 1031874329}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -13631,6 +14353,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1031874329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1164920849}
+  m_GameObject: {fileID: 1031874328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1031874330
 Renderer:
   m_ObjectHideFlags: 0
@@ -14008,6 +14742,7 @@ GameObject:
   - 33: {fileID: 1054481430}
   - 65: {fileID: 1054481429}
   - 23: {fileID: 1054481428}
+  - 114: {fileID: 1054481427}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14015,6 +14750,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1054481427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1793204511}
+  m_GameObject: {fileID: 1054481426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1054481428
 Renderer:
   m_ObjectHideFlags: 0
@@ -14129,6 +14876,7 @@ GameObject:
   - 33: {fileID: 1059683138}
   - 65: {fileID: 1059683137}
   - 23: {fileID: 1059683136}
+  - 114: {fileID: 1059683140}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -14187,6 +14935,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1059683140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1776745463}
+  m_GameObject: {fileID: 1059683135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1059906646
 GameObject:
   m_ObjectHideFlags: 0
@@ -14198,6 +14958,7 @@ GameObject:
   - 33: {fileID: 1059906650}
   - 65: {fileID: 1059906649}
   - 23: {fileID: 1059906648}
+  - 114: {fileID: 1059906647}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14205,6 +14966,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1059906647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1506670001}
+  m_GameObject: {fileID: 1059906646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1059906648
 Renderer:
   m_ObjectHideFlags: 0
@@ -14426,7 +15199,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400024, guid: 3b031d1c8e287114d82bbe6f7debe848, type: 2}
   m_PrefabInternal: {fileID: 447727144}
   m_GameObject: {fileID: 1075230292}
-  m_LocalRotation: {x: .734158218, y: .197566152, z: .537462234, w: .36484769}
+  m_LocalRotation: {x: .734158218, y: .197566137, z: .537462234, w: .36484769}
   m_LocalPosition: {x: .14475745, y: -.784989059, z: 3.02156568}
   m_LocalScale: {x: 1, y: .999999881, z: .999999821}
   m_Children:
@@ -14510,6 +15283,7 @@ GameObject:
   - 33: {fileID: 1079895818}
   - 65: {fileID: 1079895817}
   - 23: {fileID: 1079895816}
+  - 114: {fileID: 1079895815}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14517,6 +15291,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1079895815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1577350405}
+  m_GameObject: {fileID: 1079895814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1079895816
 Renderer:
   m_ObjectHideFlags: 0
@@ -14688,6 +15474,7 @@ GameObject:
   - 33: {fileID: 1088060844}
   - 65: {fileID: 1088060843}
   - 23: {fileID: 1088060842}
+  - 114: {fileID: 1088060846}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14746,6 +15533,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1088060846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1592374127}
+  m_GameObject: {fileID: 1088060841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1090037030
 GameObject:
   m_ObjectHideFlags: 0
@@ -14821,6 +15620,7 @@ GameObject:
   - 33: {fileID: 1096246099}
   - 65: {fileID: 1096246098}
   - 23: {fileID: 1096246097}
+  - 114: {fileID: 1096246101}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14879,6 +15679,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1096246101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2092717337}
+  m_GameObject: {fileID: 1096246096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1098270176
 GameObject:
   m_ObjectHideFlags: 0
@@ -14942,6 +15754,7 @@ GameObject:
   - 33: {fileID: 1102996108}
   - 65: {fileID: 1102996107}
   - 23: {fileID: 1102996106}
+  - 114: {fileID: 1102996105}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14949,6 +15762,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1102996105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 151009805}
+  m_GameObject: {fileID: 1102996104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1102996106
 Renderer:
   m_ObjectHideFlags: 0
@@ -15104,6 +15929,7 @@ GameObject:
   - 33: {fileID: 1121449720}
   - 65: {fileID: 1121449719}
   - 23: {fileID: 1121449718}
+  - 114: {fileID: 1121449722}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -15162,6 +15988,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1121449722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 724689779}
+  m_GameObject: {fileID: 1121449717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1124652073
 GameObject:
   m_ObjectHideFlags: 0
@@ -15253,6 +16091,7 @@ GameObject:
   - 33: {fileID: 1130826607}
   - 65: {fileID: 1130826606}
   - 23: {fileID: 1130826605}
+  - 114: {fileID: 1130826609}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -15311,6 +16150,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1130826609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 630240167}
+  m_GameObject: {fileID: 1130826604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1130872239
 GameObject:
   m_ObjectHideFlags: 0
@@ -15322,6 +16173,7 @@ GameObject:
   - 33: {fileID: 1130872242}
   - 65: {fileID: 1130872241}
   - 23: {fileID: 1130872240}
+  - 114: {fileID: 1130872244}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -15380,6 +16232,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1130872244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1269518528}
+  m_GameObject: {fileID: 1130872239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1137510517
 GameObject:
   m_ObjectHideFlags: 0
@@ -15457,6 +16321,7 @@ GameObject:
   - 33: {fileID: 1137573831}
   - 65: {fileID: 1137573830}
   - 23: {fileID: 1137573829}
+  - 114: {fileID: 1137573828}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -15464,6 +16329,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1137573828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2037312119}
+  m_GameObject: {fileID: 1137573827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1137573829
 Renderer:
   m_ObjectHideFlags: 0
@@ -15526,6 +16403,7 @@ GameObject:
   - 33: {fileID: 1145252470}
   - 65: {fileID: 1145252469}
   - 23: {fileID: 1145252468}
+  - 114: {fileID: 1145252467}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -15533,6 +16411,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1145252467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 89748132}
+  m_GameObject: {fileID: 1145252466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1145252468
 Renderer:
   m_ObjectHideFlags: 0
@@ -15595,6 +16485,7 @@ GameObject:
   - 33: {fileID: 1146214503}
   - 65: {fileID: 1146214502}
   - 23: {fileID: 1146214501}
+  - 114: {fileID: 1146214505}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -15653,6 +16544,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1146214505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 391808101}
+  m_GameObject: {fileID: 1146214500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1147186485
 GameObject:
   m_ObjectHideFlags: 0
@@ -15862,6 +16765,7 @@ GameObject:
   - 33: {fileID: 1157542681}
   - 65: {fileID: 1157542680}
   - 23: {fileID: 1157542679}
+  - 114: {fileID: 1157542678}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -15869,6 +16773,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1157542678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1333406381}
+  m_GameObject: {fileID: 1157542677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1157542679
 Renderer:
   m_ObjectHideFlags: 0
@@ -15931,6 +16847,7 @@ GameObject:
   - 33: {fileID: 1159043503}
   - 65: {fileID: 1159043502}
   - 23: {fileID: 1159043501}
+  - 114: {fileID: 1159043500}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -15938,6 +16855,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1159043500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2010175283}
+  m_GameObject: {fileID: 1159043499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1159043501
 Renderer:
   m_ObjectHideFlags: 0
@@ -16216,6 +17145,7 @@ GameObject:
   - 33: {fileID: 1172101873}
   - 65: {fileID: 1172101872}
   - 23: {fileID: 1172101871}
+  - 114: {fileID: 1172101870}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -16223,6 +17153,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1172101870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 444231246}
+  m_GameObject: {fileID: 1172101869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1172101871
 Renderer:
   m_ObjectHideFlags: 0
@@ -16285,6 +17227,7 @@ GameObject:
   - 33: {fileID: 1177778366}
   - 65: {fileID: 1177778365}
   - 23: {fileID: 1177778364}
+  - 114: {fileID: 1177778368}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -16343,6 +17286,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1177778368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1327521632}
+  m_GameObject: {fileID: 1177778363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1180461867
 GameObject:
   m_ObjectHideFlags: 0
@@ -16691,6 +17646,7 @@ GameObject:
   - 33: {fileID: 1200292719}
   - 65: {fileID: 1200292718}
   - 23: {fileID: 1200292717}
+  - 114: {fileID: 1200292716}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -16698,6 +17654,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1200292716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 663421245}
+  m_GameObject: {fileID: 1200292715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1200292717
 Renderer:
   m_ObjectHideFlags: 0
@@ -17064,6 +18032,7 @@ GameObject:
   - 33: {fileID: 1227974593}
   - 65: {fileID: 1227974592}
   - 23: {fileID: 1227974591}
+  - 114: {fileID: 1227974590}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -17071,6 +18040,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1227974590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1793302893}
+  m_GameObject: {fileID: 1227974589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1227974591
 Renderer:
   m_ObjectHideFlags: 0
@@ -17240,6 +18221,7 @@ GameObject:
   - 33: {fileID: 1239713612}
   - 65: {fileID: 1239713611}
   - 23: {fileID: 1239713610}
+  - 114: {fileID: 1239713609}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -17247,6 +18229,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1239713609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 973829534}
+  m_GameObject: {fileID: 1239713608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1239713610
 Renderer:
   m_ObjectHideFlags: 0
@@ -17309,6 +18303,7 @@ GameObject:
   - 33: {fileID: 1239926228}
   - 65: {fileID: 1239926227}
   - 23: {fileID: 1239926226}
+  - 114: {fileID: 1239926225}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -17316,6 +18311,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1239926225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1197747698}
+  m_GameObject: {fileID: 1239926224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1239926226
 Renderer:
   m_ObjectHideFlags: 0
@@ -17660,6 +18667,7 @@ GameObject:
   - 33: {fileID: 1272741862}
   - 65: {fileID: 1272741861}
   - 23: {fileID: 1272741860}
+  - 114: {fileID: 1272741859}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -17667,6 +18675,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1272741859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1848764153}
+  m_GameObject: {fileID: 1272741858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1272741860
 Renderer:
   m_ObjectHideFlags: 0
@@ -17729,6 +18749,7 @@ GameObject:
   - 33: {fileID: 1273930958}
   - 65: {fileID: 1273930957}
   - 23: {fileID: 1273930956}
+  - 114: {fileID: 1273930955}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -17736,6 +18757,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1273930955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1197755695}
+  m_GameObject: {fileID: 1273930954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1273930956
 Renderer:
   m_ObjectHideFlags: 0
@@ -18064,6 +19097,7 @@ GameObject:
   - 33: {fileID: 1299290010}
   - 65: {fileID: 1299290009}
   - 23: {fileID: 1299290008}
+  - 114: {fileID: 1299290012}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -18122,6 +19156,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1299290012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1884334689}
+  m_GameObject: {fileID: 1299290007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1299304761
 GameObject:
   m_ObjectHideFlags: 0
@@ -18133,6 +19179,7 @@ GameObject:
   - 33: {fileID: 1299304765}
   - 65: {fileID: 1299304764}
   - 23: {fileID: 1299304763}
+  - 114: {fileID: 1299304762}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -18140,6 +19187,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1299304762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 425204737}
+  m_GameObject: {fileID: 1299304761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1299304763
 Renderer:
   m_ObjectHideFlags: 0
@@ -18374,6 +19433,7 @@ GameObject:
   - 33: {fileID: 1320152233}
   - 65: {fileID: 1320152232}
   - 23: {fileID: 1320152231}
+  - 114: {fileID: 1320152235}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -18432,6 +19492,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1320152235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1726688721}
+  m_GameObject: {fileID: 1320152230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1327521632
 Prefab:
   m_ObjectHideFlags: 0
@@ -18778,7 +19850,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
   m_PrefabInternal: {fileID: 1442102619}
   m_GameObject: {fileID: 1349189792}
-  m_LocalRotation: {x: .628866851, y: .323305547, z: -.628866851, w: .323305547}
+  m_LocalRotation: {x: .628866911, y: .323305577, z: -.628866911, w: .323305577}
   m_LocalPosition: {x: .253155828, y: 1.63916731, z: 2.16737342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -19386,6 +20458,7 @@ GameObject:
   - 33: {fileID: 1408412090}
   - 65: {fileID: 1408412089}
   - 23: {fileID: 1408412088}
+  - 114: {fileID: 1408412087}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -19393,6 +20466,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1408412087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 626231369}
+  m_GameObject: {fileID: 1408412086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1408412088
 Renderer:
   m_ObjectHideFlags: 0
@@ -19590,6 +20675,7 @@ GameObject:
   - 33: {fileID: 1433704145}
   - 65: {fileID: 1433704144}
   - 23: {fileID: 1433704143}
+  - 114: {fileID: 1433704142}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -19597,6 +20683,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1433704142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 802337015}
+  m_GameObject: {fileID: 1433704141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1433704143
 Renderer:
   m_ObjectHideFlags: 0
@@ -19797,7 +20895,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_Radius
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_Center.z
@@ -19822,6 +20920,22 @@ Prefab:
     - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: .628866911
+      objectReference: {fileID: 0}
+    - target: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .323305577
+      objectReference: {fileID: 0}
+    - target: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -.628866911
+      objectReference: {fileID: 0}
+    - target: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .323305577
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -19850,7 +20964,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400194, guid: 3b031d1c8e287114d82bbe6f7debe848, type: 2}
   m_PrefabInternal: {fileID: 447727144}
   m_GameObject: {fileID: 1445175909}
-  m_LocalRotation: {x: .633386254, y: -.392616481, z: .338795036, w: .574362457}
+  m_LocalRotation: {x: .633386195, y: -.392616421, z: .338795006, w: .574362397}
   m_LocalPosition: {x: -.599579275, y: -.220286965, z: -.141508043}
   m_LocalScale: {x: .999999642, y: .999999762, z: .999999762}
   m_Children: []
@@ -19866,6 +20980,7 @@ GameObject:
   - 33: {fileID: 1446009438}
   - 65: {fileID: 1446009437}
   - 23: {fileID: 1446009436}
+  - 114: {fileID: 1446009440}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -19924,6 +21039,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1446009440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1112746825}
+  m_GameObject: {fileID: 1446009435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1447198255
 GameObject:
   m_ObjectHideFlags: 0
@@ -19990,6 +21117,7 @@ GameObject:
   - 33: {fileID: 1450369938}
   - 65: {fileID: 1450369937}
   - 23: {fileID: 1450369936}
+  - 114: {fileID: 1450369935}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -19997,6 +21125,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1450369935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1084413754}
+  m_GameObject: {fileID: 1450369934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1450369936
 Renderer:
   m_ObjectHideFlags: 0
@@ -20125,6 +21265,7 @@ GameObject:
   - 33: {fileID: 1457656045}
   - 65: {fileID: 1457656044}
   - 23: {fileID: 1457656043}
+  - 114: {fileID: 1457656042}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -20132,6 +21273,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1457656042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672323028}
+  m_GameObject: {fileID: 1457656041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1457656043
 Renderer:
   m_ObjectHideFlags: 0
@@ -20905,6 +22058,7 @@ GameObject:
   - 33: {fileID: 1524075597}
   - 65: {fileID: 1524075596}
   - 23: {fileID: 1524075595}
+  - 114: {fileID: 1524075594}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -20912,6 +22066,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1524075594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2141193580}
+  m_GameObject: {fileID: 1524075593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1524075595
 Renderer:
   m_ObjectHideFlags: 0
@@ -21001,6 +22167,7 @@ GameObject:
   - 33: {fileID: 1539613801}
   - 65: {fileID: 1539613800}
   - 23: {fileID: 1539613799}
+  - 114: {fileID: 1539613798}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -21008,6 +22175,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1539613798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 598690313}
+  m_GameObject: {fileID: 1539613797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1539613799
 Renderer:
   m_ObjectHideFlags: 0
@@ -21204,6 +22383,7 @@ GameObject:
   - 33: {fileID: 1561345184}
   - 65: {fileID: 1561345183}
   - 23: {fileID: 1561345182}
+  - 114: {fileID: 1561345181}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -21211,6 +22391,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1561345181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 434038974}
+  m_GameObject: {fileID: 1561345180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1561345182
 Renderer:
   m_ObjectHideFlags: 0
@@ -21504,6 +22696,7 @@ GameObject:
   - 33: {fileID: 1582721442}
   - 65: {fileID: 1582721441}
   - 23: {fileID: 1582721440}
+  - 114: {fileID: 1582721444}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -21562,6 +22755,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1582721444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1586994327}
+  m_GameObject: {fileID: 1582721439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1586104110
 GameObject:
   m_ObjectHideFlags: 0
@@ -21573,6 +22778,7 @@ GameObject:
   - 33: {fileID: 1586104114}
   - 65: {fileID: 1586104113}
   - 23: {fileID: 1586104112}
+  - 114: {fileID: 1586104111}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -21580,6 +22786,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1586104111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1086278844}
+  m_GameObject: {fileID: 1586104110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1586104112
 Renderer:
   m_ObjectHideFlags: 0
@@ -21801,6 +23019,7 @@ GameObject:
   - 33: {fileID: 1599223776}
   - 65: {fileID: 1599223775}
   - 23: {fileID: 1599223774}
+  - 114: {fileID: 1599223773}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -21808,6 +23027,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1599223773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1046616861}
+  m_GameObject: {fileID: 1599223772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1599223774
 Renderer:
   m_ObjectHideFlags: 0
@@ -22043,6 +23274,7 @@ GameObject:
   - 33: {fileID: 1624993444}
   - 65: {fileID: 1624993443}
   - 23: {fileID: 1624993442}
+  - 114: {fileID: 1624993441}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -22050,6 +23282,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1624993441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 304976156}
+  m_GameObject: {fileID: 1624993440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1624993442
 Renderer:
   m_ObjectHideFlags: 0
@@ -22395,6 +23639,7 @@ GameObject:
   - 33: {fileID: 1664756992}
   - 65: {fileID: 1664756991}
   - 23: {fileID: 1664756990}
+  - 114: {fileID: 1664756994}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -22453,6 +23698,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1664756994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 585495393}
+  m_GameObject: {fileID: 1664756989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1666406730
 GameObject:
   m_ObjectHideFlags: 0
@@ -22806,6 +24063,7 @@ GameObject:
   - 33: {fileID: 1687196091}
   - 65: {fileID: 1687196090}
   - 23: {fileID: 1687196089}
+  - 114: {fileID: 1687196088}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -22813,6 +24071,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1687196088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1611276742}
+  m_GameObject: {fileID: 1687196087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1687196089
 Renderer:
   m_ObjectHideFlags: 0
@@ -23159,6 +24429,7 @@ GameObject:
   - 33: {fileID: 1720053894}
   - 65: {fileID: 1720053893}
   - 23: {fileID: 1720053892}
+  - 114: {fileID: 1720053891}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -23166,6 +24437,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1720053891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 466741459}
+  m_GameObject: {fileID: 1720053890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1720053892
 Renderer:
   m_ObjectHideFlags: 0
@@ -23321,6 +24604,7 @@ GameObject:
   - 33: {fileID: 1726337384}
   - 65: {fileID: 1726337383}
   - 23: {fileID: 1726337382}
+  - 114: {fileID: 1726337386}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -23379,6 +24663,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1726337386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 2019556301}
+  m_GameObject: {fileID: 1726337381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1726688721
 Prefab:
   m_ObjectHideFlags: 0
@@ -23509,6 +24805,7 @@ GameObject:
   - 33: {fileID: 1742217942}
   - 65: {fileID: 1742217941}
   - 23: {fileID: 1742217940}
+  - 114: {fileID: 1742217939}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -23516,6 +24813,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1742217939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451121106}
+  m_GameObject: {fileID: 1742217938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1742217940
 Renderer:
   m_ObjectHideFlags: 0
@@ -23578,6 +24887,7 @@ GameObject:
   - 33: {fileID: 1743057553}
   - 65: {fileID: 1743057552}
   - 23: {fileID: 1743057551}
+  - 114: {fileID: 1743057550}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -23585,6 +24895,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1743057550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 170146494}
+  m_GameObject: {fileID: 1743057549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1743057551
 Renderer:
   m_ObjectHideFlags: 0
@@ -23752,6 +25074,7 @@ GameObject:
   - 33: {fileID: 1751594652}
   - 65: {fileID: 1751594651}
   - 23: {fileID: 1751594650}
+  - 114: {fileID: 1751594649}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -23759,6 +25082,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1751594649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1960001964}
+  m_GameObject: {fileID: 1751594648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1751594650
 Renderer:
   m_ObjectHideFlags: 0
@@ -23848,6 +25183,7 @@ GameObject:
   - 33: {fileID: 1756412420}
   - 65: {fileID: 1756412419}
   - 23: {fileID: 1756412418}
+  - 114: {fileID: 1756412417}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -23855,6 +25191,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1756412417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1713654619}
+  m_GameObject: {fileID: 1756412416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1756412418
 Renderer:
   m_ObjectHideFlags: 0
@@ -24158,6 +25506,7 @@ GameObject:
   - 33: {fileID: 1770548913}
   - 65: {fileID: 1770548912}
   - 23: {fileID: 1770548911}
+  - 114: {fileID: 1770548915}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -24216,6 +25565,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1770548915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 626310309}
+  m_GameObject: {fileID: 1770548910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1773438286
 GameObject:
   m_ObjectHideFlags: 0
@@ -24253,6 +25614,7 @@ GameObject:
   - 33: {fileID: 1773478711}
   - 65: {fileID: 1773478710}
   - 23: {fileID: 1773478709}
+  - 114: {fileID: 1773478708}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -24260,6 +25622,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1773478708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1642811829}
+  m_GameObject: {fileID: 1773478707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1773478709
 Renderer:
   m_ObjectHideFlags: 0
@@ -24552,6 +25926,7 @@ GameObject:
   - 33: {fileID: 1780706892}
   - 65: {fileID: 1780706891}
   - 23: {fileID: 1780706890}
+  - 114: {fileID: 1780706894}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -24610,6 +25985,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1780706894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1477233740}
+  m_GameObject: {fileID: 1780706889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1793204511
 Prefab:
   m_ObjectHideFlags: 0
@@ -24727,6 +26114,7 @@ GameObject:
   - 33: {fileID: 1802749342}
   - 65: {fileID: 1802749341}
   - 23: {fileID: 1802749340}
+  - 114: {fileID: 1802749339}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -24734,6 +26122,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1802749339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1484943873}
+  m_GameObject: {fileID: 1802749338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1802749340
 Renderer:
   m_ObjectHideFlags: 0
@@ -24836,6 +26236,7 @@ GameObject:
   - 33: {fileID: 1811048235}
   - 65: {fileID: 1811048234}
   - 23: {fileID: 1811048233}
+  - 114: {fileID: 1811048237}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -24894,6 +26295,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1811048237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1152853638}
+  m_GameObject: {fileID: 1811048232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1816845041
 GameObject:
   m_ObjectHideFlags: 0
@@ -24905,6 +26318,7 @@ GameObject:
   - 33: {fileID: 1816845045}
   - 65: {fileID: 1816845044}
   - 23: {fileID: 1816845043}
+  - 114: {fileID: 1816845042}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -24912,6 +26326,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1816845042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 862942930}
+  m_GameObject: {fileID: 1816845041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1816845043
 Renderer:
   m_ObjectHideFlags: 0
@@ -25323,6 +26749,7 @@ GameObject:
   - 33: {fileID: 1852225337}
   - 65: {fileID: 1852225336}
   - 23: {fileID: 1852225335}
+  - 114: {fileID: 1852225334}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -25330,6 +26757,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1852225334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 783654147}
+  m_GameObject: {fileID: 1852225333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1852225335
 Renderer:
   m_ObjectHideFlags: 0
@@ -25536,6 +26975,7 @@ GameObject:
   - 33: {fileID: 1861374574}
   - 65: {fileID: 1861374573}
   - 23: {fileID: 1861374572}
+  - 114: {fileID: 1861374571}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -25543,6 +26983,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1861374571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 348060081}
+  m_GameObject: {fileID: 1861374570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1861374572
 Renderer:
   m_ObjectHideFlags: 0
@@ -25657,6 +27109,7 @@ GameObject:
   - 33: {fileID: 1876442795}
   - 65: {fileID: 1876442794}
   - 23: {fileID: 1876442793}
+  - 114: {fileID: 1876442792}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -25664,6 +27117,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1876442792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1469138046}
+  m_GameObject: {fileID: 1876442791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1876442793
 Renderer:
   m_ObjectHideFlags: 0
@@ -26308,6 +27773,7 @@ GameObject:
   - 33: {fileID: 1907091285}
   - 65: {fileID: 1907091284}
   - 23: {fileID: 1907091283}
+  - 114: {fileID: 1907091282}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -26315,6 +27781,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1907091282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 997506589}
+  m_GameObject: {fileID: 1907091281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1907091283
 Renderer:
   m_ObjectHideFlags: 0
@@ -26484,6 +27962,7 @@ GameObject:
   - 33: {fileID: 1929197341}
   - 65: {fileID: 1929197340}
   - 23: {fileID: 1929197339}
+  - 114: {fileID: 1929197338}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -26491,6 +27970,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1929197338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1670396160}
+  m_GameObject: {fileID: 1929197337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1929197339
 Renderer:
   m_ObjectHideFlags: 0
@@ -26855,6 +28346,7 @@ GameObject:
   - 33: {fileID: 1956860320}
   - 65: {fileID: 1956860319}
   - 23: {fileID: 1956860318}
+  - 114: {fileID: 1956860317}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -26862,6 +28354,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1956860317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1878276366}
+  m_GameObject: {fileID: 1956860316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1956860318
 Renderer:
   m_ObjectHideFlags: 0
@@ -26990,6 +28494,7 @@ GameObject:
   - 33: {fileID: 1964269560}
   - 65: {fileID: 1964269559}
   - 23: {fileID: 1964269558}
+  - 114: {fileID: 1964269557}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -26997,6 +28502,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1964269557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 670056185}
+  m_GameObject: {fileID: 1964269556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1964269558
 Renderer:
   m_ObjectHideFlags: 0
@@ -27166,6 +28683,7 @@ GameObject:
   - 33: {fileID: 1981178574}
   - 65: {fileID: 1981178573}
   - 23: {fileID: 1981178572}
+  - 114: {fileID: 1981178571}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -27173,6 +28691,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1981178571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1013239830}
+  m_GameObject: {fileID: 1981178570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1981178572
 Renderer:
   m_ObjectHideFlags: 0
@@ -27384,6 +28914,7 @@ GameObject:
   - 33: {fileID: 1985754432}
   - 65: {fileID: 1985754431}
   - 23: {fileID: 1985754430}
+  - 114: {fileID: 1985754429}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -27391,6 +28922,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1985754429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1849268272}
+  m_GameObject: {fileID: 1985754428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1985754430
 Renderer:
   m_ObjectHideFlags: 0
@@ -27732,6 +29275,7 @@ GameObject:
   - 33: {fileID: 1999538232}
   - 65: {fileID: 1999538231}
   - 23: {fileID: 1999538230}
+  - 114: {fileID: 1999538229}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -27739,6 +29283,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1999538229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 670454309}
+  m_GameObject: {fileID: 1999538228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1999538230
 Renderer:
   m_ObjectHideFlags: 0
@@ -27801,6 +29357,7 @@ GameObject:
   - 33: {fileID: 2001237514}
   - 65: {fileID: 2001237513}
   - 23: {fileID: 2001237512}
+  - 114: {fileID: 2001237516}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -27859,6 +29416,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &2001237516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 1889171184}
+  m_GameObject: {fileID: 2001237511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2006561377
 GameObject:
   m_ObjectHideFlags: 0
@@ -27989,6 +29558,7 @@ GameObject:
   - 33: {fileID: 2012228217}
   - 65: {fileID: 2012228216}
   - 23: {fileID: 2012228215}
+  - 114: {fileID: 2012228214}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -27996,6 +29566,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2012228214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 282880739}
+  m_GameObject: {fileID: 2012228213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &2012228215
 Renderer:
   m_ObjectHideFlags: 0
@@ -28299,6 +29881,7 @@ GameObject:
   - 33: {fileID: 2039799880}
   - 65: {fileID: 2039799879}
   - 23: {fileID: 2039799878}
+  - 114: {fileID: 2039799882}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -28357,6 +29940,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &2039799882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 989997429}
+  m_GameObject: {fileID: 2039799877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2041037848
 GameObject:
   m_ObjectHideFlags: 0
@@ -28460,6 +30055,7 @@ GameObject:
   - 33: {fileID: 2045476884}
   - 65: {fileID: 2045476883}
   - 23: {fileID: 2045476882}
+  - 114: {fileID: 2045476881}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -28467,6 +30063,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2045476881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 391457319}
+  m_GameObject: {fileID: 2045476880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &2045476882
 Renderer:
   m_ObjectHideFlags: 0
@@ -28874,6 +30482,7 @@ GameObject:
   - 33: {fileID: 2079650061}
   - 65: {fileID: 2079650060}
   - 23: {fileID: 2079650059}
+  - 114: {fileID: 2079650058}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -28881,6 +30490,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2079650058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1990298526}
+  m_GameObject: {fileID: 2079650057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &2079650059
 Renderer:
   m_ObjectHideFlags: 0
@@ -29036,6 +30657,7 @@ GameObject:
   - 33: {fileID: 2090250784}
   - 65: {fileID: 2090250783}
   - 23: {fileID: 2090250782}
+  - 114: {fileID: 2090250786}
   m_Layer: 9
   m_Name: WoodCube
   m_TagString: Untagged
@@ -29094,6 +30716,18 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &2090250786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c4ddda7db0b09eb40b24c6170937ee36,
+    type: 2}
+  m_PrefabInternal: {fileID: 466287217}
+  m_GameObject: {fileID: 2090250781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37faaeaf80dce4019a06722b8a176cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2091126476
 GameObject:
   m_ObjectHideFlags: 0
@@ -29131,6 +30765,7 @@ GameObject:
   - 33: {fileID: 2091648627}
   - 65: {fileID: 2091648626}
   - 23: {fileID: 2091648625}
+  - 114: {fileID: 2091648624}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -29138,6 +30773,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2091648624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1224053944}
+  m_GameObject: {fileID: 2091648623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &2091648625
 Renderer:
   m_ObjectHideFlags: 0
@@ -29319,6 +30966,7 @@ GameObject:
   - 33: {fileID: 2108474241}
   - 65: {fileID: 2108474240}
   - 23: {fileID: 2108474239}
+  - 114: {fileID: 2108474238}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -29326,6 +30974,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2108474238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 926448942}
+  m_GameObject: {fileID: 2108474237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &2108474239
 Renderer:
   m_ObjectHideFlags: 0
@@ -29441,6 +31101,7 @@ GameObject:
   - 33: {fileID: 2117516893}
   - 65: {fileID: 2117516892}
   - 23: {fileID: 2117516891}
+  - 114: {fileID: 2117516890}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -29448,6 +31109,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2117516890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1503801334}
+  m_GameObject: {fileID: 2117516889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &2117516891
 Renderer:
   m_ObjectHideFlags: 0
@@ -29727,6 +31400,7 @@ GameObject:
   - 33: {fileID: 2143309455}
   - 65: {fileID: 2143309454}
   - 23: {fileID: 2143309453}
+  - 114: {fileID: 2143309452}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -29734,6 +31408,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2143309452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 790451782}
+  m_GameObject: {fileID: 2143309451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &2143309453
 Renderer:
   m_ObjectHideFlags: 0
