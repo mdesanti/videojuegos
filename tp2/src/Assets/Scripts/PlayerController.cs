@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
 	}
 	
 	void plantBomb() {
-		if (Input.GetKey(KeyCode.Space) && bombCount > 0) {
+		if (Input.GetKeyDown(KeyCode.Space) && bombCount > 0) {
             Transform bomb = (Transform)GameObject.Instantiate(bombPrototype);
 
 			Vector3 move = new Vector3(transform.position.x, (transform.position.y), 0.5f);
@@ -64,10 +64,21 @@ public class PlayerController : MonoBehaviour
         }
 	}
 	
+	public void bombExploded() {
+		bombCount++;
+	}
+	
 	void OnCollisionEnter(Collision collision) 
     {
 		if(collision.collider.gameObject.tag == "Ball") {
 			Application.LoadLevel ("GameOver");
+		}
+    }
+	
+	void OnParticleCollision(GameObject collision) 
+    {
+		if(collision.tag == "Fire") {
+			Destroy(gameObject);
 		}
     }
 }
