@@ -14,12 +14,11 @@ public class BombController : MonoBehaviour
 			Vector3 move = new Vector3(transform.position.x, (transform.position.y), 0.5f);
 			explotion.position = move;
 			Destroy(gameObject);
-			//this is allways returning null!
-			GameObject go = GameObject.Find("Player");
+			GameObject go = GameObject.FindGameObjectWithTag("Player");
 			if(go != null) {
 				go.GetComponent<PlayerController>().bombExploded();
 			} else {
-				Debug.Log("WTF");
+				Debug.Log("Should not happen");
 			}
 		}
 	}
