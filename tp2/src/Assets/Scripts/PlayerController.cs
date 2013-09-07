@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
 	public int points = 0;
 	public float score;
 
+	private int moves = 0;
+	//Cantidad total de pasos para hacer un movimiento. Mientras mayor sea, mas lento se mueve.
+	private int MAX_MOVES = 10;
+
 
     void Start()
     {
@@ -23,23 +27,38 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update() {
-    	moveDirection = new Vector3(0,0,0);
-    	if(Input.GetKey(KeyCode.LeftArrow)) {
+    	//moveDirection = new Vector3.zero;
+    	if(Input.GetKey(KeyCode.LeftArrow) && moves == 0) {
 			moveDirection = new Vector3(-10, 0, 0);
-		} else if(Input.GetKey(KeyCode.RightArrow)) {
+			moves = MAX_MOVES;
+		} else if(Input.GetKey(KeyCode.RightArrow) && moves == 0) {
 			moveDirection = new Vector3(10, 0, 0);
-		} else if(Input.GetKey(KeyCode.UpArrow)) {
+			moves = MAX_MOVES;
+		} else if(Input.GetKey(KeyCode.UpArrow) && moves == 0) {
 			moveDirection = new Vector3(0, -10, 0);
-		} else if(Input.GetKey(KeyCode.DownArrow)) {
+			moves = MAX_MOVES;
+		} else if(Input.GetKey(KeyCode.DownArrow) && moves == 0) {
 			moveDirection = new Vector3(0, 10, 0);
+			moves = MAX_MOVES;
 		}
-		moveDirection *= speed;
-
-         if (moveDirection != Vector3.zero)
-             transform.forward = Vector3.Slerp(transform.forward, moveDirection, 0.3f);
 
         //Just tell the controller where we want to move, it will handle collisions itself
-		controller.Move(moveDirection * Time.deltaTime);
+         if (moveDirection != Vector3.zero && moves > 0){
+         	//transform.forward = Vector3.Slerp(transform.forward, moveDirection, 0.3f);
+         	controller.Move(moveDirection * 1/MAX_MOVES);
+
+			//transform.Translate(moveDirection * 1/MAX_MOVES, Space.World);
+			//controller.Move(moveDirection * 1/MAX_MOVES);
+
+			moves--;
+			if(moves == 0) {
+				moveDirection = new Vector3(0,0,0);
+				transform.position = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), 0.5f);
+			}
+		}
+			//transform.Translate(moveDirection, Space.World);
+
+
 
 		//Hay que rotar despues de mover, sino toma cualquier valor
     	if(Input.GetKey(KeyCode.LeftArrow)) {

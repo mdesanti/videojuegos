@@ -2594,10 +2594,10 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!114 &214449604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2613,8 +2613,6 @@ MonoBehaviour:
   bullets: []
   points: 0
   score: 0
-  x: 0
-  y: 0
 --- !u!143 &214449605
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2626,7 +2624,7 @@ CharacterController:
   m_Height: 1
   m_Radius: .500000119
   m_SlopeLimit: 45
-  m_StepOffset: 0
+  m_StepOffset: .300000012
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
@@ -2641,8 +2639,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .500000119
-  m_Center: {x: 5.96046448e-08, y: 0, z: -8.94069672e-08}
+  m_Radius: 10
+  m_Center: {x: 0, y: 5, z: 0}
 --- !u!33 &214449607
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19771,7 +19769,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_StepOffset
-      value: 0
+      value: .300000012
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_AngularDrag
@@ -19787,7 +19785,43 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_MinMoveDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_Radius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_Center.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -22220,6 +22254,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
       propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_Size.z
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
