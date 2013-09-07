@@ -2754,7 +2754,7 @@ CharacterController:
   m_GameObject: {fileID: 214449601}
   serializedVersion: 2
   m_Height: 1
-  m_Radius: 3
+  m_Radius: 3.29999995
   m_SlopeLimit: 45
   m_StepOffset: .300000012
   m_SkinWidth: .0799999982
@@ -19850,7 +19850,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
   m_PrefabInternal: {fileID: 1442102619}
   m_GameObject: {fileID: 1349189792}
-  m_LocalRotation: {x: .628866851, y: .323305547, z: -.628866851, w: .323305547}
+  m_LocalRotation: {x: .628866911, y: .323305577, z: -.628866911, w: .323305577}
   m_LocalPosition: {x: .253155828, y: 1.63916731, z: 2.16737342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -20923,23 +20923,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_LocalRotation.x
-      value: .628866911
+      value: .628866851
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .323305577
+      value: .323305547
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.628866911
+      value: -.628866851
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .323305577
+      value: .323305547
       objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_Radius
-      value: 3
+      value: 3.29999995
       objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_Height

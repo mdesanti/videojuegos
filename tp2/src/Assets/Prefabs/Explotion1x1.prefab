@@ -280,8 +280,8 @@ ParticleSystem:
     radius: 1
     angle: 25
     length: 5
-    boxX: 10
-    boxY: 10
+    boxX: 13
+    boxY: 13
     boxZ: 2
     placementMode: 1
     m_Mesh: {fileID: 0}
