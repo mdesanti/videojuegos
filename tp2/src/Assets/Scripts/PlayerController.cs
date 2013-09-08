@@ -5,20 +5,17 @@ using System.Collections;
 // GameObject whenever a PlayerController is added
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
-{
-	public static float STARTING_SPEED = 50.0f;
-	public float speed = STARTING_SPEED;
-	
+{	
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
 	public Transform bombPrototype;
-	public int bombCount = 0;
+	public int bombCount = 1;
 	public int points = 0;
 	public float score;
 
-	private int moves = 0;
+	private float moves = 0;
 	//Cantidad total de pasos para hacer un movimiento. Mientras mayor sea, mas lento se mueve.
-	private int MAX_MOVES = 10;
+	public float MAX_MOVES = 32;
 
 
     void Start()
@@ -53,13 +50,13 @@ public class PlayerController : MonoBehaviour
 		}
 
 		//Hay que rotar despues de mover, sino toma cualquier valor
-    	if(Input.GetKey(KeyCode.LeftArrow)) {
+    	if(Input.GetKey(KeyCode.LeftArrow) && moves == MAX_MOVES-1) {
 			transform.eulerAngles = new Vector3(0, 270, 270);
-		} else if(Input.GetKey(KeyCode.RightArrow)) {
+		} else if(Input.GetKey(KeyCode.RightArrow) && moves == MAX_MOVES-1) {
 			transform.eulerAngles = new Vector3(0, 90, 90);
-		} else if(Input.GetKey(KeyCode.UpArrow)) {
+		} else if(Input.GetKey(KeyCode.UpArrow) && moves == MAX_MOVES-1) {
 			transform.eulerAngles = new Vector3(90, 0, 0);
-		} else if(Input.GetKey(KeyCode.DownArrow)) {
+		} else if(Input.GetKey(KeyCode.DownArrow) && moves == MAX_MOVES-1) {
 			transform.eulerAngles = new Vector3(270, 0, 180);
 		}
 	}
@@ -80,6 +77,7 @@ public class PlayerController : MonoBehaviour
 	
 	void OnCollisionEnter(Collision collision) 
     {
+    	Debug.Log("Player hit a: " + collision.collider.gameObject.tag);
 		if(collision.collider.gameObject.tag == "Ball") {
 			Application.LoadLevel ("GameOver");
 		}
