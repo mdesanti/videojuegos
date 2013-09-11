@@ -168,6 +168,7 @@ GameObject:
   - 65: {fileID: 11302466}
   - 23: {fileID: 11302465}
   - 114: {fileID: 11302464}
+  - 54: {fileID: 11302469}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -238,6 +239,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &11302469
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1061520050}
+  m_GameObject: {fileID: 11302463}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &13919706
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +373,7 @@ GameObject:
   - 65: {fileID: 27210872}
   - 23: {fileID: 27210871}
   - 114: {fileID: 27210870}
+  - 54: {fileID: 27210875}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -426,6 +444,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &27210875
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1153518772}
+  m_GameObject: {fileID: 27210869}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &27718810
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +958,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-  m_PrefabInternal: {fileID: 1494273323}
+  m_PrefabInternal: {fileID: 327715750}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 85962643}
@@ -932,6 +966,7 @@ GameObject:
   - 65: {fileID: 85962641}
   - 23: {fileID: 85962640}
   - 114: {fileID: 85962639}
+  - 54: {fileID: 85962644}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -944,7 +979,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 83765574e78b8a145813cdddf62d0790,
     type: 2}
-  m_PrefabInternal: {fileID: 1494273323}
+  m_PrefabInternal: {fileID: 327715750}
   m_GameObject: {fileID: 85962638}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -956,7 +991,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: 83765574e78b8a145813cdddf62d0790,
     type: 2}
-  m_PrefabInternal: {fileID: 1494273323}
+  m_PrefabInternal: {fileID: 327715750}
   m_GameObject: {fileID: 85962638}
   m_Enabled: 1
   m_CastShadows: 1
@@ -975,7 +1010,7 @@ BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6500000, guid: 83765574e78b8a145813cdddf62d0790,
     type: 2}
-  m_PrefabInternal: {fileID: 1494273323}
+  m_PrefabInternal: {fileID: 327715750}
   m_GameObject: {fileID: 85962638}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -988,20 +1023,36 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: 83765574e78b8a145813cdddf62d0790,
     type: 2}
-  m_PrefabInternal: {fileID: 1494273323}
+  m_PrefabInternal: {fileID: 327715750}
   m_GameObject: {fileID: 85962638}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &85962643
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-  m_PrefabInternal: {fileID: 1494273323}
+  m_PrefabInternal: {fileID: 327715750}
   m_GameObject: {fileID: 85962638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 70, y: 20, z: 5}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &85962644
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 327715750}
+  m_GameObject: {fileID: 85962638}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &89748132
 Prefab:
   m_ObjectHideFlags: 0
@@ -1810,6 +1861,7 @@ GameObject:
   - 65: {fileID: 154158392}
   - 23: {fileID: 154158391}
   - 114: {fileID: 154158390}
+  - 54: {fileID: 154158395}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -1880,6 +1932,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &154158395
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1210906074}
+  m_GameObject: {fileID: 154158389}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &154906360
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2160,7 @@ GameObject:
   - 65: {fileID: 171542962}
   - 23: {fileID: 171542961}
   - 114: {fileID: 171542960}
+  - 54: {fileID: 171542965}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -2162,6 +2231,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &171542965
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 765549577}
+  m_GameObject: {fileID: 171542959}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &172050591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,6 +2259,7 @@ GameObject:
   - 65: {fileID: 172050594}
   - 23: {fileID: 172050593}
   - 114: {fileID: 172050592}
+  - 54: {fileID: 172050597}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -2244,6 +2330,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &172050597
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 627111143}
+  m_GameObject: {fileID: 172050591}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &173765863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,6 +2623,7 @@ GameObject:
   - 65: {fileID: 209621598}
   - 23: {fileID: 209621597}
   - 114: {fileID: 209621596}
+  - 54: {fileID: 209621601}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -2591,6 +2694,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &209621601
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 842768580}
+  m_GameObject: {fileID: 209621595}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &211669414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,7 +2871,7 @@ SphereCollider:
   m_GameObject: {fileID: 214449601}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 3.3499999
   m_Center: {x: 0, y: 3, z: 0}
@@ -2793,7 +2912,6 @@ MonoBehaviour:
   bombCount: 1
   points: 0
   score: 0
-  MAX_MOVES: 32
 --- !u!1 &215652465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,7 +3174,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400026, guid: 3b031d1c8e287114d82bbe6f7debe848, type: 2}
   m_PrefabInternal: {fileID: 447727144}
   m_GameObject: {fileID: 246052309}
-  m_LocalRotation: {x: .734158218, y: -.197566345, z: .537462175, w: -.36484766}
+  m_LocalRotation: {x: .734158218, y: -.19756636, z: .537462175, w: -.36484766}
   m_LocalPosition: {x: .144757569, y: .784989059, z: 3.02156568}
   m_LocalScale: {x: 1, y: .999999881, z: .999999881}
   m_Children:
@@ -3394,6 +3512,7 @@ GameObject:
   - 65: {fileID: 293464985}
   - 23: {fileID: 293464984}
   - 114: {fileID: 293464983}
+  - 54: {fileID: 293464988}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -3464,6 +3583,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &293464988
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1951044236}
+  m_GameObject: {fileID: 293464982}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &293858146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,6 +4012,46 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 265262691}
+--- !u!1001 &327715750
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+  m_RootGameObject: {fileID: 85962638}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &331436076
 GameObject:
   m_ObjectHideFlags: 0
@@ -3915,6 +4090,7 @@ GameObject:
   - 65: {fileID: 332148522}
   - 23: {fileID: 332148521}
   - 114: {fileID: 332148520}
+  - 54: {fileID: 332148525}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -3985,6 +4161,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &332148525
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1807979873}
+  m_GameObject: {fileID: 332148519}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &335381413
 GameObject:
   m_ObjectHideFlags: 0
@@ -4187,6 +4379,7 @@ GameObject:
   - 65: {fileID: 343728125}
   - 23: {fileID: 343728124}
   - 114: {fileID: 343728123}
+  - 54: {fileID: 343728128}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4257,6 +4450,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &343728128
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311798467}
+  m_GameObject: {fileID: 343728122}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &344077228
 GameObject:
   m_ObjectHideFlags: 0
@@ -4391,6 +4600,7 @@ GameObject:
   - 65: {fileID: 353754485}
   - 23: {fileID: 353754484}
   - 114: {fileID: 353754483}
+  - 54: {fileID: 353754488}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4461,6 +4671,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &353754488
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1944136737}
+  m_GameObject: {fileID: 353754482}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &358268660
 GameObject:
   m_ObjectHideFlags: 0
@@ -4553,6 +4779,7 @@ GameObject:
   - 65: {fileID: 365737527}
   - 23: {fileID: 365737526}
   - 114: {fileID: 365737525}
+  - 54: {fileID: 365737530}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4623,6 +4850,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &365737530
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 730612572}
+  m_GameObject: {fileID: 365737524}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &367780827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4714,6 +4957,7 @@ GameObject:
   - 65: {fileID: 375459729}
   - 23: {fileID: 375459728}
   - 114: {fileID: 375459727}
+  - 54: {fileID: 375459732}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -4784,6 +5028,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &375459732
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1183936012}
+  m_GameObject: {fileID: 375459726}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &381532726
 GameObject:
   m_ObjectHideFlags: 0
@@ -5115,6 +5375,7 @@ GameObject:
   - 65: {fileID: 408412712}
   - 23: {fileID: 408412711}
   - 114: {fileID: 408412710}
+  - 54: {fileID: 408412715}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -5185,6 +5446,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &408412715
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1884862837}
+  m_GameObject: {fileID: 408412709}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &415420939
 GameObject:
   m_ObjectHideFlags: 0
@@ -5572,6 +5849,7 @@ GameObject:
   - 65: {fileID: 438340007}
   - 23: {fileID: 438340006}
   - 114: {fileID: 438340005}
+  - 54: {fileID: 438340010}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -5642,6 +5920,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &438340010
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 832836362}
+  m_GameObject: {fileID: 438340004}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &438642492
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,6 +6140,7 @@ GameObject:
   - 65: {fileID: 448499870}
   - 23: {fileID: 448499869}
   - 114: {fileID: 448499868}
+  - 54: {fileID: 448499873}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -5916,6 +6211,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &448499873
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1157001327}
+  m_GameObject: {fileID: 448499867}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &455082390
 GameObject:
   m_ObjectHideFlags: 0
@@ -6119,6 +6430,7 @@ GameObject:
   - 65: {fileID: 466564786}
   - 23: {fileID: 466564785}
   - 114: {fileID: 466564784}
+  - 54: {fileID: 466564789}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -6189,6 +6501,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &466564789
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1897100395}
+  m_GameObject: {fileID: 466564783}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &466741459
 Prefab:
   m_ObjectHideFlags: 0
@@ -6361,6 +6689,7 @@ GameObject:
   - 65: {fileID: 485798505}
   - 23: {fileID: 485798504}
   - 114: {fileID: 485798503}
+  - 54: {fileID: 485798508}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -6431,6 +6760,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &485798508
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 808566949}
+  m_GameObject: {fileID: 485798502}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &487613398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6699,6 +7044,7 @@ GameObject:
   - 65: {fileID: 504195731}
   - 23: {fileID: 504195730}
   - 114: {fileID: 504195729}
+  - 54: {fileID: 504195734}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -6769,6 +7115,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &504195734
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 482527040}
+  m_GameObject: {fileID: 504195728}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &507015824
 GameObject:
   m_ObjectHideFlags: 0
@@ -8374,6 +8736,7 @@ GameObject:
   - 65: {fileID: 652086810}
   - 23: {fileID: 652086809}
   - 114: {fileID: 652086808}
+  - 54: {fileID: 652086813}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -8444,6 +8807,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &652086813
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 430106586}
+  m_GameObject: {fileID: 652086807}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &653229846
 GameObject:
   m_ObjectHideFlags: 0
@@ -8456,6 +8835,7 @@ GameObject:
   - 65: {fileID: 653229849}
   - 23: {fileID: 653229848}
   - 114: {fileID: 653229847}
+  - 54: {fileID: 653229852}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -8526,6 +8906,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &653229852
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 979576279}
+  m_GameObject: {fileID: 653229846}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &653751212
 GameObject:
   m_ObjectHideFlags: 0
@@ -8935,6 +9331,7 @@ GameObject:
   - 65: {fileID: 673376602}
   - 23: {fileID: 673376601}
   - 114: {fileID: 673376600}
+  - 54: {fileID: 673376605}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -9005,6 +9402,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &673376605
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1396078388}
+  m_GameObject: {fileID: 673376599}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &675447410
 GameObject:
   m_ObjectHideFlags: 0
@@ -9095,6 +9508,7 @@ GameObject:
   - 65: {fileID: 681773929}
   - 23: {fileID: 681773928}
   - 114: {fileID: 681773927}
+  - 54: {fileID: 681773932}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -9165,6 +9579,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &681773932
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 587397694}
+  m_GameObject: {fileID: 681773926}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &682344945
 GameObject:
   m_ObjectHideFlags: 0
@@ -9882,6 +10312,7 @@ GameObject:
   - 65: {fileID: 754593138}
   - 23: {fileID: 754593137}
   - 114: {fileID: 754593136}
+  - 54: {fileID: 754593141}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -9952,6 +10383,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &754593141
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1628737812}
+  m_GameObject: {fileID: 754593135}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &754911305
 GameObject:
   m_ObjectHideFlags: 0
@@ -10046,6 +10493,7 @@ GameObject:
   - 65: {fileID: 755821580}
   - 23: {fileID: 755821579}
   - 114: {fileID: 755821578}
+  - 54: {fileID: 755821583}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -10116,6 +10564,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &755821583
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 150298723}
+  m_GameObject: {fileID: 755821577}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &757100781
 GameObject:
   m_ObjectHideFlags: 0
@@ -10154,6 +10618,7 @@ GameObject:
   - 65: {fileID: 758777537}
   - 23: {fileID: 758777536}
   - 114: {fileID: 758777535}
+  - 54: {fileID: 758777540}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -10224,6 +10689,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &758777540
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 422445088}
+  m_GameObject: {fileID: 758777534}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &762132453
 GameObject:
   m_ObjectHideFlags: 0
@@ -10358,6 +10839,7 @@ GameObject:
   - 65: {fileID: 767538729}
   - 23: {fileID: 767538728}
   - 114: {fileID: 767538727}
+  - 54: {fileID: 767538732}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -10428,6 +10910,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &767538732
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 61114389}
+  m_GameObject: {fileID: 767538726}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &774141217
 GameObject:
   m_ObjectHideFlags: 0
@@ -10466,6 +10964,7 @@ GameObject:
   - 65: {fileID: 775957763}
   - 23: {fileID: 775957762}
   - 114: {fileID: 775957761}
+  - 54: {fileID: 775957766}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -10536,6 +11035,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &775957766
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1721476100}
+  m_GameObject: {fileID: 775957760}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &777115631
 GameObject:
   m_ObjectHideFlags: 0
@@ -11305,6 +11820,7 @@ GameObject:
   - 65: {fileID: 827846917}
   - 23: {fileID: 827846916}
   - 114: {fileID: 827846915}
+  - 54: {fileID: 827846920}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -11375,6 +11891,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &827846920
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1038331051}
+  m_GameObject: {fileID: 827846914}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &831118889
 GameObject:
   m_ObjectHideFlags: 0
@@ -11413,6 +11945,7 @@ GameObject:
   - 65: {fileID: 831931002}
   - 23: {fileID: 831931001}
   - 114: {fileID: 831931000}
+  - 54: {fileID: 831931005}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -11483,6 +12016,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &831931005
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1405462701}
+  m_GameObject: {fileID: 831930999}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &832836362
 Prefab:
   m_ObjectHideFlags: 0
@@ -11885,6 +12434,7 @@ GameObject:
   - 65: {fileID: 873490741}
   - 23: {fileID: 873490740}
   - 114: {fileID: 873490739}
+  - 54: {fileID: 873490744}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -11955,6 +12505,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &873490744
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 282184033}
+  m_GameObject: {fileID: 873490738}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &877143307
 GameObject:
   m_ObjectHideFlags: 0
@@ -11967,6 +12533,7 @@ GameObject:
   - 65: {fileID: 877143310}
   - 23: {fileID: 877143309}
   - 114: {fileID: 877143308}
+  - 54: {fileID: 877143313}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -12037,6 +12604,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &877143313
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 958577806}
+  m_GameObject: {fileID: 877143307}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &882978388
 GameObject:
   m_ObjectHideFlags: 0
@@ -12049,6 +12632,7 @@ GameObject:
   - 65: {fileID: 882978391}
   - 23: {fileID: 882978390}
   - 114: {fileID: 882978389}
+  - 54: {fileID: 882978394}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -12119,6 +12703,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &882978394
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2044605227}
+  m_GameObject: {fileID: 882978388}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &884709712
 GameObject:
   m_ObjectHideFlags: 0
@@ -13165,6 +13765,7 @@ GameObject:
   - 65: {fileID: 979210631}
   - 23: {fileID: 979210630}
   - 114: {fileID: 979210629}
+  - 54: {fileID: 979210634}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -13235,6 +13836,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &979210634
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 62238996}
+  m_GameObject: {fileID: 979210628}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &979576279
 Prefab:
   m_ObjectHideFlags: 0
@@ -13314,6 +13931,7 @@ GameObject:
   - 65: {fileID: 988274595}
   - 23: {fileID: 988274594}
   - 114: {fileID: 988274593}
+  - 54: {fileID: 988274598}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -13384,6 +14002,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &988274598
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1293970684}
+  m_GameObject: {fileID: 988274592}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &989997429
 Prefab:
   m_ObjectHideFlags: 0
@@ -13734,6 +14368,7 @@ GameObject:
   - 65: {fileID: 1001810528}
   - 23: {fileID: 1001810527}
   - 114: {fileID: 1001810526}
+  - 54: {fileID: 1001810531}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -13804,6 +14439,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1001810531
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1858983974}
+  m_GameObject: {fileID: 1001810525}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1003258869
 GameObject:
   m_ObjectHideFlags: 0
@@ -14044,6 +14695,7 @@ GameObject:
   - 65: {fileID: 1024284891}
   - 23: {fileID: 1024284890}
   - 114: {fileID: 1024284889}
+  - 54: {fileID: 1024284894}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14114,6 +14766,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1024284894
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2049608119}
+  m_GameObject: {fileID: 1024284888}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1027822494
 GameObject:
   m_ObjectHideFlags: 0
@@ -14263,6 +14931,7 @@ GameObject:
   - 65: {fileID: 1031874331}
   - 23: {fileID: 1031874330}
   - 114: {fileID: 1031874329}
+  - 54: {fileID: 1031874334}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14333,6 +15002,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1031874334
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1164920849}
+  m_GameObject: {fileID: 1031874328}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1034712093
 GameObject:
   m_ObjectHideFlags: 0
@@ -14660,6 +15345,7 @@ GameObject:
   - 65: {fileID: 1054481429}
   - 23: {fileID: 1054481428}
   - 114: {fileID: 1054481427}
+  - 54: {fileID: 1054481432}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14730,6 +15416,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1054481432
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1793204511}
+  m_GameObject: {fileID: 1054481426}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1054949321
 GameObject:
   m_ObjectHideFlags: 0
@@ -14876,6 +15578,7 @@ GameObject:
   - 65: {fileID: 1059906649}
   - 23: {fileID: 1059906648}
   - 114: {fileID: 1059906647}
+  - 54: {fileID: 1059906652}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -14946,6 +15649,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1059906652
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1506670001}
+  m_GameObject: {fileID: 1059906646}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1061520050
 Prefab:
   m_ObjectHideFlags: 0
@@ -15116,7 +15835,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400024, guid: 3b031d1c8e287114d82bbe6f7debe848, type: 2}
   m_PrefabInternal: {fileID: 447727144}
   m_GameObject: {fileID: 1075230292}
-  m_LocalRotation: {x: .734158218, y: .197566137, z: .537462234, w: .36484769}
+  m_LocalRotation: {x: .734158218, y: .197566152, z: .537462234, w: .36484769}
   m_LocalPosition: {x: .14475745, y: -.784989059, z: 3.02156568}
   m_LocalScale: {x: 1, y: .999999881, z: .999999821}
   m_Children:
@@ -15201,6 +15920,7 @@ GameObject:
   - 65: {fileID: 1079895817}
   - 23: {fileID: 1079895816}
   - 114: {fileID: 1079895815}
+  - 54: {fileID: 1079895820}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -15271,6 +15991,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1079895820
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1577350405}
+  m_GameObject: {fileID: 1079895814}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1084413754
 Prefab:
   m_ObjectHideFlags: 0
@@ -15392,6 +16128,7 @@ GameObject:
   - 65: {fileID: 1088060843}
   - 23: {fileID: 1088060842}
   - 114: {fileID: 1088060846}
+  - 54: {fileID: 1088060847}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -15462,6 +16199,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1088060847
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1592374127}
+  m_GameObject: {fileID: 1088060841}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1090037030
 GameObject:
   m_ObjectHideFlags: 0
@@ -15538,6 +16291,7 @@ GameObject:
   - 65: {fileID: 1096246098}
   - 23: {fileID: 1096246097}
   - 114: {fileID: 1096246101}
+  - 54: {fileID: 1096246102}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -15608,6 +16362,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9021d87a2847c4969a61cc0a4ca0b43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1096246102
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2092717337}
+  m_GameObject: {fileID: 1096246096}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1098270176
 GameObject:
   m_ObjectHideFlags: 0
@@ -15672,6 +16442,7 @@ GameObject:
   - 65: {fileID: 1102996107}
   - 23: {fileID: 1102996106}
   - 114: {fileID: 1102996105}
+  - 54: {fileID: 1102996110}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -15742,6 +16513,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1102996110
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 151009805}
+  m_GameObject: {fileID: 1102996104}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1112746825
 Prefab:
   m_ObjectHideFlags: 0
@@ -16173,6 +16960,7 @@ GameObject:
   - 65: {fileID: 1137573830}
   - 23: {fileID: 1137573829}
   - 114: {fileID: 1137573828}
+  - 54: {fileID: 1137573833}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -16243,6 +17031,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1137573833
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2037312119}
+  m_GameObject: {fileID: 1137573827}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1145252466
 GameObject:
   m_ObjectHideFlags: 0
@@ -16255,6 +17059,7 @@ GameObject:
   - 65: {fileID: 1145252469}
   - 23: {fileID: 1145252468}
   - 114: {fileID: 1145252467}
+  - 54: {fileID: 1145252472}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -16325,6 +17130,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1145252472
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 89748132}
+  m_GameObject: {fileID: 1145252466}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1146214500
 GameObject:
   m_ObjectHideFlags: 0
@@ -16508,6 +17329,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
   m_RootGameObject: {fileID: 27210869}
@@ -16617,6 +17446,7 @@ GameObject:
   - 65: {fileID: 1157542680}
   - 23: {fileID: 1157542679}
   - 114: {fileID: 1157542678}
+  - 54: {fileID: 1157542683}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -16687,6 +17517,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1157542683
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1333406381}
+  m_GameObject: {fileID: 1157542677}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1159043499
 GameObject:
   m_ObjectHideFlags: 0
@@ -16699,6 +17545,7 @@ GameObject:
   - 65: {fileID: 1159043502}
   - 23: {fileID: 1159043501}
   - 114: {fileID: 1159043500}
+  - 54: {fileID: 1159043505}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -16769,6 +17616,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1159043505
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2010175283}
+  m_GameObject: {fileID: 1159043499}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1160349522
 GameObject:
   m_ObjectHideFlags: 0
@@ -16997,6 +17860,7 @@ GameObject:
   - 65: {fileID: 1172101872}
   - 23: {fileID: 1172101871}
   - 114: {fileID: 1172101870}
+  - 54: {fileID: 1172101875}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -17067,6 +17931,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1172101875
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 444231246}
+  m_GameObject: {fileID: 1172101869}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1177778363
 GameObject:
   m_ObjectHideFlags: 0
@@ -17498,6 +18378,7 @@ GameObject:
   - 65: {fileID: 1200292718}
   - 23: {fileID: 1200292717}
   - 114: {fileID: 1200292716}
+  - 54: {fileID: 1200292721}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -17568,6 +18449,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1200292721
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 663421245}
+  m_GameObject: {fileID: 1200292715}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1210906074
 Prefab:
   m_ObjectHideFlags: 0
@@ -17818,6 +18715,7 @@ GameObject:
   - 65: {fileID: 1227974592}
   - 23: {fileID: 1227974591}
   - 114: {fileID: 1227974590}
+  - 54: {fileID: 1227974595}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -17888,6 +18786,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1227974595
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1793302893}
+  m_GameObject: {fileID: 1227974589}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1232054907
 GameObject:
   m_ObjectHideFlags: 0
@@ -18007,6 +18921,7 @@ GameObject:
   - 65: {fileID: 1239713611}
   - 23: {fileID: 1239713610}
   - 114: {fileID: 1239713609}
+  - 54: {fileID: 1239713614}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -18077,6 +18992,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1239713614
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 973829534}
+  m_GameObject: {fileID: 1239713608}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1239926224
 GameObject:
   m_ObjectHideFlags: 0
@@ -18089,6 +19020,7 @@ GameObject:
   - 65: {fileID: 1239926227}
   - 23: {fileID: 1239926226}
   - 114: {fileID: 1239926225}
+  - 54: {fileID: 1239926230}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -18159,6 +19091,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1239926230
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1197747698}
+  m_GameObject: {fileID: 1239926224}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1240907305
 GameObject:
   m_ObjectHideFlags: 0
@@ -18453,6 +19401,7 @@ GameObject:
   - 65: {fileID: 1272741861}
   - 23: {fileID: 1272741860}
   - 114: {fileID: 1272741859}
+  - 54: {fileID: 1272741864}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -18523,6 +19472,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1272741864
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1848764153}
+  m_GameObject: {fileID: 1272741858}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1273930954
 GameObject:
   m_ObjectHideFlags: 0
@@ -18535,6 +19500,7 @@ GameObject:
   - 65: {fileID: 1273930957}
   - 23: {fileID: 1273930956}
   - 114: {fileID: 1273930955}
+  - 54: {fileID: 1273930960}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -18605,6 +19571,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1273930960
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1197755695}
+  m_GameObject: {fileID: 1273930954}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1279586614
 GameObject:
   m_ObjectHideFlags: 0
@@ -18965,6 +19947,7 @@ GameObject:
   - 65: {fileID: 1299304764}
   - 23: {fileID: 1299304763}
   - 114: {fileID: 1299304762}
+  - 54: {fileID: 1299304767}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -19035,6 +20018,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1299304767
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 425204737}
+  m_GameObject: {fileID: 1299304761}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1300766050
 GameObject:
   m_ObjectHideFlags: 0
@@ -19635,7 +20634,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400062, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
   m_PrefabInternal: {fileID: 1442102619}
   m_GameObject: {fileID: 1349189792}
-  m_LocalRotation: {x: .628866911, y: .323305577, z: -.628866911, w: .323305577}
+  m_LocalRotation: {x: .628866851, y: .323305547, z: -.628866851, w: .323305547}
   m_LocalPosition: {x: .253155828, y: 1.63916731, z: 2.16737342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -20244,6 +21243,7 @@ GameObject:
   - 65: {fileID: 1408412089}
   - 23: {fileID: 1408412088}
   - 114: {fileID: 1408412087}
+  - 54: {fileID: 1408412092}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -20314,6 +21314,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1408412092
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 626231369}
+  m_GameObject: {fileID: 1408412086}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1425206898
 GameObject:
   m_ObjectHideFlags: 0
@@ -20461,6 +21477,7 @@ GameObject:
   - 65: {fileID: 1433704144}
   - 23: {fileID: 1433704143}
   - 114: {fileID: 1433704142}
+  - 54: {fileID: 1433704147}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -20531,6 +21548,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1433704147
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 802337015}
+  m_GameObject: {fileID: 1433704141}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1434825046
 GameObject:
   m_ObjectHideFlags: 0
@@ -20672,7 +21705,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
       propertyPath: m_MinMoveDistance
@@ -20773,7 +21806,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400194, guid: 3b031d1c8e287114d82bbe6f7debe848, type: 2}
   m_PrefabInternal: {fileID: 447727144}
   m_GameObject: {fileID: 1445175909}
-  m_LocalRotation: {x: .633386195, y: -.392616421, z: .338795006, w: .574362397}
+  m_LocalRotation: {x: .633386254, y: -.392616481, z: .338795036, w: .574362457}
   m_LocalPosition: {x: -.599579275, y: -.220286965, z: -.141508043}
   m_LocalScale: {x: .999999642, y: .999999762, z: .999999762}
   m_Children: []
@@ -20927,6 +21960,7 @@ GameObject:
   - 65: {fileID: 1450369937}
   - 23: {fileID: 1450369936}
   - 114: {fileID: 1450369935}
+  - 54: {fileID: 1450369940}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -20997,6 +22031,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1450369940
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1084413754}
+  m_GameObject: {fileID: 1450369934}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1451121106
 Prefab:
   m_ObjectHideFlags: 0
@@ -21075,6 +22125,7 @@ GameObject:
   - 65: {fileID: 1457656044}
   - 23: {fileID: 1457656043}
   - 114: {fileID: 1457656042}
+  - 54: {fileID: 1457656047}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -21145,6 +22196,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1457656047
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672323028}
+  m_GameObject: {fileID: 1457656041}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1465356206
 GameObject:
   m_ObjectHideFlags: 0
@@ -21518,46 +22585,6 @@ Prefab:
   m_RootGameObject: {fileID: 497194454}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1001 &1494273323
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 83765574e78b8a145813cdddf62d0790, type: 2}
-  m_RootGameObject: {fileID: 85962638}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1494836872
 GameObject:
   m_ObjectHideFlags: 0
@@ -21868,6 +22895,7 @@ GameObject:
   - 65: {fileID: 1524075596}
   - 23: {fileID: 1524075595}
   - 114: {fileID: 1524075594}
+  - 54: {fileID: 1524075599}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -21938,6 +22966,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1524075599
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 2141193580}
+  m_GameObject: {fileID: 1524075593}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1525713132
 GameObject:
   m_ObjectHideFlags: 0
@@ -21977,6 +23021,7 @@ GameObject:
   - 65: {fileID: 1539613800}
   - 23: {fileID: 1539613799}
   - 114: {fileID: 1539613798}
+  - 54: {fileID: 1539613803}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -22047,6 +23092,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1539613803
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 598690313}
+  m_GameObject: {fileID: 1539613797}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1541770951
 GameObject:
   m_ObjectHideFlags: 0
@@ -22193,6 +23254,7 @@ GameObject:
   - 65: {fileID: 1561345183}
   - 23: {fileID: 1561345182}
   - 114: {fileID: 1561345181}
+  - 54: {fileID: 1561345186}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -22263,6 +23325,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1561345186
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 434038974}
+  m_GameObject: {fileID: 1561345180}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1562923933
 GameObject:
   m_ObjectHideFlags: 0
@@ -22588,6 +23666,7 @@ GameObject:
   - 65: {fileID: 1586104113}
   - 23: {fileID: 1586104112}
   - 114: {fileID: 1586104111}
+  - 54: {fileID: 1586104116}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -22658,6 +23737,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1586104116
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1086278844}
+  m_GameObject: {fileID: 1586104110}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1586994327
 Prefab:
   m_ObjectHideFlags: 0
@@ -22829,6 +23924,7 @@ GameObject:
   - 65: {fileID: 1599223775}
   - 23: {fileID: 1599223774}
   - 114: {fileID: 1599223773}
+  - 54: {fileID: 1599223778}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -22899,6 +23995,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1599223778
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1046616861}
+  m_GameObject: {fileID: 1599223772}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1606366468
 GameObject:
   m_ObjectHideFlags: 0
@@ -23084,6 +24196,7 @@ GameObject:
   - 65: {fileID: 1624993443}
   - 23: {fileID: 1624993442}
   - 114: {fileID: 1624993441}
+  - 54: {fileID: 1624993446}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -23154,6 +24267,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1624993446
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 304976156}
+  m_GameObject: {fileID: 1624993440}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1628268465
 GameObject:
   m_ObjectHideFlags: 0
@@ -23873,6 +25002,7 @@ GameObject:
   - 65: {fileID: 1687196090}
   - 23: {fileID: 1687196089}
   - 114: {fileID: 1687196088}
+  - 54: {fileID: 1687196093}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -23943,6 +25073,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1687196093
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1611276742}
+  m_GameObject: {fileID: 1687196087}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1690982437
 GameObject:
   m_ObjectHideFlags: 0
@@ -24095,6 +25241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   extraSpeed: {fileID: 400000, guid: 3b8701bc0dfe24f72ad1b71251604fd5, type: 2}
   extraBomb: {fileID: 400000, guid: 0fc2222c4b1204f7f88eeba86c3531a1, type: 2}
+  extraExplosion: {fileID: 400000, guid: f97e70ea4bcdfe046b46f5240bc6ceb2, type: 2}
 --- !u!1 &1699868840
 GameObject:
   m_ObjectHideFlags: 0
@@ -24279,6 +25426,7 @@ GameObject:
   - 65: {fileID: 1720053893}
   - 23: {fileID: 1720053892}
   - 114: {fileID: 1720053891}
+  - 54: {fileID: 1720053896}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -24349,6 +25497,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1720053896
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 466741459}
+  m_GameObject: {fileID: 1720053890}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1720087666
 GameObject:
   m_ObjectHideFlags: 0
@@ -24655,6 +25819,7 @@ GameObject:
   - 65: {fileID: 1742217941}
   - 23: {fileID: 1742217940}
   - 114: {fileID: 1742217939}
+  - 54: {fileID: 1742217944}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -24725,6 +25890,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1742217944
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451121106}
+  m_GameObject: {fileID: 1742217938}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1743057549
 GameObject:
   m_ObjectHideFlags: 0
@@ -24737,6 +25918,7 @@ GameObject:
   - 65: {fileID: 1743057552}
   - 23: {fileID: 1743057551}
   - 114: {fileID: 1743057550}
+  - 54: {fileID: 1743057555}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -24807,6 +25989,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1743057555
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 170146494}
+  m_GameObject: {fileID: 1743057549}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1746125317
 GameObject:
   m_ObjectHideFlags: 0
@@ -24924,6 +26122,7 @@ GameObject:
   - 65: {fileID: 1751594651}
   - 23: {fileID: 1751594650}
   - 114: {fileID: 1751594649}
+  - 54: {fileID: 1751594654}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -24994,6 +26193,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1751594654
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1960001964}
+  m_GameObject: {fileID: 1751594648}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1755143781
 GameObject:
   m_ObjectHideFlags: 0
@@ -25033,6 +26248,7 @@ GameObject:
   - 65: {fileID: 1756412419}
   - 23: {fileID: 1756412418}
   - 114: {fileID: 1756412417}
+  - 54: {fileID: 1756412422}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -25103,6 +26319,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1756412422
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1713654619}
+  m_GameObject: {fileID: 1756412416}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1757968523
 GameObject:
   m_ObjectHideFlags: 0
@@ -25464,6 +26696,7 @@ GameObject:
   - 65: {fileID: 1773478710}
   - 23: {fileID: 1773478709}
   - 114: {fileID: 1773478708}
+  - 54: {fileID: 1773478713}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -25534,6 +26767,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1773478713
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1642811829}
+  m_GameObject: {fileID: 1773478707}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1774046295
 GameObject:
   m_ObjectHideFlags: 0
@@ -25964,6 +27213,7 @@ GameObject:
   - 65: {fileID: 1802749341}
   - 23: {fileID: 1802749340}
   - 114: {fileID: 1802749339}
+  - 54: {fileID: 1802749344}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -26034,6 +27284,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1802749344
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1484943873}
+  m_GameObject: {fileID: 1802749338}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1807979873
 Prefab:
   m_ObjectHideFlags: 0
@@ -26168,6 +27434,7 @@ GameObject:
   - 65: {fileID: 1816845044}
   - 23: {fileID: 1816845043}
   - 114: {fileID: 1816845042}
+  - 54: {fileID: 1816845047}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -26238,6 +27505,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1816845047
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 862942930}
+  m_GameObject: {fileID: 1816845041}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1826951799
 GameObject:
   m_ObjectHideFlags: 0
@@ -26599,6 +27882,7 @@ GameObject:
   - 65: {fileID: 1852225336}
   - 23: {fileID: 1852225335}
   - 114: {fileID: 1852225334}
+  - 54: {fileID: 1852225339}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -26669,6 +27953,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1852225339
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 783654147}
+  m_GameObject: {fileID: 1852225333}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1852728562
 GameObject:
   m_ObjectHideFlags: 0
@@ -26825,6 +28125,7 @@ GameObject:
   - 65: {fileID: 1861374573}
   - 23: {fileID: 1861374572}
   - 114: {fileID: 1861374571}
+  - 54: {fileID: 1861374576}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -26895,6 +28196,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1861374576
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 348060081}
+  m_GameObject: {fileID: 1861374570}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1867423726
 GameObject:
   m_ObjectHideFlags: 0
@@ -26959,6 +28276,7 @@ GameObject:
   - 65: {fileID: 1876442794}
   - 23: {fileID: 1876442793}
   - 114: {fileID: 1876442792}
+  - 54: {fileID: 1876442797}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -27029,6 +28347,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1876442797
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1469138046}
+  m_GameObject: {fileID: 1876442791}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1878276366
 Prefab:
   m_ObjectHideFlags: 0
@@ -27623,6 +28957,7 @@ GameObject:
   - 65: {fileID: 1907091284}
   - 23: {fileID: 1907091283}
   - 114: {fileID: 1907091282}
+  - 54: {fileID: 1907091287}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -27693,6 +29028,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1907091287
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 997506589}
+  m_GameObject: {fileID: 1907091281}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1917299920
 GameObject:
   m_ObjectHideFlags: 0
@@ -27812,6 +29163,7 @@ GameObject:
   - 65: {fileID: 1929197340}
   - 23: {fileID: 1929197339}
   - 114: {fileID: 1929197338}
+  - 54: {fileID: 1929197343}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -27882,6 +29234,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1929197343
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1670396160}
+  m_GameObject: {fileID: 1929197337}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1933036457
 GameObject:
   m_ObjectHideFlags: 0
@@ -28196,6 +29564,7 @@ GameObject:
   - 65: {fileID: 1956860319}
   - 23: {fileID: 1956860318}
   - 114: {fileID: 1956860317}
+  - 54: {fileID: 1956860322}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -28266,6 +29635,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1956860322
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1878276366}
+  m_GameObject: {fileID: 1956860316}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1959447747
 GameObject:
   m_ObjectHideFlags: 0
@@ -28344,6 +29729,7 @@ GameObject:
   - 65: {fileID: 1964269559}
   - 23: {fileID: 1964269558}
   - 114: {fileID: 1964269557}
+  - 54: {fileID: 1964269562}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -28414,6 +29800,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1964269562
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 670056185}
+  m_GameObject: {fileID: 1964269556}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1965396769
 GameObject:
   m_ObjectHideFlags: 0
@@ -28533,6 +29935,7 @@ GameObject:
   - 65: {fileID: 1981178573}
   - 23: {fileID: 1981178572}
   - 114: {fileID: 1981178571}
+  - 54: {fileID: 1981178576}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -28603,6 +30006,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1981178576
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1013239830}
+  m_GameObject: {fileID: 1981178570}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1981934943
 GameObject:
   m_ObjectHideFlags: 0
@@ -28764,6 +30183,7 @@ GameObject:
   - 65: {fileID: 1985754431}
   - 23: {fileID: 1985754430}
   - 114: {fileID: 1985754429}
+  - 54: {fileID: 1985754434}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -28834,6 +30254,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1985754434
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1849268272}
+  m_GameObject: {fileID: 1985754428}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1985963455
 GameObject:
   m_ObjectHideFlags: 0
@@ -29125,6 +30561,7 @@ GameObject:
   - 65: {fileID: 1999538231}
   - 23: {fileID: 1999538230}
   - 114: {fileID: 1999538229}
+  - 54: {fileID: 1999538234}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -29195,6 +30632,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1999538234
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 670454309}
+  m_GameObject: {fileID: 1999538228}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2001237511
 GameObject:
   m_ObjectHideFlags: 0
@@ -29408,6 +30861,7 @@ GameObject:
   - 65: {fileID: 2012228216}
   - 23: {fileID: 2012228215}
   - 114: {fileID: 2012228214}
+  - 54: {fileID: 2012228219}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -29478,6 +30932,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &2012228219
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 282880739}
+  m_GameObject: {fileID: 2012228213}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2013033490
 GameObject:
   m_ObjectHideFlags: 0
@@ -29905,6 +31375,7 @@ GameObject:
   - 65: {fileID: 2045476883}
   - 23: {fileID: 2045476882}
   - 114: {fileID: 2045476881}
+  - 54: {fileID: 2045476886}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -29975,6 +31446,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &2045476886
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 391457319}
+  m_GameObject: {fileID: 2045476880}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2046056359
 GameObject:
   m_ObjectHideFlags: 0
@@ -30332,6 +31819,7 @@ GameObject:
   - 65: {fileID: 2079650060}
   - 23: {fileID: 2079650059}
   - 114: {fileID: 2079650058}
+  - 54: {fileID: 2079650063}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -30402,6 +31890,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &2079650063
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1990298526}
+  m_GameObject: {fileID: 2079650057}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2079889188
 GameObject:
   m_ObjectHideFlags: 0
@@ -30615,6 +32119,7 @@ GameObject:
   - 65: {fileID: 2091648626}
   - 23: {fileID: 2091648625}
   - 114: {fileID: 2091648624}
+  - 54: {fileID: 2091648629}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -30685,6 +32190,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &2091648629
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1224053944}
+  m_GameObject: {fileID: 2091648623}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2091942364
 GameObject:
   m_ObjectHideFlags: 0
@@ -30816,6 +32337,7 @@ GameObject:
   - 65: {fileID: 2108474240}
   - 23: {fileID: 2108474239}
   - 114: {fileID: 2108474238}
+  - 54: {fileID: 2108474243}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -30886,6 +32408,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &2108474243
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 926448942}
+  m_GameObject: {fileID: 2108474237}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2111282917
 GameObject:
   m_ObjectHideFlags: 0
@@ -30951,6 +32489,7 @@ GameObject:
   - 65: {fileID: 2117516892}
   - 23: {fileID: 2117516891}
   - 114: {fileID: 2117516890}
+  - 54: {fileID: 2117516895}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -31021,6 +32560,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &2117516895
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 1503801334}
+  m_GameObject: {fileID: 2117516889}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2118413849
 GameObject:
   m_ObjectHideFlags: 0
@@ -31250,6 +32805,7 @@ GameObject:
   - 65: {fileID: 2143309454}
   - 23: {fileID: 2143309453}
   - 114: {fileID: 2143309452}
+  - 54: {fileID: 2143309457}
   m_Layer: 8
   m_Name: SteelCube
   m_TagString: Untagged
@@ -31320,6 +32876,22 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &2143309457
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 83765574e78b8a145813cdddf62d0790,
+    type: 2}
+  m_PrefabInternal: {fileID: 790451782}
+  m_GameObject: {fileID: 2143309451}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2144885027
 GameObject:
   m_ObjectHideFlags: 0

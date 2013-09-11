@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
 	private float moves = 0;
 	//Cantidad total de pasos para hacer un movimiento. Mientras mayor sea, mas lento se mueve.
-	public float MAX_MOVES = 32;
+	private float max_moves = 32;
 
 
     void Start()
@@ -27,21 +27,21 @@ public class PlayerController : MonoBehaviour
 		plantBomb();
     	if(Input.GetKey(KeyCode.LeftArrow) && moves == 0) {
 			moveDirection = new Vector3(-10, 0, 0);
-			moves = MAX_MOVES;
+			moves = max_moves;
 		} else if(Input.GetKey(KeyCode.RightArrow) && moves == 0) {
 			moveDirection = new Vector3(10, 0, 0);
-			moves = MAX_MOVES;
+			moves = max_moves;
 		} else if(Input.GetKey(KeyCode.UpArrow) && moves == 0) {
 			moveDirection = new Vector3(0, -10, 0);
-			moves = MAX_MOVES;
+			moves = max_moves;
 		} else if(Input.GetKey(KeyCode.DownArrow) && moves == 0) {
 			moveDirection = new Vector3(0, 10, 0);
-			moves = MAX_MOVES;
+			moves = max_moves;
 		}
 
         //Just tell the controller where we want to move, it will handle collisions itself
          if (moveDirection != Vector3.zero && moves > 0){
-         	controller.Move(moveDirection * 1/MAX_MOVES);
+			controller.Move(moveDirection * 1/max_moves);
 			moves--;
 			if(moves == 0) {
 				moveDirection = new Vector3(0,0,0);
@@ -50,13 +50,13 @@ public class PlayerController : MonoBehaviour
 		}
 
 		//Hay que rotar despues de mover, sino toma cualquier valor
-    	if(Input.GetKey(KeyCode.LeftArrow) && moves == MAX_MOVES-1) {
+    	if(Input.GetKey(KeyCode.LeftArrow) && moves == max_moves-1) {
 			transform.eulerAngles = new Vector3(0, 270, 270);
-		} else if(Input.GetKey(KeyCode.RightArrow) && moves == MAX_MOVES-1) {
+		} else if(Input.GetKey(KeyCode.RightArrow) && moves == max_moves-1) {
 			transform.eulerAngles = new Vector3(0, 90, 90);
-		} else if(Input.GetKey(KeyCode.UpArrow) && moves == MAX_MOVES-1) {
+		} else if(Input.GetKey(KeyCode.UpArrow) && moves == max_moves-1) {
 			transform.eulerAngles = new Vector3(90, 0, 0);
-		} else if(Input.GetKey(KeyCode.DownArrow) && moves == MAX_MOVES-1) {
+		} else if(Input.GetKey(KeyCode.DownArrow) && moves == max_moves-1) {
 			transform.eulerAngles = new Vector3(270, 0, 180);
 		}
 	}
@@ -73,6 +73,10 @@ public class PlayerController : MonoBehaviour
 	
 	public void bombExploded() {
 		bombCount++;
+	}
+
+	public void updateSpeed() {
+		this.max_moves -= 8;
 	}
 	
 	void OnCollisionEnter(Collision collision) 
