@@ -49,7 +49,7 @@ public class NPCController : MonoBehaviour
 	}
 	
 	private Vector3 getMovingDirection() {
-		int rand = Random.Range(0,3);
+		int rand = Random.Range(0,11);
 		int last = rand;
 		bool found = false;
 		
@@ -59,10 +59,13 @@ public class NPCController : MonoBehaviour
 		Vector3 dir = Vector3.zero;
 		do {
 			dir = getDirection(rand);
-			Debug.Log("Ray direction -> " + dir);
-			if (!Physics.Raycast (transform.position, dir, 10)) {
+			UnityEngine.RaycastHit hitInfo = new RaycastHit();
+			Vector3 position = transform.position;
+			Vector3 from = new Vector3(position.x, position.y, 0.5f);
+			if (!Physics.Raycast (from, dir, out hitInfo, 10f)) {
 				found = true;
 			} else {	
+				Debug.Log("Ray in direction" + dir + " Hit a -> " + hitInfo.collider.tag);
 				rand++;
 				if(rand > 3) {
 					rand = 0;
@@ -77,12 +80,21 @@ public class NPCController : MonoBehaviour
 	}
 	
 	private Vector3 getDirection(int i) {
-		switch(i) {
-		case 0: return new Vector3(-1,0,0);
-		case 1: return new Vector3(1,0,0);
-		case 2: return new Vector3(0,1,0);
-		case 3: return new Vector3(0,-1,0);
-		default: return Vector3.zero;
+		if(i == 0 || i == 4 || i == 8) {
+			return new Vector3(-1,0,0);
+		} else if(i == 1 || i == 5 || i == 9) {
+			return new Vector3(1,0,0);
+		} else if(i == 2 || i == 6 || i == 10) {
+			return new Vector3(0,1,0);
+		} else {
+			return new Vector3(0,-1,0);
 		}
 	}
+	
+	void OnParticleCollision(GameObject collision) 
+    {
+		if(collision.tag == "Fire") {
+			Destroy(gameObject);
+		}
+    }
 }
