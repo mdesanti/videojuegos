@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explotionPrototype: {fileID: 400000, guid: eff2c0d39b6d248c1b617c24481a5533, type: 2}
+  explosionClip: {fileID: 8300000, guid: ea9bdfa0796bb734d901df5290f10cfc, type: 3}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1

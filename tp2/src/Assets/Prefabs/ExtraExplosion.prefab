@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 20
+  explosionClip: {fileID: 8300000, guid: 46f5277c164ad38459f4e3f7019d6854, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
