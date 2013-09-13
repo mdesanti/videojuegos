@@ -78,19 +78,12 @@ public class PlayerController : MonoBehaviour
 	public void updateSpeed() {
 		this.max_moves -= 8;
 	}
-	
-	void OnCollisionEnter(Collision collision) 
-    {
-    	Debug.Log("Player hit a: " + collision.collider.gameObject.tag);
-		if(collision.collider.gameObject.tag == "Ball") {
-			Application.LoadLevel ("GameOver");
-		}
-    }
+
 	
 	void OnParticleCollision(GameObject collision) 
     {
 		if(collision.tag == "Fire") {
-			Destroy(gameObject);
+			Application.LoadLevel ("GameOver");
 		}
     }
 }

@@ -7,6 +7,7 @@ public class BombController : MonoBehaviour
 	private static double EXPLOTION_TIME = 3;
 	public Transform explotionPrototype;
 	public static float wide = 2;
+	public AudioClip explosionClip;
 
     void FixedUpdate() {
 		elapsedTime += Time.deltaTime;
@@ -19,6 +20,7 @@ public class BombController : MonoBehaviour
 			verticalExplotion.localScale = new Vector3(0.7f, wide, 1);
 			horizontalExplotion.localScale = new Vector3(wide, 0.7f, 1);
 			Destroy(gameObject);
+			AudioSource.PlayClipAtPoint(explosionClip , transform.position);
 			GameObject go = GameObject.FindGameObjectWithTag("Player");
 			if(go != null) {
 				go.GetComponent<PlayerController>().bombExploded();
