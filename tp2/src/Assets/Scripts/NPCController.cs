@@ -59,6 +59,7 @@ public class NPCController : MonoBehaviour
 		Vector3 dir = Vector3.zero;
 		do {
 			dir = getDirection(rand);
+			Debug.Log("Ray direction -> " + dir);
 			if (!Physics.Raycast (transform.position, dir, 10)) {
 				found = true;
 			} else {	
@@ -68,7 +69,10 @@ public class NPCController : MonoBehaviour
 				}
 			}
 		} while(rand != last && !found);
-		Debug.Log("Direction -> " + dir);
+		if(!found) {
+			dir = Vector3.zero;
+		}
+		Debug.Log("Moves -> " + dir);
 		return dir*10;
 	}
 	
