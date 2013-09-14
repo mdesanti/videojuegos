@@ -3,10 +3,10 @@ using System.Collections;
 
 public abstract class AbstractExtrasController : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision) 
+    void OnTriggerEnter(Collider collider) 
     {
-		if(collision.collider.gameObject.tag == "Player") {
-			perform(collision.gameObject);
+		if(collider.gameObject.tag == "Player") {
+			perform(collider.gameObject);
 			Destroy(gameObject);
 		}
     }

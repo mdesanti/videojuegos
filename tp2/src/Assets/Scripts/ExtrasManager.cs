@@ -9,7 +9,7 @@ public class ExtrasManager : MonoBehaviour
 
 	public void OnCubeDestroyed(Transform position) {
 		float rand = Random.value;
-		if(rand >= 0.15) {
+		if(rand >= 0.20) {
 			return;
 		}
 		rand = Random.value;

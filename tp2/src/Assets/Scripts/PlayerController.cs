@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
 	}
 
 	public void updateSpeed() {
-		this.max_moves -= 8;
+		this.max_moves -= 4;
 	}
 
 	
