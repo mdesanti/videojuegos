@@ -27367,7 +27367,7 @@ Prefab:
       propertyPath: m_Constraints
       value: 126
       objectReference: {fileID: 0}
-    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -27375,15 +27375,15 @@ Prefab:
       propertyPath: m_MinMoveDistance
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Radius
       value: 3.3499999
       objectReference: {fileID: 0}
-    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Center.y
       value: 3
       objectReference: {fileID: 0}
@@ -27395,11 +27395,11 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Center.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -27445,7 +27445,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: 13500000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d6e19742c981d4d4e8c3eb36dc3aff06, type: 2}
   m_RootGameObject: {fileID: 214449601}
   m_IsPrefabParent: 0

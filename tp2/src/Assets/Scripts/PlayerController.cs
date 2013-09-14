@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
 	//Cantidad total de pasos para hacer un movimiento. Mientras mayor sea, mas lento se mueve.
 	private float max_moves = 32;
 
-
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -45,7 +44,24 @@ public class PlayerController : MonoBehaviour
 			moves--;
 			if(moves == 0) {
 				moveDirection = new Vector3(0,0,0);
+				//redondeo la posicion a un entero
 				transform.position = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), 0.5f);
+				//redondeo la posicion a un multiplo de 10 por las dudas que haya quedado corrido
+				float x = transform.position.x;
+				float y = transform.position.y;
+				if(x%10 > 0) {
+					if(y%10 > 0) {
+						transform.position = new Vector3(x%10 >= 5? x+(10-x%10) : x-x%10, y%10 >= 5? y+(10-(y%10)) : y-y%10, 0.5f);
+					} else {
+						transform.position = new Vector3(x%10 >= 5? x+(10-x%10) : x-x%10, Mathf.Abs(y%10) >= 5? y-(10+(y%10)) : y-y%10, 0.5f);
+					}
+				} else {
+					if(y%10 > 0) {
+						transform.position = new Vector3(Mathf.Abs(x%10) >= 5? x-(10+x%10) : x-x%10, y%10 >= 5? y+(10-(y%10)) : y-y%10, 0.5f);
+					} else {
+						transform.position = new Vector3(Mathf.Abs(x%10) >= 5? x-(10+x%10) : x-x%10, Mathf.Abs(y%10) >= 5? y-(10+(y%10)) : y-y%10, 0.5f);
+					}
+				}
 			}
 		}
 
@@ -64,8 +80,25 @@ public class PlayerController : MonoBehaviour
 	void plantBomb() {
 		if (Input.GetKeyDown(KeyCode.Space) && bombCount > 0) {
             Transform bomb = (Transform)GameObject.Instantiate(bombPrototype);
-
-			Vector3 move = new Vector3(transform.position.x, (transform.position.y), 0.5f);
+			float x = transform.position.x;
+			float y = transform.position.y;
+			Debug.Log("x%10" + x%10);
+			Vector3 move = Vector3.zero;
+			if(x%10 > 0) {
+				if(y%10 > 0) {
+					move = new Vector3(x%10 >= 5? x+(10-x%10) : x-x%10, y%10 >= 5? y+(10-(y%10)) : y-y%10, 0.5f);
+				} else {
+					move = new Vector3(x%10 >= 5? x+(10-x%10) : x-x%10, Mathf.Abs(y%10) >= 5? y-(10+(y%10)) : y-y%10, 0.5f);
+				}
+			} else {
+				if(y%10 > 0) {
+					move = new Vector3(Mathf.Abs(x%10) >= 5? x-(10+x%10) : x-x%10, y%10 >= 5? y+(10-(y%10)) : y-y%10, 0.5f);
+				} else {
+					move = new Vector3(Mathf.Abs(x%10) >= 5? x-(10+x%10) : x-x%10, Mathf.Abs(y%10) >= 5? y-(10+(y%10)) : y-y%10, 0.5f);
+				}
+			}
+			Debug.Log("Player position: " + transform.position);
+			Debug.Log("Bomb position: " + move);
 			bomb.position = move;
 			bombCount--;
         }

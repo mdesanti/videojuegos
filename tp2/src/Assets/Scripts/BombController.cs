@@ -64,7 +64,7 @@ public class BombController : MonoBehaviour
 
 	private bool putExplosion(Vector3 dir, Vector3 move, int i) {
 		UnityEngine.RaycastHit hitInfo = new RaycastHit();
-		if (!Physics.Raycast(position, dir, out hitInfo, 10f * Mathf.Abs(i))) { //si no le pego a nada pongo la explosion
+		if (!Physics.Raycast(position, dir, out hitInfo, 10f * Mathf.Abs(i)) || hitInfo.collider.tag == "Extra") { //si no le pego a nada pongo la explosion
 			Transform explotion = (Transform)GameObject.Instantiate(explotionPrototype);
 			explotion.position = move;
 		} else if(hitInfo.collider.tag == "Wooden Cube") { //si le pego a un cubo de madera pongo la explosion y corto

@@ -65,7 +65,7 @@ public class NPCController : MonoBehaviour
 			if (!Physics.Raycast (from, dir, out hitInfo, 10f)) {
 				found = true;
 			} else {	
-				Debug.Log("Ray in direction" + dir + " Hit a -> " + hitInfo.collider.tag);
+				//Debug.Log("Ray in direction" + dir + " Hit a -> " + hitInfo.collider.tag);
 				rand++;
 				if(rand > 3) {
 					rand = 0;
@@ -75,7 +75,7 @@ public class NPCController : MonoBehaviour
 		if(!found) {
 			dir = Vector3.zero;
 		}
-		Debug.Log("Moves -> " + dir);
+		//Debug.Log("Moves -> " + dir);
 		return dir*10;
 	}
 	
