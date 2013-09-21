@@ -10,8 +10,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
 	public Transform bombPrototype;
 	public int bombCount = 1;
-	public int points = 0;
-	public float score;
+	public float score = 0;
 
 	private float moves = 0;
 	//Cantidad total de pasos para hacer un movimiento. Mientras mayor sea, mas lento se mueve.
@@ -82,7 +81,6 @@ public class PlayerController : MonoBehaviour
             Transform bomb = (Transform)GameObject.Instantiate(bombPrototype);
 			float x = transform.position.x;
 			float y = transform.position.y;
-			Debug.Log("x%10" + x%10);
 			Vector3 move = Vector3.zero;
 			if(x%10 > 0) {
 				if(y%10 > 0) {
@@ -97,8 +95,6 @@ public class PlayerController : MonoBehaviour
 					move = new Vector3(Mathf.Abs(x%10) >= 5? x-(10+x%10) : x-x%10, Mathf.Abs(y%10) >= 5? y-(10+(y%10)) : y-y%10, 0.5f);
 				}
 			}
-			Debug.Log("Player position: " + transform.position);
-			Debug.Log("Bomb position: " + move);
 			bomb.position = move;
 			bombCount--;
         }

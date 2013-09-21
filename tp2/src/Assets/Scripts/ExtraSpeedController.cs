@@ -10,8 +10,8 @@ public class ExtraSpeedController : AbstractExtrasController
 
 	public override void perform(GameObject playerGameObject) {
 		AudioSource.PlayClipAtPoint(explosionClip , transform.position);
-		int playerScore = PlayerPrefs.GetInt("Score");
-		PlayerPrefs.SetInt("Score",playerScore + score);
+		int playerScore = PlayerPrefs.GetInt("score");
+		PlayerPrefs.SetInt("score",playerScore + score);
 		playerGameObject.GetComponent<PlayerController>().updateSpeed();
 		Debug.Log("Extra speed player");
 		GameObject.Destroy(gameObject);

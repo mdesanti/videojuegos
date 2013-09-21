@@ -8,10 +8,10 @@ public class ExtraExplosionController : AbstractExtrasController
 
 	public override void perform(GameObject playerGameObject) {
 		AudioSource.PlayClipAtPoint(explosionClip , transform.position);
-		int playerScore = PlayerPrefs.GetInt("Score");
-		PlayerPrefs.SetInt("Score", playerScore + score);
+		int playerScore = PlayerPrefs.GetInt("score");
+		PlayerPrefs.SetInt("score", playerScore + score);
 		BombController.incrementWide();
-		Debug.Log("Extra speed player");
+		Debug.Log("Extra explosion player");
 		GameObject.Destroy(gameObject);
     }
 }
