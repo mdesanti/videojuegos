@@ -22,8 +22,8 @@ TagManager:
   User Layer 10: Player
   User Layer 11: 
   User Layer 12: Terrain
-  User Layer 13: 
-  User Layer 14: 
+  User Layer 13: Enemy
+  User Layer 14: Enemies Manager
   User Layer 15: 
   User Layer 16: 
   User Layer 17: 

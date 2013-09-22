@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ExplotionController : MonoBehaviour
+public class ExplosionController : MonoBehaviour
 {	
 	void Start()
     {

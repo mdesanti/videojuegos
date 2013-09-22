@@ -6,6 +6,7 @@ public class NPCController : MonoBehaviour
 {
 	
 	private float moves = 0;
+	public int score = 20;
 	//Cantidad total de pasos para hacer un movimiento. Mientras mayor sea, mas lento se mueve.
 	private float max_moves = 32;
 	private Vector3 movingDirection = Vector3.zero;
@@ -33,6 +34,21 @@ public class NPCController : MonoBehaviour
 			if(moves == 0) {
 				movingDirection = new Vector3(0,0,0);
 				transform.position = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), 0.5f);
+				float x = transform.position.x;
+				float y = transform.position.y;
+				if(x%10 > 0) {
+					if(y%10 > 0) {
+						transform.position = new Vector3(x%10 >= 5? x+(10-x%10) : x-x%10, y%10 >= 5? y+(10-(y%10)) : y-y%10, 0.5f);
+					} else {
+						transform.position = new Vector3(x%10 >= 5? x+(10-x%10) : x-x%10, Mathf.Abs(y%10) >= 5? y-(10+(y%10)) : y-y%10, 0.5f);
+					}
+				} else {
+					if(y%10 > 0) {
+						transform.position = new Vector3(Mathf.Abs(x%10) >= 5? x-(10+x%10) : x-x%10, y%10 >= 5? y+(10-(y%10)) : y-y%10, 0.5f);
+					} else {
+						transform.position = new Vector3(Mathf.Abs(x%10) >= 5? x-(10+x%10) : x-x%10, Mathf.Abs(y%10) >= 5? y-(10+(y%10)) : y-y%10, 0.5f);
+					}
+				}
 			}
 		}
 		
@@ -66,6 +82,9 @@ public class NPCController : MonoBehaviour
 				found = true;
 			} else {	
 				//Debug.Log("Ray in direction" + dir + " Hit a -> " + hitInfo.collider.tag);
+				if(hitInfo.collider.tag == "Player") {
+					Application.LoadLevel ("GameOver");
+				}
 				rand++;
 				if(rand > 3) {
 					rand = 0;
@@ -94,7 +113,7 @@ public class NPCController : MonoBehaviour
 	void OnParticleCollision(GameObject collision) 
     {
 		if(collision.tag == "Fire") {
-			Destroy(gameObject);
+			GameObject.Find("Enemies Manager").GetComponent<EnemiesManager>().OnEnemyDestroyed(this);
 		}
     }
 }

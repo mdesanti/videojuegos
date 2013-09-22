@@ -2304,9 +2304,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 400306}
   - 137: {fileID: 13700000}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sphere_002
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3763,7 +3763,7 @@ GameObject:
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GreenDragon
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -4641,7 +4641,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100076}
-  m_LocalRotation: {x: .734158158, y: -.197566316, z: .537462115, w: -.36484763}
+  m_LocalRotation: {x: .734158218, y: -.19756633, z: .537462175, w: -.36484766}
   m_LocalPosition: {x: .144757569, y: .784989059, z: 3.02156568}
   m_LocalScale: {x: 1, y: .999999881, z: .999999881}
   m_Children:
@@ -5005,7 +5005,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100138}
-  m_LocalRotation: {x: .628866851, y: .323305547, z: -.628866851, w: .323305547}
+  m_LocalRotation: {x: .628866911, y: .323305577, z: -.628866911, w: .323305577}
   m_LocalPosition: {x: .253155828, y: 1.63916731, z: 2.16737342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5919,7 +5919,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100290}
-  m_LocalRotation: {x: .734158158, y: .197566107, z: .537462175, w: .36484766}
+  m_LocalRotation: {x: .734158218, y: .197566122, z: .537462234, w: .36484769}
   m_LocalPosition: {x: .14475745, y: -.784989059, z: 3.02156568}
   m_LocalScale: {x: 1, y: .999999881, z: .999999821}
   m_Children:
@@ -6367,7 +6367,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100364}
-  m_LocalRotation: {x: .633386254, y: -.392616451, z: .338795036, w: .574362457}
+  m_LocalRotation: {x: .633386254, y: -.392616421, z: .338795036, w: .574362457}
   m_LocalPosition: {x: -.599579275, y: -.220286965, z: -.141508043}
   m_LocalScale: {x: .999999642, y: .999999762, z: .999999762}
   m_Children: []
@@ -7196,7 +7196,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100500}
   m_LocalRotation: {x: -2.80971406e-08, y: -.642787635, z: -.766044438, w: 3.34848664e-08}
-  m_LocalPosition: {x: -60, y: -60, z: 0}
+  m_LocalPosition: {x: -60, y: -60, z: .5}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 400104}
@@ -7548,6 +7548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b99c49a2ff482464c8ed7ce22153b32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 20
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

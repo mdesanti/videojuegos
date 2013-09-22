@@ -112,7 +112,14 @@ public class PlayerController : MonoBehaviour
 	void OnParticleCollision(GameObject collision) 
     {
 		string tag = collision.tag;
-		if(tag == "Fire" || tag == "Enemy") {
+		if(tag == "Fire") {
+			Application.LoadLevel ("GameOver");
+		}
+    }
+
+    void OnCollisionEnter(Collision collision) {
+    	string tag = collision.collider.gameObject.tag;
+		if(tag == "Enemy") {
 			Application.LoadLevel ("GameOver");
 		}
     }

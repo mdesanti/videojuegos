@@ -6,6 +6,10 @@ public class ExtrasManager : MonoBehaviour
 	public Transform extraBomb;
 	public Transform extraExplosion;
 
+	void Start() {
+		BombController.wide = 1;
+	}
+
 
 	public void OnCubeDestroyed(Transform position) {
 		float rand = Random.value;
