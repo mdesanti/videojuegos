@@ -9,8 +9,9 @@ public class PlayerController : MonoBehaviour
 	private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
 	public Transform bombPrototype;
-	public int bombCount = 1;
-	public float score = 0;
+	private int bombCount = 1;
+	private static float score = 0;
+	public static bool onPause = false;
 
 	private float moves = 0;
 	//Cantidad total de pasos para hacer un movimiento. Mientras mayor sea, mas lento se mueve.
@@ -22,6 +23,9 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update() {
+    	if(onPause){
+    		return;
+    	}
 		plantBomb();
     	if(Input.GetKey(KeyCode.LeftArrow) && moves == 0) {
 			moveDirection = new Vector3(-10, 0, 0);
@@ -100,12 +104,16 @@ public class PlayerController : MonoBehaviour
         }
 	}
 	
-	public void bombExploded() {
+	public void incrementBombQtty() {
 		bombCount++;
 	}
 
 	public void updateSpeed() {
 		this.max_moves -= 4;
+	}
+
+	public static void incrementScore(float s){
+		score += s;
 	}
 
 	
@@ -122,5 +130,9 @@ public class PlayerController : MonoBehaviour
 		if(tag == "Enemy") {
 			Application.LoadLevel ("GameOver");
 		}
+    }
+
+    public static void pause(){
+    	onPause = !onPause;
     }
 }

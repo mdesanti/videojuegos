@@ -36,9 +36,13 @@ public class PauseMenu : MonoBehaviour
     bool togglePause(){
        if(Time.timeScale == 0f){
          Time.timeScale = 1f;
+         NPCController.pause();
+         PlayerController.pause();
          return(false);
        }else{
          Time.timeScale = 0f;
+         NPCController.pause();
+         PlayerController.pause();
          return(true);    
        }
     }

@@ -3,6 +3,7 @@ using System.Collections;
 
 public abstract class AbstractCollisionController : MonoBehaviour
 {
+
     void OnParticleCollision(GameObject collision) 
     {
 		if(collision.tag == "Fire" && isDestroyedByFire()) {

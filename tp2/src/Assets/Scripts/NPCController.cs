@@ -7,6 +7,7 @@ public class NPCController : MonoBehaviour
 	
 	private float moves = 0;
 	public int score = 20;
+	public static bool onPause = false;
 	//Cantidad total de pasos para hacer un movimiento. Mientras mayor sea, mas lento se mueve.
 	private float max_moves = 32;
 	private Vector3 movingDirection = Vector3.zero;
@@ -16,13 +17,18 @@ public class NPCController : MonoBehaviour
 	private static Vector3 RIGHT = new Vector3(10, 0, 0);
 	private static Vector3 UP = new Vector3(0, -10, 0);
 	private static Vector3 DOWN = new Vector3(0, 10, 0);
+	private EnemiesManager enemiesManager;
 	
 	void Start()
     {
         controller = GetComponent<CharacterController>();
+        enemiesManager = GameObject.Find("Enemies Manager").GetComponent<EnemiesManager>();
     }
 	
     void Update () {
+    	if(onPause){
+    		return;
+    	}
 		if(moves == 0) {
 			movingDirection = getMovingDirection();
 			moves = max_moves;
@@ -113,7 +119,19 @@ public class NPCController : MonoBehaviour
 	void OnParticleCollision(GameObject collision) 
     {
 		if(collision.tag == "Fire") {
-			GameObject.Find("Enemies Manager").GetComponent<EnemiesManager>().OnEnemyDestroyed(this);
+			enemiesManager.OnEnemyDestroyed(this);
 		}
     }
+
+    void OnCollisionEnter(Collision collision) {
+    	string tag = collision.collider.gameObject.tag;
+		if(tag == "Player") {
+			Application.LoadLevel ("GameOver");
+		}
+    }
+
+    public static void pause(){
+    	onPause = !onPause;
+    }
+
 }

@@ -9,10 +9,23 @@ public class BombController : MonoBehaviour
 	public static int wide = 1;
 	public AudioClip explosionClip;
 	private Vector3 position;
+	private PlayerController player;
+	private Transform[] explotionPool;
+	private static int POOL_SIZE = 15*15;
 
 
 	void Start() {
         position = transform.position;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        initPool();
+    }
+
+    private void initPool() {
+    	explotionPool = new Transform[POOL_SIZE];
+    	for(int i = 0; i < POOL_SIZE; i++) {
+    		explotionPool[i] = (Transform)GameObject.Instantiate(explotionPrototype);
+    		explotionPool[i].gameObject.SetActive(false);
+    	}
     }
 
     void FixedUpdate() {
@@ -20,7 +33,7 @@ public class BombController : MonoBehaviour
 		if(elapsedTime >= EXPLOSION_TIME) {
 
 			//poner la primera explosion donde estaba la bomba
-			Transform explotion = (Transform)GameObject.Instantiate(explotionPrototype);
+			Transform explotion = getExplotion();
 			explotion.position = position;
 
 			int i;
@@ -53,9 +66,8 @@ public class BombController : MonoBehaviour
 
 			Destroy(gameObject);
 			AudioSource.PlayClipAtPoint(explosionClip , transform.position);
-			GameObject go = GameObject.FindGameObjectWithTag("Player");
-			if(go != null) {
-				go.GetComponent<PlayerController>().bombExploded();
+			if(player != null) {
+				player.incrementBombQtty();
 			} else {
 				Debug.Log("Should not happen");
 			}
@@ -66,16 +78,27 @@ public class BombController : MonoBehaviour
 		UnityEngine.RaycastHit hitInfo = new RaycastHit();
 		//si no le pego a nada o le pego a un extra o le pego al player pongo la explosion
 		if (!Physics.Raycast(position, dir, out hitInfo, 10f * Mathf.Abs(i)) || hitInfo.collider.tag == "Extra" || hitInfo.collider.tag == "Player") {
-			Transform explotion = (Transform)GameObject.Instantiate(explotionPrototype);
+			Transform explotion = getExplotion();
 			explotion.position = move;
 		} else if(hitInfo.collider.tag == "Wooden Cube") { //si le pego a un cubo de madera pongo la explosion y corto
-			Transform explotion = (Transform)GameObject.Instantiate(explotionPrototype);
+			Transform explotion = getExplotion();
 			explotion.position = move;
 			return false;
 		} else if(hitInfo.collider.tag == "Steel Cube") {
 			return false;
 		}
 		return true;
+	}
+
+	private Transform getExplotion() {
+		for(int i = 0; i < POOL_SIZE; i++) {
+			if(!explotionPool[i].active) {
+				//explotionPool[i].SetActive(true);
+				explotionPool[i].active = true;
+				return explotionPool[i].transform;
+			}
+		}
+		return null;
 	}
 
 	public static void incrementWide() {

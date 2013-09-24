@@ -3,9 +3,12 @@ using System.Collections;
 
 public class ExplosionController : MonoBehaviour
 {	
-	void Start()
-    {
-		//autodestroy after 5 seconds
-        Destroy(gameObject, 3);
+	private float deltaTime = 0;
+
+    void Update() {
+    	deltaTime += Time.deltaTime;
+    	if(deltaTime > 3) {
+    		gameObject.SetActive(false);
+    	}
     }
 }

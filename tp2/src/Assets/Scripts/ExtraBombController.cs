@@ -10,7 +10,7 @@ public class ExtraBombController : AbstractExtrasController
 		AudioSource.PlayClipAtPoint(explosionClip , transform.position);
 		int playerScore = PlayerPrefs.GetInt("score");
 		PlayerPrefs.SetInt("score",playerScore + score);
-		playerGameObject.GetComponent<PlayerController>().bombCount += 1;
+		playerGameObject.GetComponent<PlayerController>().incrementBombQtty();
 		Debug.Log("Extra bomb player");
 		GameObject.Destroy(gameObject);
     }
