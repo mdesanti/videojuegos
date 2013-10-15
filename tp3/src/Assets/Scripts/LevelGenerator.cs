@@ -32,8 +32,10 @@ public class LevelGenerator : MonoBehaviour
         while(create && Mathf.Abs(x) < width && Mathf.Abs(y) < height && elapsedTime < 5) {
         	elapsedTime += Time.deltaTime;
         	if(!checkSpace(actual, default_size)) {
-        		if(!changeDirection())
+        		if(!changeDirection()) {
         			create = false;
+                    break;
+                }
         		else 
         			direction_changed = true;
         	}
