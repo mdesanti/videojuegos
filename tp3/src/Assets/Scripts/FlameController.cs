@@ -8,7 +8,7 @@ public class FlameController : MonoBehaviour
 	private Vector3 position;
 	public GameObject explotionPrototype;
     private double elapsedTime = 0;
-    private static double EXPLOSION_TIME = 3;
+    private static double EXPLOSION_TIME = 5;
 	
 	void Start() {
         position = transform.position;
@@ -32,7 +32,7 @@ public class FlameController : MonoBehaviour
     }
 
     private void burn() {
-        Debug.Log("burning");
+        //Debug.Log("burning");
         int i;
         bool loop;
         Vector3 dir = new Vector3(1, 0, 0);
@@ -43,7 +43,7 @@ public class FlameController : MonoBehaviour
     }
 
     private bool putExplosion(Vector3 dir, Vector3 move, int i) {
-        Debug.Log("Putting explosion");
+        //Debug.Log("Putting explosion");
         UnityEngine.RaycastHit hitInfo = new RaycastHit();
         Physics.Raycast(position, dir, out hitInfo, 10f * Mathf.Abs(i));
         if(!hitInfo.collider) {
@@ -61,7 +61,6 @@ public class FlameController : MonoBehaviour
         for(int i = 0; i < POOL_SIZE; i++) {
             if(!explotionPool[i].activeSelf) {
                 explotionPool[i].SetActive(true);
-                //Debug.Log("activating = " + explotionPool[i].active);
                 return explotionPool[i].transform;
             }
         }
