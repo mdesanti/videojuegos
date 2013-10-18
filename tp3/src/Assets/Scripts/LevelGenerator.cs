@@ -243,7 +243,10 @@ public class LevelGenerator : MonoBehaviour
 	    			w.transform.position = new Vector3(x + j - 5 * sign, 6, z + i);
 	    			w.transform.eulerAngles = new Vector3(0, 90, 0);
                     if(other_torch) {
-                        putTorch(x + j - 5, z + i, new Vector3(0, 0, -30));
+                        if(actual == Directions.RIGHT || actual == Directions.TOP)
+                            putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, -30));
+                        else 
+                            putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, 30));
                     }
                         //other_torch = !other_torch;
                 }
@@ -252,7 +255,10 @@ public class LevelGenerator : MonoBehaviour
                     w.transform.position = new Vector3(x + j + 5 * sign, 6, z + i);
 	    			w.transform.eulerAngles = new Vector3(0, 90, 0);
                     if(!other_torch) {
-                        putTorch(x + j + 5, z + i, new Vector3(0, 0, 30));
+                        if(actual == Directions.RIGHT || actual == Directions.TOP)
+                            putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, 30));
+                        else
+                            putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, -30));
                     }
                         other_torch = !other_torch;
                 } 
@@ -260,7 +266,10 @@ public class LevelGenerator : MonoBehaviour
                     GameObject w = (GameObject)GameObject.Instantiate(wall);
                     w.transform.position = new Vector3(x + j, 6, z + i - 5 * sign);
                     if(torch_created) {
-                        putTorch(x + j, z + i - 5, new Vector3(30, 0, 0));
+                        if(actual == Directions.RIGHT || actual == Directions.TOP)
+                            putTorch(x + j, z + i - 5 * sign, new Vector3(30, 0, 0));
+                        else
+                            putTorch(x + j, z + i - 5 * sign, new Vector3(-30, 0, 0));
                     }
                         torch_created = !torch_created;
                 } 
@@ -268,7 +277,10 @@ public class LevelGenerator : MonoBehaviour
                     GameObject w = (GameObject)GameObject.Instantiate(wall);
                     w.transform.position = new Vector3(x + j, 6, z + i + 5 * sign);
                     if(torch_created) {
-                        putTorch(x + j, z + i + 5, new Vector3(-30, 0, 0));
+                        if(actual == Directions.RIGHT || actual == Directions.TOP)
+                            putTorch(x + j, z + i + 5 * sign, new Vector3(-30, 0, 0));
+                        else
+                            putTorch(x + j, z + i + 5 * sign, new Vector3(30, 0, 0));
                     }
                         torch_created = !torch_created;
         		}
@@ -281,38 +293,45 @@ public class LevelGenerator : MonoBehaviour
   
     	if(actual == Directions.RIGHT || actual == Directions.LEFT) {
     		z -= step;
-            //int sign = (step / Mathf.Abs(step));
     		putDoor(x - step / 2, z); //salida
-            /*if(Random.value > 0.5) {
-                //extra door
-                if(Random.value > 0.5) {
-                    int rand = 1 +  ((int) Random.value * (width - 1));
-                    GameObject d = putDoor(x - rand * 10 * sign, z - (step / 2)); //arriba
+            if(Random.value > 0.5) { //pongo la puerta extra?
+                if(Random.value > 0.5) { //ok, donde?
+                    double random = Random.value;
+                    int rand = 2 + (int) (random * (width/10 - 2));
+                    rand *= 10;
+                    Debug.Log("random: " + random);
+                    Debug.Log("rand: " + rand);
+                    GameObject d = putDoor(x - rand * sign, z + (step / 2)); //arriba
                     d.transform.eulerAngles = new Vector3(90, 0, 0);
                     Debug.Log("arriba");
                 }
                 else {
-                    int rand = 1 +  ((int) Random.value * (width - 1));
-                    GameObject d = putDoor(x - rand * 10 * sign, z + step / 2); //abajo
+                    int rand = 2 + (int) (Random.value * (width/10 - 2));
+                    rand *= 10;
+                    GameObject d = putDoor(x - rand * sign, z + step / 2 - height); //abajo
                     d.transform.eulerAngles = new Vector3(90, 0, 0);
                     Debug.Log("abajo");
                 }
-            }*/
+            }
     	} else {
     		x -= step;
     		putDoor(x, z - step / 2); //salida
-            /*if(Random.value > 0.5) {
+            if(Random.value > 0.5) { 
                 if(Random.value > 0.5) {
-                    int rand = 1 +  ((int) Random.value * (height - 1));
-                    putDoor(x - step / 2, z - rand); //derecha
+                    int rand = 2 + (int) (Random.value * (height/10 - 2));
+                    rand *= 10;
+                    GameObject d = putDoor(x + step / 2 - width, z - rand * sign); //derecha
+                    d.transform.eulerAngles = new Vector3(90, 90, 0);
                     Debug.Log("derecha");
                 }
                 else {
-                    int rand = 1 +  ((int) Random.value * (height - 1));
-                    putDoor(x - width * (step / Mathf.Abs(step)) + step / 2, z - rand * 10); //abajo
+                    int rand = 2 + (int) (Random.value * (height/10 - 2));
+                    rand *= 10;
+                    GameObject d = putDoor(x + step / 2, z - rand * sign); //izquierda
+                    d.transform.eulerAngles = new Vector3(90, 90, 0);
                     Debug.Log("izquierda");
                 }
-            }*/
+            }
     	}
     	return true;
     }
