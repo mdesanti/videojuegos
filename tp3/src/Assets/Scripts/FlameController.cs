@@ -46,13 +46,14 @@ public class FlameController : MonoBehaviour
         //Debug.Log("Putting explosion");
         UnityEngine.RaycastHit hitInfo = new RaycastHit();
         Physics.Raycast(position, dir, out hitInfo, 10f * Mathf.Abs(i));
-        if(!hitInfo.collider) {
+		Debug.Log("hit a: " + hitInfo.collider.gameObject.tag);
+        if(hitInfo.collider.gameObject.tag != "Wall") {
             Transform explotion = getExplotion();
             explotion.position = move;
             //Debug.Log("position: " + move);
             return true;
         } else {
-            //Debug.Log("hit a: " + hitInfo.collider.tag);
+            
             return false;
         }
     }

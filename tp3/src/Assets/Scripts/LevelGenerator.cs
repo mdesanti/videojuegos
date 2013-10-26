@@ -7,6 +7,9 @@ public class LevelGenerator : MonoBehaviour
 	public GameObject floor;
 	public GameObject door;
 	public GameObject torch;
+	public GameObject axe;
+	public GameObject cart;
+	public GameObject flameThrower;
 	private int width = 400;
 	private int height = 400;
 	private int x = 0;
@@ -154,6 +157,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void putCorridor(int x, int z) {
     	putFloor(x, z);
+		putAxe(x, z);
     	if(actual == Directions.LEFT || actual == Directions.RIGHT) {
 	    	if(direction_changed) {
 	    		if(previous == Directions.DOWN) {
@@ -338,39 +342,51 @@ public class LevelGenerator : MonoBehaviour
         		if(j == 0 && !((z + i) == entrance_door_z && (x + j - 5 * sign) == entrance_door_x) && !(exit_door && (z + i) == exit_door_z && (x + j - 5 * sign) == exit_door_x) && !(extra_exit && (z + i) == extra_door_z && (x + j - 5 * sign) == extra_door_x)) {
                     putWall(x + j - 5 * sign, 6, z + i, new Vector3(0, 90, 0));
                     if(other_torch) {
-                        if(actual == Directions.RIGHT || actual == Directions.TOP)
+                        if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, -30));
-                        else 
+							putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 0));
+						} else {
                             putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, 30));
+							putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 0));
+						}
                     }
                 }
                 if (Mathf.Abs(j) == (width - 10) && !((z + i) == entrance_door_z && (x + j + 5 * sign) == entrance_door_x) && !(exit_door && (z + i) == exit_door_z && (x + j + 5 * sign) == exit_door_x) && !(extra_exit && (z + i) == extra_door_z && (x + j + 5 * sign) == extra_door_x)) {
                     putWall(x + j + 5 * sign, 6, z + i, new Vector3(0, 90, 0));
                     if(!other_torch) {
-                        if(actual == Directions.RIGHT || actual == Directions.TOP)
+                        if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, 30));
-                        else
+							putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 0));
+						} else {
                             putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, -30));
+							putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 0));
+						}
                     }
                         other_torch = !other_torch;
                 } 
                 if (i == 0 && ((x + j) != entrance_door_x || (z + i - 5 * sign) != entrance_door_z) && (exit_door && (x + j) != exit_door_x || (z + i - 5 * sign) != exit_door_z) && !(extra_exit && (z + i - 5) == extra_door_z && (x + j) == extra_door_x)) {
                     putWall(x + j, 6, z + i - 5 * sign, new Vector3(0, 0, 0));
                     if(torch_created) {
-                        if(actual == Directions.RIGHT || actual == Directions.TOP)
+                        if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(30, 0, 0));
-                        else
+							putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 0));
+						} else {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(-30, 0, 0));
+							putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 0));
+						}
                     }
                         torch_created = !torch_created;
                 } 
                 if (Mathf.Abs(i) == height - 10 && ((x + j) != entrance_door_x || (z + i + 5 * sign) != entrance_door_z) && (exit_door && (x + j) != exit_door_x || (z + i + 5 * sign) != exit_door_z) && !(extra_exit && (z + i + 5) == extra_door_z && (x + j) == extra_door_x)) {
                     putWall(x + j, 6, z + i + 5 * sign, new Vector3(0, 0, 0));
                     if(torch_created) {
-                        if(actual == Directions.RIGHT || actual == Directions.TOP)
+                        if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j, z + i + 5 * sign, new Vector3(-30, 0, 0));
-                        else
+							putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 0));
+						} else {
                             putTorch(x + j, z + i + 5 * sign, new Vector3(30, 0, 0));
+							putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 0));
+						}
                     }
                         torch_created = !torch_created;
         		}
@@ -403,7 +419,23 @@ public class LevelGenerator : MonoBehaviour
         extra_exit = false;
     	return true;
     }
-
+	
+	private void putAxe(int x, int z) {
+		if(Random.value > 0.8) {
+			GameObject d = (GameObject)GameObject.Instantiate(axe);
+		    d.transform.position = new Vector3(x, 3.5f, z);
+			d.transform.eulerAngles = new Vector3(-90, 0, 0);
+		}
+	}
+	
+	private void putFlameThrower(int x, int z, float probability, Vector3 rotation) {
+		if(Random.value < probability) {
+			GameObject d = (GameObject)GameObject.Instantiate(flameThrower);
+		    d.transform.position = new Vector3(x, 5, z);
+			d.transform.eulerAngles = rotation;
+		}
+	}
+	
     private void putDoor(int x, int z) {
 		Vector3 rotation;
     	if(actual == Directions.RIGHT || actual == Directions.LEFT)

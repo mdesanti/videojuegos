@@ -17,7 +17,6 @@ public class OpenDoor : MonoBehaviour
 			//var target = Quaternion.Euler (transform.localRotation.x, transform.localRotation.y+DoorOpenAngle, transform.localRotation.z);
 			//transform.localRotation = Quaternion.Slerp(transform.localRotation, target,
 			//Time.deltaTime * smooth);
-			Debug.Log("opened");
 		}
 	
 	}
