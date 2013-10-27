@@ -8,7 +8,7 @@ public class LevelGenerator : MonoBehaviour
 	public GameObject door;
 	public GameObject torch;
 	public GameObject axe;
-	public GameObject cart;
+	//public GameObject cart;
 	public GameObject flameThrower;
 	private int width = 400;
 	private int height = 400;

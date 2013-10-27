@@ -29,7 +29,7 @@ public class ScoreManager : MonoBehaviour
 		string score = PlayerPrefs.GetInt("Score").ToString();
 		string life = PlayerPrefs.GetInt("Life").ToString();
 		GUI.Label (new Rect (Screen.width/2-65,140,100,50),"Score: " + score, style);	
-		GUI.Label (new Rect (Screen.width/2-65,200,100,50),"Life: " + life, style);	
+		GUI.Label (new Rect (Screen.width/2-65 + 70,140,100,50),"Life: " + life, style);	
 	}
 	
 }
