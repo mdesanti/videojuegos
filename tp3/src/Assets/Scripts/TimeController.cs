@@ -10,7 +10,6 @@ public class TimeController : MonoBehaviour {
 	void Update () {
 		availableTime -= Time.deltaTime;
 		if(availableTime < 0) {
-			Debug.Log("Time is up!");
 			//loose!
 		}
 	}

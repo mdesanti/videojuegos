@@ -46,8 +46,6 @@ public class FlameController : MonoBehaviour
     private bool putExplosion(Vector3 dir, Vector3 move, int i) {
         UnityEngine.RaycastHit hitInfo = new RaycastHit();
         if(Physics.Raycast(move, dir, out hitInfo, 10f) && (hitInfo.collider.gameObject.tag == "Wall" || hitInfo.collider.gameObject.tag == "Door")) {
-            Debug.Log("move:" + move + " direction:" + dir);
-            //Debug.Log("position: " + move);
             Transform explotion = getExplotion();
             explotion.position = move;
             return false;

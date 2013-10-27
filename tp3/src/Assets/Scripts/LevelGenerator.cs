@@ -8,7 +8,6 @@ public class LevelGenerator : MonoBehaviour
 	public GameObject door;
 	public GameObject torch;
 	public GameObject axe;
-	//public GameObject cart;
 	public GameObject flameThrower;
 	private int width = 400;
 	private int height = 400;
@@ -47,7 +46,6 @@ public class LevelGenerator : MonoBehaviour
         	if(!checkSpace(x, z, actual, default_size)) {
         		if(!changeDirection()) {
         			create = false;
-                    Debug.Log("exit...");
                     putExit(x, z, actual);
                     return;
                 }
@@ -277,7 +275,6 @@ public class LevelGenerator : MonoBehaviour
                         extra_door_x = x - rand * sign + width * sign;
                         extra_door_z = z - (step / 2) + height * sign;
                         extra_direction = Directions.TOP;
-                        Debug.Log("arriba");
                     }
                 }
                 else {
@@ -289,7 +286,6 @@ public class LevelGenerator : MonoBehaviour
                         extra_door_x = x + rand * sign;
                         extra_door_z = z - step / 2;
                         extra_direction = Directions.DOWN;
-                        Debug.Log("abajo");
                     }
                 }
             }
@@ -318,7 +314,6 @@ public class LevelGenerator : MonoBehaviour
                         extra_door_x = x - step / 2 + width * sign;
                         extra_door_z = z + rand * sign;
                         extra_direction = Directions.RIGHT;
-                        Debug.Log("derecha");
                     }
                 }
                 else {
@@ -330,7 +325,6 @@ public class LevelGenerator : MonoBehaviour
                         extra_door_x = x - step / 2;
                         extra_door_z = z + rand * sign;
                         extra_direction = Directions.LEFT;
-                        Debug.Log("izquierda");
                     }
                 }
             }
