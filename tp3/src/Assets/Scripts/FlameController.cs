@@ -3,8 +3,8 @@ using UnityEngine;
 public class FlameController : MonoBehaviour
 {
 
-	private static GameObject[] explotionPool;
-	private static int POOL_SIZE = 40;
+	private GameObject[] explotionPool;
+	private static int POOL_SIZE = 10;
 	private Vector3 position;
 	public GameObject explotionPrototype;
     private double elapsedTime = 0;
@@ -20,6 +20,8 @@ public class FlameController : MonoBehaviour
     	for(int i = 0; i < POOL_SIZE; i++) {
     		explotionPool[i] = (GameObject)GameObject.Instantiate(explotionPrototype);
     		explotionPool[i].SetActive(false);
+            Vector3 rotation = new Vector3(0, Mathf.Abs(transform.eulerAngles.z) * 90, 0);
+            explotionPool[i].transform.eulerAngles = rotation;
     	}
     }
 
@@ -32,29 +34,27 @@ public class FlameController : MonoBehaviour
     }
 
     private void burn() {
-        //Debug.Log("burning");
         int i;
         bool loop;
-        Vector3 dir = new Vector3(1, 0, 0);
-        for(i = 1, loop = true; loop; i++) {
-                Vector3 move = new Vector3(position.x + i * 10, position.y, position.z);
+        Vector3 dir = transform.eulerAngles;
+        for(i = 0, loop = true; loop; i++) {
+                Vector3 move = new Vector3(position.x + i * 10 * dir.x, position.y, position.z + i * 10 * dir.z);
                 loop = putExplosion(dir, move, i);
             }
     }
 
     private bool putExplosion(Vector3 dir, Vector3 move, int i) {
-        //Debug.Log("Putting explosion");
         UnityEngine.RaycastHit hitInfo = new RaycastHit();
-        Physics.Raycast(position, dir, out hitInfo, 10f * Mathf.Abs(i));
-		Debug.Log("hit a: " + hitInfo.collider.gameObject.tag);
-        if(hitInfo.collider.gameObject.tag != "Wall") {
+        if(Physics.Raycast(move, dir, out hitInfo, 10f) && (hitInfo.collider.gameObject.tag == "Wall" || hitInfo.collider.gameObject.tag == "Door")) {
+            Debug.Log("move:" + move + " direction:" + dir);
+            //Debug.Log("position: " + move);
             Transform explotion = getExplotion();
             explotion.position = move;
-            //Debug.Log("position: " + move);
-            return true;
-        } else {
-            
             return false;
+        } else {
+            Transform explotion = getExplotion();
+            explotion.position = move;
+            return true;
         }
     }
 
