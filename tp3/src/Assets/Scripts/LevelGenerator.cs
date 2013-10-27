@@ -344,10 +344,9 @@ public class LevelGenerator : MonoBehaviour
                     if(other_torch) {
                         if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, -30));
-                            putFlameThrower(x + j, z + i, 1f, new Vector3(1, 0, 0));
+                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(1, 0, 0));
 						} else {
                             putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, 30));
-                            //putFlameThrower(x + j, z + i, 1f, new Vector3(-1, 0, 0));
 						}
                     }
                 }
@@ -356,10 +355,9 @@ public class LevelGenerator : MonoBehaviour
                     if(!other_torch) {
                         if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, 30));
-							//putFlameThrower(x + j, z + i, 1f, new Vector3(-1, 0, 0));
 						} else {
                             putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, -30));
-                            putFlameThrower(x + j, z + i, 1f, new Vector3(1, 0, 0));
+                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(1, 0, 0));
 						}
                     }
                     other_torch = !other_torch;
@@ -369,7 +367,7 @@ public class LevelGenerator : MonoBehaviour
                     if(torch_created) {
                         if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(30, 0, 0));
-                            putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 1));
+                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(0, 0, 1));
 						} else {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(-30, 0, 0));
                         //    putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, -1));
@@ -385,7 +383,7 @@ public class LevelGenerator : MonoBehaviour
                         //    putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, -1));
 						} else {
                             putTorch(x + j, z + i + 5 * sign, new Vector3(30, 0, 0));
-                            putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, 1));
+                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(0, 0, 1));
 						}
                     }
                     torch_created = !torch_created;
@@ -431,7 +429,7 @@ public class LevelGenerator : MonoBehaviour
 	private void putFlameThrower(int x, int z, float probability, Vector3 dir) {
 		if(Random.value < probability) {
 			GameObject f = (GameObject)GameObject.Instantiate(flameThrower);
-		    f.transform.position = new Vector3(x, 5, z);
+		    f.transform.position = new Vector3(x, 1, z);
             f.transform.eulerAngles = dir;
 		}
 	}

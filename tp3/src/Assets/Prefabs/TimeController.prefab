@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: ScoreManager
+  m_Name: TimeController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.07015228, y: -71.2177734, z: 153.602295}
+  m_LocalPosition: {x: 37.9062958, y: 33.2147522, z: 33.1415596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35,14 +35,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad83a2b7a9c7e4485bb37a0d30a8a523, type: 3}
+  m_Script: {fileID: 11500000, guid: b2779da7eb3554b86a42a784a7ae20e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  availableTime: 0
   style:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: .986206889, g: 1, b: 0, a: 1}
+      m_TextColor: {r: .944827557, g: 1, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
