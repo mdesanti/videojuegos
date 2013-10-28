@@ -207,6 +207,7 @@ public class LevelGenerator : MonoBehaviour
     			}
                 putWall(x + 5, 6, z, new Vector3(0, 90, 0));
                 putWall(x - 5, 6, z, new Vector3(0, 90, 0));
+				putFlameThrower(x + 5, z, 0.25f, new Vector3(0, 0, -1));
 	    	}
     	}
     	torch_created = !torch_created;
