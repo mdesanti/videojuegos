@@ -7,8 +7,7 @@ public class PlayerCollisionController : MonoBehaviour
     {
 		string tag = collision.tag;
 		if(tag == "Fire") {
-			Debug.Log("DIE!");
-			//Application.LoadLevel ("GameOver");
+			Application.LoadLevel ("GameOver");
 		}
     }
 }
