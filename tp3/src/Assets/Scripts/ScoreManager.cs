@@ -15,14 +15,9 @@ public class ScoreManager : MonoBehaviour
 		PlayerPrefs.SetInt("Score", score + 10);
 	}
 	
-	public void poissonCollected() {
+	public void playerGotBurnt() {
 		int score = PlayerPrefs.GetInt("Life");
 		PlayerPrefs.SetInt("Life", score - 40);
-	}
-	
-	public void extraScore() {
-		int score = PlayerPrefs.GetInt("Score");
-		PlayerPrefs.SetInt("Score", score + 40);
 	}
 	
 	void OnGUI () {
