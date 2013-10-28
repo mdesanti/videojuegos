@@ -2,7 +2,13 @@ fileFormatVersion: 2
 guid: b398cf1ed9f5481448abb0f9aaf779db
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - wall: {instanceID: 0}
+  - floor: {instanceID: 0}
+  - door: {instanceID: 0}
+  - torch: {instanceID: 0}
+  - axe: {instanceID: 0}
+  - flameThrower: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -27,7 +27,7 @@ public class LevelGenerator : MonoBehaviour
 
 
     void Start() {
-        Random.seed = seed;
+        //Random.seed = seed;
         putWall(x - 5, 6, z, new Vector3(0, 90, 0));
         CreateLevel(0, 0, Directions.RIGHT);
     } 
@@ -207,6 +207,7 @@ public class LevelGenerator : MonoBehaviour
     			}
                 putWall(x + 5, 6, z, new Vector3(0, 90, 0));
                 putWall(x - 5, 6, z, new Vector3(0, 90, 0));
+				putFlameThrower(x + 5, z, 0.25f, new Vector3(0, 0, -1));
 	    	}
     	}
     	torch_created = !torch_created;
@@ -333,12 +334,13 @@ public class LevelGenerator : MonoBehaviour
     	for(int i = 0; Mathf.Abs(i) < height; i+= step) {
         	for(int j = 0; Mathf.Abs(j) < width; j+= step) {
         		putFloor(x + j, z + i);
+				putAxe(x + j, z + i);
         		if(j == 0 && !((z + i) == entrance_door_z && (x + j - 5 * sign) == entrance_door_x) && !(exit_door && (z + i) == exit_door_z && (x + j - 5 * sign) == exit_door_x) && !(extra_exit && (z + i) == extra_door_z && (x + j - 5 * sign) == extra_door_x)) {
                     putWall(x + j - 5 * sign, 6, z + i, new Vector3(0, 90, 0));
                     if(other_torch) {
                         if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, -30));
-                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(1, 0, 0));
+                            //putFlameThrower(x + j, z + i, 0.4f, new Vector3(1, 0, 0));
 						} else {
                             putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, 30));
 						}
@@ -351,7 +353,7 @@ public class LevelGenerator : MonoBehaviour
                             putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, 30));
 						} else {
                             putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, -30));
-                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(1, 0, 0));
+                            //putFlameThrower(x + j, z + i, 0.4f, new Vector3(1, 0, 0));
 						}
                     }
                     other_torch = !other_torch;
@@ -361,10 +363,9 @@ public class LevelGenerator : MonoBehaviour
                     if(torch_created) {
                         if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(30, 0, 0));
-                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(0, 0, 1));
+                            putFlameThrower(x + j, z + i, 0.2f, new Vector3(0, 0, 1));
 						} else {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(-30, 0, 0));
-                        //    putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, -1));
 						}
                     }
                     torch_created = !torch_created;
@@ -374,10 +375,9 @@ public class LevelGenerator : MonoBehaviour
                     if(torch_created) {
                         if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j, z + i + 5 * sign, new Vector3(-30, 0, 0));
-                        //    putFlameThrower(x + j, z + i, 1f, new Vector3(0, 0, -1));
 						} else {
                             putTorch(x + j, z + i + 5 * sign, new Vector3(30, 0, 0));
-                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(0, 0, 1));
+                            putFlameThrower(x + j, z + i, 0.2f, new Vector3(0, 0, 1));
 						}
                     }
                     torch_created = !torch_created;
