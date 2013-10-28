@@ -8,6 +8,7 @@ public class AxeController : MonoBehaviour
 	//Activate the Main function when player is near the door
 	void OnTriggerEnter(Collider other)
 	{
+		Debug.Log(other.gameObject.tag);
 		if (other.gameObject.tag == "Player") 
 		{
 			scoreManager.axeCollected();

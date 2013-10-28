@@ -311,6 +311,18 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: m_Radius
+      value: .699999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: movement.maxForwardSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
   m_RootGameObject: {fileID: 1026032764}
@@ -469,7 +481,7 @@ GameObject:
   - 114: {fileID: 1026032770}
   m_Layer: 0
   m_Name: First Person Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,7 +526,7 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 6
+    maxForwardSpeed: 10
     maxSidewaysSpeed: 6
     maxBackwardsSpeed: 6
     slopeSpeedMultiplier:
@@ -583,7 +595,7 @@ CharacterController:
   m_GameObject: {fileID: 1026032764}
   serializedVersion: 2
   m_Height: 2
-  m_Radius: .400000006
+  m_Radius: .699999988
   m_SlopeLimit: 45
   m_StepOffset: .400000006
   m_SkinWidth: .0500000007
@@ -682,7 +694,7 @@ MonoBehaviour:
   floor: {fileID: 100000, guid: fb5537ec3947335459723211e77437ee, type: 2}
   door: {fileID: 100000, guid: d36b5cf88525ff34d9bf1a82b6404112, type: 2}
   torch: {fileID: 100000, guid: 1e5c742accdc1824fb01f98f446fa63c, type: 2}
-  axe: {fileID: 100000, guid: 22584a23c304f4f2c9b73b8cb57cdce8, type: 3}
+  axe: {fileID: 100000, guid: 6954dc9abe8114b59882bb8c921aa22a, type: 2}
   flameThrower: {fileID: 100000, guid: be0195c5386fe42eabf4ff0f40e59288, type: 2}
 --- !u!1 &1988923112
 GameObject:
