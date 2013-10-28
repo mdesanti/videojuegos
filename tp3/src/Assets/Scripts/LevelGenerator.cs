@@ -362,7 +362,7 @@ public class LevelGenerator : MonoBehaviour
                     if(torch_created) {
                         if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(30, 0, 0));
-                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(0, 0, 1));
+                            putFlameThrower(x + j, z + i, 0.2f, new Vector3(0, 0, 1));
 						} else {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(-30, 0, 0));
 						}
@@ -376,7 +376,7 @@ public class LevelGenerator : MonoBehaviour
                             putTorch(x + j, z + i + 5 * sign, new Vector3(-30, 0, 0));
 						} else {
                             putTorch(x + j, z + i + 5 * sign, new Vector3(30, 0, 0));
-                            putFlameThrower(x + j, z + i, 0.4f, new Vector3(0, 0, 1));
+                            putFlameThrower(x + j, z + i, 0.2f, new Vector3(0, 0, 1));
 						}
                     }
                     torch_created = !torch_created;
