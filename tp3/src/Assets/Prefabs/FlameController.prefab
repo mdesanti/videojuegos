@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9af41e8b81ad746ae01c944e3eb550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explotionPrototype: {fileID: 100000, guid: de7347e5db6104f4e8ae60eb6a2084e2, type: 2}
+  explotionPrototype: {fileID: 100000, guid: e855c40d6ff76324faf742ebcbe317e6, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

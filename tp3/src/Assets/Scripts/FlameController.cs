@@ -4,7 +4,7 @@ public class FlameController : MonoBehaviour
 {
 
 	private GameObject[] explotionPool;
-	private static int POOL_SIZE = 10;
+	private int POOL_SIZE = 10;
 	private Vector3 position;
 	public GameObject explotionPrototype;
     private double elapsedTime = 0;
@@ -45,13 +45,17 @@ public class FlameController : MonoBehaviour
 
     private bool putExplosion(Vector3 dir, Vector3 move, int i) {
         UnityEngine.RaycastHit hitInfo = new RaycastHit();
-        if(Physics.Raycast(move, dir, out hitInfo, 10f) && (hitInfo.collider.gameObject.tag == "Wall" || hitInfo.collider.gameObject.tag == "Door")) {
+        if(Physics.Raycast(new Vector3(move.x, 0, move.z), dir, out hitInfo, 10f) && (hitInfo.collider.gameObject.tag == "Wall" || hitInfo.collider.gameObject.tag == "Door")) {
             Transform explotion = getExplotion();
             explotion.position = move;
+            if(hitInfo.collider)
+                Debug.Log("collider:" + hitInfo.collider.gameObject.tag);
             return false;
         } else {
             Transform explotion = getExplotion();
             explotion.position = move;
+            if(hitInfo.collider)
+                Debug.Log("collider:" + hitInfo.collider.gameObject.tag);
             return true;
         }
     }

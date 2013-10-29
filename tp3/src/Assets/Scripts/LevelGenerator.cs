@@ -124,6 +124,8 @@ public class LevelGenerator : MonoBehaviour
     private bool checkSpace(int x, int z, Directions direction, int size) {
     	Vector3 d = new Vector3(0, 0, 0);
     	UnityEngine.RaycastHit hitInfo = new RaycastHit();
+        if(x >= height || x < 0 || z >= width || z < 0)
+            return false;
     	if(direction == Directions.LEFT) {
     		d = new Vector3(-1, 0, 0);
             if(x - default_size * 10 <= 0)
@@ -155,7 +157,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void putCorridor(int x, int z) {
     	putFloor(x, z);
-		putAxe(x, z);
+		bool axe = putAxe(x, z);
     	if(actual == Directions.LEFT || actual == Directions.RIGHT) {
 	    	if(direction_changed) {
 	    		if(previous == Directions.DOWN) {
@@ -207,7 +209,8 @@ public class LevelGenerator : MonoBehaviour
     			}
                 putWall(x + 5, 6, z, new Vector3(0, 90, 0));
                 putWall(x - 5, 6, z, new Vector3(0, 90, 0));
-				putFlameThrower(x + 5, z, 0.25f, new Vector3(0, 0, -1));
+                if(!axe)
+				    putFlameThrower(x, z, 0.25f, new Vector3(1, 0, 0));
 	    	}
     	}
     	torch_created = !torch_created;
@@ -412,18 +415,20 @@ public class LevelGenerator : MonoBehaviour
     	return true;
     }
 	
-	private void putAxe(int x, int z) {
+	private bool putAxe(int x, int z) {
 		if(Random.value > 0.8) {
 			GameObject d = (GameObject)GameObject.Instantiate(axe);
-		    d.transform.position = new Vector3(x, 3.5f, z);
+		    d.transform.position = new Vector3(x, 4f, z);
 			d.transform.eulerAngles = new Vector3(-90, 0, 0);
+            return true;
 		}
+        return false;
 	}
 	
 	private void putFlameThrower(int x, int z, float probability, Vector3 dir) {
 		if(Random.value < probability) {
 			GameObject f = (GameObject)GameObject.Instantiate(flameThrower);
-		    f.transform.position = new Vector3(x, 1, z);
+		    f.transform.position = new Vector3(x, 5, z);
             f.transform.eulerAngles = dir;
 		}
 	}
