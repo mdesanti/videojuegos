@@ -17,7 +17,10 @@ public class ScoreManager : MonoBehaviour
 	
 	public void playerGotBurnt() {
 		int score = PlayerPrefs.GetInt("Life");
-		PlayerPrefs.SetInt("Life", score - 5);
+		if(score == 5)
+			Application.LoadLevel ("GameOver");
+		else 
+			PlayerPrefs.SetInt("Life", score - 5);
 	}
 	
 	void OnGUI () {

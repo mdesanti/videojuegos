@@ -10,7 +10,6 @@ public class PlayerCollisionController : MonoBehaviour
 		string tag = collision.tag;
 		if(tag == "Fire") {
 			scoreManager.playerGotBurnt();
-			Application.LoadLevel ("GameOver");
 		}
     }
 }

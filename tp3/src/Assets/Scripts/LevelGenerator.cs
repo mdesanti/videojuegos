@@ -17,17 +17,18 @@ public class LevelGenerator : MonoBehaviour
 	private enum Directions {LEFT, RIGHT, TOP, DOWN};
 	private Directions actual;
 	private Directions previous;
-	private int step = 12;
+	private int step = 10;
 	private bool create = true;
 	private double elapsedTime = 0;
 	private bool room_created = false;
 	private bool direction_changed = false;
 	private bool torch_created = true;
     private int default_size = 2;
+    private bool start = true;
 
 
     void Start() {
-        //Random.seed = seed;
+        Random.seed = seed;
         putWall(x - 5, 6, z, new Vector3(0, 90, 0));
         CreateLevel(0, 0, Directions.RIGHT);
     } 
@@ -68,7 +69,7 @@ public class LevelGenerator : MonoBehaviour
 	        		z += step;
 	    		}
     		}
-    		room_created = direction_changed = false;
+    		room_created = direction_changed = start = false;
         }
         if(Mathf.Abs(x) < width || Mathf.Abs(z) < height)
             putExit(x, z, actual);
@@ -221,8 +222,8 @@ public class LevelGenerator : MonoBehaviour
     	int width = ((int) (Random.value * 5) + 5) * 10;
     	int height = ((int) (Random.value * 5) + 5) * 10;
 
-        int entrance_door_x;
-        int entrance_door_z;
+        int entrance_door_x = 0;
+        int entrance_door_z = 0;
         int exit_door_x = 0;
         int exit_door_z = 0;
         int extra_door_x = 0;
@@ -256,7 +257,10 @@ public class LevelGenerator : MonoBehaviour
 
         //pongo la puerta de salida en la direccion opuesta a la que entre, en una posicion random.
         if(actual == Directions.RIGHT || actual == Directions.LEFT) {
-            putDoor(x - step / 2, z);
+            if(!start) {
+                putDoor(x - step / 2, z);
+            }
+            start = false;
             entrance_door_x = x - step / 2;
             entrance_door_z = z;
 
@@ -295,7 +299,10 @@ public class LevelGenerator : MonoBehaviour
             }
 
         } else {
-            putDoor(x, z - step / 2);
+            if(!start) {
+                putDoor(x, z - step / 2);
+            }
+            start = false;
             entrance_door_x = x;
             entrance_door_z = z - step / 2;
 
