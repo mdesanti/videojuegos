@@ -8,9 +8,10 @@ public class OpenDoor : MonoBehaviour
 	public bool open = false;
 
 	//Activate the Main function when player is near the door
-	void OnTriggerEnter(Collider other)
+	//void OnTriggerEnter(Collider other)
+	void OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.tag == "Player" && !open) 
+		if (other.collider.gameObject.tag == "Player" && !open) 
 		{
 			open = true;
 			if(transform.position.x % 10 == 5) {

@@ -9,6 +9,7 @@ public class LevelGenerator : MonoBehaviour
 	public GameObject torch;
 	public GameObject axe;
 	public GameObject flameThrower;
+    public GameObject shieldAndSword;
 	private int width = 400;
 	private int height = 400;
 	private int x = 0;
@@ -181,7 +182,10 @@ public class LevelGenerator : MonoBehaviour
     			if(torch_created) {
     				putTorch(x, z + 5, new Vector3(-30, 0, 0));
     				putTorch(x, z - 5, new Vector3(30, 0, 0));
-    			}
+    			} else {
+                    putShieldAndSword(x, z + 4.5f, new Vector3(0, 90, 0));
+                    putShieldAndSword(x, z - 4.5f, new Vector3(0, 270, 0));
+                }
                 putWall(x, 6, z + 5, new Vector3(0, 0, 0));
                 putWall(x, 6, z - 5, new Vector3(0, 0, 0));
     		}
@@ -207,10 +211,13 @@ public class LevelGenerator : MonoBehaviour
     			if(torch_created) {
     				putTorch(x + 5, z, new Vector3(0, 0, 30));
     				putTorch(x - 5, z, new Vector3(0, 0, -30));
-    			}
+    			} else {
+                    putShieldAndSword(x + 4.5f, z, new Vector3(0, 180, 0));
+                    putShieldAndSword(x - 4.5f, z, new Vector3(0, 0, 0));
+                }
                 putWall(x + 5, 6, z, new Vector3(0, 90, 0));
                 putWall(x - 5, 6, z, new Vector3(0, 90, 0));
-                if(!axe)
+                //if(!axe)
 				    putFlameThrower(x, z, 0.25f, new Vector3(1, 0, 0));
 	    	}
     	}
@@ -421,6 +428,12 @@ public class LevelGenerator : MonoBehaviour
         extra_exit = false;
     	return true;
     }
+
+    private void putShieldAndSword(float x, float z, Vector3 rotation) {
+        GameObject s = (GameObject)GameObject.Instantiate(shieldAndSword);
+        s.transform.position = new Vector3(x, 10, z);
+        s.transform.eulerAngles = rotation;
+    }
 	
 	private bool putAxe(int x, int z) {
 		if(Random.value > 0.8) {
@@ -464,7 +477,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void putTorch(int x, int z, Vector3 rotation) {
     	GameObject t = (GameObject)GameObject.Instantiate(torch);
-    	t.transform.position = new Vector3(x, 5, z);
+    	t.transform.position = new Vector3(x, 7, z);
     	t.transform.eulerAngles = rotation;
     }
 
