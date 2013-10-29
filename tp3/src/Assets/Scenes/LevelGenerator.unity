@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2779da7eb3554b86a42a784a7ae20e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableTime: 0
   style:
     m_Name: 
     m_Normal:
@@ -437,6 +436,10 @@ Prefab:
     - target: {fileID: 400000, guid: e7dbe7ef89bd443c8b526f431d4a9364, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e7dbe7ef89bd443c8b526f431d4a9364, type: 2}
+      propertyPath: availableTime
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7dbe7ef89bd443c8b526f431d4a9364, type: 2}
@@ -945,6 +948,8 @@ MonoBehaviour:
   shieldAndSword: {fileID: 100002, guid: b5dc7b89d77642c44b60136733d6a3eb, type: 2}
   box: {fileID: 100000, guid: b0a9c34f8ad2c4c49988cbeb282fceec, type: 3}
   barrel: {fileID: 100000, guid: c4369bf553c2bef4cbd538d7280e052b, type: 2}
+  timeController: {fileID: 11400000, guid: e7dbe7ef89bd443c8b526f431d4a9364, type: 2}
+  scoreManager: {fileID: 11400000, guid: db79b2f36b5aa418e91aa8e128c978e9, type: 2}
 --- !u!1 &1927732053
 GameObject:
   m_ObjectHideFlags: 0

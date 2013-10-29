@@ -12,6 +12,8 @@ public class LevelGenerator : MonoBehaviour
     public GameObject shieldAndSword;
     public GameObject box;
     public GameObject barrel;
+	public TimeController timeController;
+	public ScoreManager scoreManager;
 	private int width = 400;
 	private int height = 400;
 	private int x = 0;
@@ -34,6 +36,8 @@ public class LevelGenerator : MonoBehaviour
         Random.seed = seed;
         putWall(x - 5, 6, z, new Vector3(0, 90, 0));
         CreateLevel(0, 0, Directions.RIGHT);
+		timeController.SetTime();
+		scoreManager.SetAxesLeft();
     } 
 
 	void CreateLevel(int _x, int _z, Directions _actual) {
@@ -158,7 +162,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void putCorridor(int x, int z) {
     	putFloor(x, z);
-		putAxe(x, z);
+		putAxe(x, z, 0.2f);
     	if(actual == Directions.LEFT || actual == Directions.RIGHT) {
 	    	if(direction_changed) {
 	    		if(previous == Directions.DOWN) {
@@ -350,7 +354,7 @@ public class LevelGenerator : MonoBehaviour
     	for(int i = 0; Mathf.Abs(i) < height; i+= step) {
         	for(int j = 0; Mathf.Abs(j) < width; j+= step) {
         		putFloor(x + j, z + i);
-				axe = putAxe(x + j, z + i);
+				axe = putAxe(x + j, z + i, 0.05f);
         		if(j == 0 && !((z + i) == entrance_door_z && (x + j - 5 * sign) == entrance_door_x) && !(exit_door && (z + i) == exit_door_z && (x + j - 5 * sign) == exit_door_x) && !(extra_exit && (z + i) == extra_door_z && (x + j - 5 * sign) == extra_door_x)) {
                     putWall(x + j - 5 * sign, 6, z + i, new Vector3(0, 90, 0));
                     if(other_torch) {
@@ -447,8 +451,8 @@ public class LevelGenerator : MonoBehaviour
         s.transform.eulerAngles = rotation;
     }
 	
-	private bool putAxe(int x, int z) {
-		if(Random.value > 0.8) {
+	private bool putAxe(int x, int z, float probability) {
+		if(Random.value < probability) {
 			GameObject d = (GameObject)GameObject.Instantiate(axe);
 		    d.transform.position = new Vector3(x, 4f, z);
 			d.transform.eulerAngles = new Vector3(-90, 0, 0);
