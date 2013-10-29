@@ -23,7 +23,13 @@ public class TimeController : MonoBehaviour {
 	
 	public void SetTime() {
 		GameObject[] aux = GameObject.FindGameObjectsWithTag("Floor");
-		availableTime = aux.Length*1.1f;
+		string diff = PlayerPrefs.GetString("difficult");
+		bool difficult = bool.Parse(diff);
+		float factor = 1.1f;
+		if(difficult) {
+			factor = 0.8f;
+		}
+		availableTime = aux.Length*factor;
 		started = true;
 	}
 	
