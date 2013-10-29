@@ -10,6 +10,8 @@ public class LevelGenerator : MonoBehaviour
 	public GameObject axe;
 	public GameObject flameThrower;
     public GameObject shieldAndSword;
+    public GameObject box;
+    public GameObject barrel;
 	private int width = 400;
 	private int height = 400;
 	private int x = 0;
@@ -119,7 +121,6 @@ public class LevelGenerator : MonoBehaviour
     			     return false;
     		}
         }
-        //Debug.Log("changing.. x: " + x + " z: " + z);
         return true;
     }
 
@@ -149,17 +150,15 @@ public class LevelGenerator : MonoBehaviour
                 return false;
     	} 	
         if(Physics.Raycast(new Vector3(x, 5, z), d, out hitInfo, 10f * size)) {
-    			//Debug.Log("collision:" + hitInfo.collider.tag + "x:" + x + " z:" + z);
     			return false;
         }
-    	//Debug.Log("not collision");
     	return true;
     }
 
 
     private void putCorridor(int x, int z) {
     	putFloor(x, z);
-		bool axe = putAxe(x, z);
+		putAxe(x, z);
     	if(actual == Directions.LEFT || actual == Directions.RIGHT) {
 	    	if(direction_changed) {
 	    		if(previous == Directions.DOWN) {
@@ -217,15 +216,14 @@ public class LevelGenerator : MonoBehaviour
                 }
                 putWall(x + 5, 6, z, new Vector3(0, 90, 0));
                 putWall(x - 5, 6, z, new Vector3(0, 90, 0));
-                //if(!axe)
-				    putFlameThrower(x, z, 0.25f, new Vector3(1, 0, 0));
+				putFlameThrower(x, z, 0.25f, new Vector3(1, 0, 0));
 	    	}
     	}
     	torch_created = !torch_created;
     }
 
     private bool createRoom() {
-        //tamanio de la habitacion
+        //tamaño de la habitacion
     	int width = ((int) (Random.value * 5) + 5) * 10;
     	int height = ((int) (Random.value * 5) + 5) * 10;
 
@@ -239,6 +237,7 @@ public class LevelGenerator : MonoBehaviour
         bool other_torch = true;
         bool extra_exit = false;
         bool exit_door = false;
+        bool axe;
         Directions extra_direction = actual;
         int rand;
 
@@ -351,7 +350,7 @@ public class LevelGenerator : MonoBehaviour
     	for(int i = 0; Mathf.Abs(i) < height; i+= step) {
         	for(int j = 0; Mathf.Abs(j) < width; j+= step) {
         		putFloor(x + j, z + i);
-				putAxe(x + j, z + i);
+				axe = putAxe(x + j, z + i);
         		if(j == 0 && !((z + i) == entrance_door_z && (x + j - 5 * sign) == entrance_door_x) && !(exit_door && (z + i) == exit_door_z && (x + j - 5 * sign) == exit_door_x) && !(extra_exit && (z + i) == extra_door_z && (x + j - 5 * sign) == extra_door_x)) {
                     putWall(x + j - 5 * sign, 6, z + i, new Vector3(0, 90, 0));
                     if(other_torch) {
@@ -361,7 +360,9 @@ public class LevelGenerator : MonoBehaviour
 						} else {
                             putTorch(x + j - 5 * sign, z + i, new Vector3(0, 0, 30));
 						}
-                    }
+                    } else
+                        if(!axe)
+                            putFurniture(x + j, z + i);
                 }
                 if (Mathf.Abs(j) == (width - 10) && !((z + i) == entrance_door_z && (x + j + 5 * sign) == entrance_door_x) && !(exit_door && (z + i) == exit_door_z && (x + j + 5 * sign) == exit_door_x) && !(extra_exit && (z + i) == extra_door_z && (x + j + 5 * sign) == extra_door_x)) {
                     putWall(x + j + 5 * sign, 6, z + i, new Vector3(0, 90, 0));
@@ -372,7 +373,9 @@ public class LevelGenerator : MonoBehaviour
                             putTorch(x + j + 5 * sign, z + i, new Vector3(0, 0, -30));
                             //putFlameThrower(x + j, z + i, 0.4f, new Vector3(1, 0, 0));
 						}
-                    }
+                    } else
+                        if(!axe)
+                            putFurniture(x + j, z + i);
                     other_torch = !other_torch;
                 } 
                 if (i == 0 && ((x + j) != entrance_door_x || (z + i - 5 * sign) != entrance_door_z) && (exit_door && (x + j) != exit_door_x || (z + i - 5 * sign) != exit_door_z) && !(extra_exit && (z + i - 5) == extra_door_z && (x + j) == extra_door_x)) {
@@ -384,7 +387,9 @@ public class LevelGenerator : MonoBehaviour
 						} else {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(-30, 0, 0));
 						}
-                    }
+                    } else
+                        if(!axe)
+                            putFurniture(x + j, z + i);
                     torch_created = !torch_created;
                 } 
                 if (Mathf.Abs(i) == height - 10 && ((x + j) != entrance_door_x || (z + i + 5 * sign) != entrance_door_z) && (exit_door && (x + j) != exit_door_x || (z + i + 5 * sign) != exit_door_z) && !(extra_exit && (z + i + 5) == extra_door_z && (x + j) == extra_door_x)) {
@@ -396,7 +401,9 @@ public class LevelGenerator : MonoBehaviour
                             putTorch(x + j, z + i + 5 * sign, new Vector3(30, 0, 0));
                             putFlameThrower(x + j, z + i, 0.2f, new Vector3(0, 0, 1));
 						}
-                    }
+                    } else
+                        if(!axe)
+                            putFurniture(x + j, z + i);
                     torch_created = !torch_created;
         		}
         	}
@@ -427,6 +434,11 @@ public class LevelGenerator : MonoBehaviour
         }
         extra_exit = false;
     	return true;
+    }
+
+    private void putFurniture(float x, float z) {
+        //GameObject b = (GameObject)GameObject.Instantiate(barrel);
+        //b.transform.position = new Vector3(x, 0, z);
     }
 
     private void putShieldAndSword(float x, float z, Vector3 rotation) {
