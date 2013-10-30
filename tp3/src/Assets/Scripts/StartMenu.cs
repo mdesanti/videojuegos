@@ -6,7 +6,7 @@ public class StartMenu : MonoBehaviour {
 	
 	private string width = "400";
 	private string height = "400";
-	private string seed = "1234";
+	private string seed = "12345";
 	bool difficult = false;
 	
 	void OnGUI () {

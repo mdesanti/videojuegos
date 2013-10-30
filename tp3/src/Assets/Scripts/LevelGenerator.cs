@@ -50,7 +50,7 @@ public class LevelGenerator : MonoBehaviour
 		difficult = bool.Parse (diff);
 		if(difficult) {
 			roomAxeProbability = 0.1f;
-			corridorAxeProbability = 0.35f;
+			corridorAxeProbability = 0.25f;
 		}
 		GenerateLevel(seed, width, height, difficult);
 	}
