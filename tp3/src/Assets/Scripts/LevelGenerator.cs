@@ -12,6 +12,8 @@ public class LevelGenerator : MonoBehaviour
     public GameObject shieldAndSword;
     public GameObject box;
     public GameObject barrel;
+	public TimeController timeController;
+	public ScoreManager scoreManager;
 	private int width = 400;
 	private int height = 400;
 	private int x = 0;
@@ -28,13 +30,38 @@ public class LevelGenerator : MonoBehaviour
 	private bool torch_created = true;
     private int default_size = 5; //minimum size to consider in order to place items
     private bool start = true;
-
-
-    void Start() {
-        //Random.seed = seed;
+	private float roomAxeProbability = 0.05f;
+	private float corridorAxeProbability = 0.2f;
+	private bool difficult = false;
+	
+	void Start() {
+		height = PlayerPrefs.GetInt("height");
+		width = PlayerPrefs.GetInt("width");
+		seed = PlayerPrefs.GetInt("seed");
+		string diff = PlayerPrefs.GetString("difficult");
+		if(seed == 0) {
+			seed = (int)Random.value;
+		}
+		Random.seed = seed;
+		Debug.Log(height);
+		Debug.Log(width);
+		Debug.Log(seed);
+		Debug.Log(diff);
+		difficult = bool.Parse (diff);
+		if(difficult) {
+			roomAxeProbability = 0.1f;
+			corridorAxeProbability = 0.35f;
+		}
+		GenerateLevel(seed, width, height, difficult);
+	}
+	
+	public void GenerateLevel(int seed, int width, int height, bool difficulty) {
+		Random.seed = seed;
         putWall(x - 5, 6, z, new Vector3(0, 90, 0));
         CreateLevel(0, 0, Directions.RIGHT);
-    } 
+		timeController.SetTime();
+		scoreManager.SetAxesLeft();
+	}
 
 	void CreateLevel(int _x, int _z, Directions _actual) {
         x = _x;
@@ -158,7 +185,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void putCorridor(int x, int z) {
     	putFloor(x, z);
-		putAxe(x, z);
+		putAxe(x, z, corridorAxeProbability);
     	if(actual == Directions.LEFT || actual == Directions.RIGHT) {
 	    	if(direction_changed) {
 	    		if(previous == Directions.DOWN) {
@@ -287,7 +314,7 @@ public class LevelGenerator : MonoBehaviour
                     rand *= 10;
                     if(checkSpace(x - rand * sign + width * sign, z - (step / 2) + height * sign, Directions.TOP, default_size)) {
                         putDoor(x - rand * sign + width * sign, z - (step / 2) + height * sign, new Vector3(90, 0, 0)); //arriba
-                        extra_exit = true;
+                        extra_exit = true && difficult;
                         extra_door_x = x - rand * sign + width * sign;
                         extra_door_z = z - (step / 2) + height * sign;
                         if(actual == Directions.RIGHT)
@@ -301,7 +328,7 @@ public class LevelGenerator : MonoBehaviour
                     rand *= 10;
                     if(checkSpace(x + rand * sign, z - step / 2, Directions.DOWN, default_size)) {
                         putDoor(x + rand * sign, z - step / 2, new Vector3(90, 0, 0) ); //abajo
-                        extra_exit = true;
+                        extra_exit = true && difficult;
                         extra_door_x = x + rand * sign;
                         extra_door_z = z - step / 2;
                         if(actual == Directions.RIGHT)
@@ -335,7 +362,7 @@ public class LevelGenerator : MonoBehaviour
                     rand *= 10;
                     if(checkSpace(x - step / 2 + width * sign, z + rand * sign, Directions.RIGHT, default_size)) {
                         putDoor(x - step / 2 + width * sign, z + rand * sign, new Vector3(90, 90, 0)); //derecha
-                        extra_exit = true;
+                        extra_exit = true && difficult;
                         extra_door_x = x - step / 2 + width * sign;
                         extra_door_z = z + rand * sign;
                         if(actual == Directions.TOP)
@@ -349,7 +376,7 @@ public class LevelGenerator : MonoBehaviour
                     rand *= 10;
                     if(checkSpace(x - step / 2, z + rand * sign, Directions.LEFT, default_size)) {
                         putDoor(x - step / 2, z + rand * sign, new Vector3(90, 90, 0)); //izquierda
-                        extra_exit = true;
+                        extra_exit = true && difficult;
                         extra_door_x = x - step / 2;
                         extra_door_z = z + rand * sign;
                         if(actual == Directions.TOP)
@@ -364,7 +391,7 @@ public class LevelGenerator : MonoBehaviour
     	for(int i = 0; Mathf.Abs(i) < height; i+= step) {
         	for(int j = 0; Mathf.Abs(j) < width; j+= step) {
         		putFloor(x + j, z + i);
-				axe = putAxe(x + j, z + i);
+				axe = putAxe(x + j, z + i, roomAxeProbability);
         		if(j == 0 && !((z + i) == entrance_door_z && (x + j - 5 * sign) == entrance_door_x) && !(exit_door && (z + i) == exit_door_z && (x + j - 5 * sign) == exit_door_x) && !(extra_exit && (z + i) == extra_door_z && (x + j - 5 * sign) == extra_door_x)) {
                     putWall(x + j - 5 * sign, 6, z + i, new Vector3(0, 90, 0));
                     if(other_torch) {
@@ -397,7 +424,7 @@ public class LevelGenerator : MonoBehaviour
                     if(torch_created) {
                         if(actual == Directions.RIGHT || actual == Directions.TOP) {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(30, 0, 0));
-                            putFlameThrower(x + j, z + i, 0.2f, new Vector3(0, 0, 1));
+                            putFlameThrower(x + j, z + i, 0.3f, new Vector3(0, 0, 1));
 						} else {
                             putTorch(x + j, z + i - 5 * sign, new Vector3(-30, 0, 0));
 						}
@@ -413,7 +440,7 @@ public class LevelGenerator : MonoBehaviour
                             putTorch(x + j, z + i + 5 * sign, new Vector3(-30, 0, 0));
 						} else {
                             putTorch(x + j, z + i + 5 * sign, new Vector3(30, 0, 0));
-                            putFlameThrower(x + j, z + i, 0.2f, new Vector3(0, 0, 1));
+                            putFlameThrower(x + j, z + i, 0.3f, new Vector3(0, 0, 1));
 						}
                     } else if(!axe && j != 0 && j != width - 10) {
                             putFurniture(x + j, z + i);
@@ -468,8 +495,8 @@ public class LevelGenerator : MonoBehaviour
         s.transform.eulerAngles = rotation;
     }
 	
-	private bool putAxe(int x, int z) {
-		if(Random.value > 0.8) {
+	private bool putAxe(int x, int z, float probability) {
+		if(Random.value < probability) {
 			GameObject d = (GameObject)GameObject.Instantiate(axe);
 		    d.transform.position = new Vector3(x, 4f, z);
 			d.transform.eulerAngles = new Vector3(-90, 0, 0);
