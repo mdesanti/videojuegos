@@ -942,7 +942,7 @@ MonoBehaviour:
   axe: {fileID: 100000, guid: 6954dc9abe8114b59882bb8c921aa22a, type: 2}
   flameThrower: {fileID: 100000, guid: be0195c5386fe42eabf4ff0f40e59288, type: 2}
   shieldAndSword: {fileID: 100002, guid: b5dc7b89d77642c44b60136733d6a3eb, type: 2}
-  box: {fileID: 100000, guid: b0a9c34f8ad2c4c49988cbeb282fceec, type: 3}
+  box: {fileID: 100000, guid: eb9c0df0da5b8b2448455fccf0768b6d, type: 2}
   barrel: {fileID: 100000, guid: c4369bf553c2bef4cbd538d7280e052b, type: 2}
 --- !u!1 &1988923112
 GameObject:
