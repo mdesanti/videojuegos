@@ -5,17 +5,16 @@ public class ScoreManager : MonoBehaviour
 {
 	public GUIStyle style;
 	
-	private static int axesLeft = 0;
+	public static int axesLeft = 0;
+
+	public static void incrementAxeCount() {
+		axesLeft += 1;
+	}
 	
 	void Start() {
 		PlayerPrefs.SetInt("Score", 0);
 		PlayerPrefs.SetInt("Life", 100);
     }
-	
-	public void SetAxesLeft() {
-		GameObject[] aux = GameObject.FindGameObjectsWithTag("Axe");
-		axesLeft = aux.Length;
-	}
 	
 	public void axeCollected() {
 		int score = PlayerPrefs.GetInt("Score");
@@ -28,10 +27,9 @@ public class ScoreManager : MonoBehaviour
 	
 	public void playerGotBurnt() {
 		int life = PlayerPrefs.GetInt("Life");
+		PlayerPrefs.SetInt("Life", life - 5);
 		if(life <= 0)
 			Application.LoadLevel ("GameOver");
-		else 
-			PlayerPrefs.SetInt("Life", life - 5);
 	}
 	
 	void OnGUI () {

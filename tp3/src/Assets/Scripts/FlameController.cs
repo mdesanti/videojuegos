@@ -4,7 +4,7 @@ public class FlameController : MonoBehaviour
 {
 
 	private GameObject[] explotionPool;
-	private int POOL_SIZE = 10;
+	private int POOL_SIZE = 20;
 	private Vector3 position;
 	public GameObject explotionPrototype;
     private double elapsedTime = 0;
@@ -53,9 +53,8 @@ public class FlameController : MonoBehaviour
             return false;
         } else {
             Transform explotion = getExplotion();
-            explotion.position = move;
-            //if(hitInfo.collider)
-              //  Debug.Log("collider:" + hitInfo.collider.gameObject.tag);
+            if(explotion != null)
+                explotion.position = move;
             return true;
         }
     }
