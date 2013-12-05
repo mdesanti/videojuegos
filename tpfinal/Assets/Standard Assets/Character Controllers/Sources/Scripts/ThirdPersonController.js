@@ -139,7 +139,7 @@ function UpdateSmoothedMovementDirection ()
 		if (isMoving)
 			inAirVelocity = targetDirection.normalized * Time.deltaTime * inAirControlAcceleration;
 			if(horizontal != 0) 
-				inAirVelocity = new Vector3(inAirVelocity.x * Mathf.Abs(horizontal) * 400, inAirVelocity.y, inAirVelocity.z);
+				inAirVelocity = new Vector3(inAirVelocity.x * Mathf.Abs(horizontal) * 300, inAirVelocity.y, inAirVelocity.z);
 	}	
 }
 
