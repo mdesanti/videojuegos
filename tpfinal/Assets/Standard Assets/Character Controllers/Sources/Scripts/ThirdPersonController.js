@@ -3,11 +3,7 @@
 @script RequireComponent(CharacterController)
 
 // The speed when walking
-var walkSpeed = 70.0;
-// after trotAfterSeconds of walking we trot with trotSpeed
-var trotSpeed = 70.0;
-// when pressing "Fire3" button (cmd) we start running
-var runSpeed = 70.0;
+static var walkSpeed = 70.0;
 
 var inAirControlAcceleration = 5.0;
 
@@ -15,7 +11,7 @@ var inAirControlAcceleration = 5.0;
 var jumpHeight = 5;
 
 // The gravity for the character
-var gravity = 90.0;
+static var gravity = 90.0;
 // The gravity in controlled descent mode
 var speedSmoothing = 5.0;
 var rotateSpeed = 0.0;
