@@ -45,6 +45,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CoinController.cs" />
+     <Compile Include="Assets\Scripts\ExtraLowGravityController.cs" />
+     <Compile Include="Assets\Scripts\ExtraSlowController.cs" />
+     <Compile Include="Assets\Scripts\ExtraSpeedController.cs" />
      <Compile Include="Assets\Scripts\GameOverController.cs" />
      <Compile Include="Assets\Scripts\GliderController.cs" />
      <Compile Include="Assets\Scripts\StartMenu.cs" />
