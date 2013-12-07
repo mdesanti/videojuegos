@@ -6,7 +6,8 @@ public class ExtraLowGravityController : MonoBehaviour
 	void OnTriggerEnter(Collider collider) 
     {
 		//perform(collider.gameObject);
-		ThirdPersonController.gravity -= 20;
+		//ThirdPersonController.gravity -= 20;
+		PlayerController.gravity -= 20;
 		Destroy(gameObject);
     }
 }

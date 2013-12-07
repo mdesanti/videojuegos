@@ -6,7 +6,8 @@ public class ExtraSpeedController : MonoBehaviour
 	void OnTriggerEnter(Collider collider) 
     {
 		//perform(collider.gameObject);
-		ThirdPersonController.walkSpeed += 20;
+		//ThirdPersonController.walkSpeed += 20;
+		PlayerController.walkSpeed += 20;
 		Destroy(gameObject);
     }
 }

@@ -5,10 +5,7 @@ using System.Collections;
 
 public class GliderController : MonoBehaviour {
 	
-	private double original_position;
-	
 	void Start() {
-        original_position = this.gameObject.transform.position.y;
     }
 	
 	void FixedUpdate() {
@@ -22,6 +19,10 @@ public class GliderController : MonoBehaviour {
 		Debug.Log("Hit a" + collision.gameObject.tag);
 		if(collision.gameObject.tag == "SolidWall") {
 			Application.LoadLevel("GameOver");
+		}
+
+		if(collision.gameObject.tag == "Target") {
+			Application.LoadLevel("LevelFinished");
 		}
     }
 }
