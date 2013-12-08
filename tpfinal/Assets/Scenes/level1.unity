@@ -2978,7 +2978,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bbb4dddd38c944e295b62536bd94849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
 --- !u!23 &429659948
 Renderer:
   m_ObjectHideFlags: 0
@@ -11743,7 +11742,7 @@ GameObject:
   - 4: {fileID: 1470689915}
   - 114: {fileID: 1470689916}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DataDisplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11831,6 +11830,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+  heart: {fileID: 2800000, guid: 6c90cf9d303a84f7aa57a8f35605b858, type: 3}
 --- !u!1 &1473174406
 GameObject:
   m_ObjectHideFlags: 0
