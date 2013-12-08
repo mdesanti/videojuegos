@@ -53,7 +53,10 @@
      <Compile Include="Assets\Scripts\GliderController.cs" />
      <Compile Include="Assets\Scripts\Instructions.cs" />
      <Compile Include="Assets\Scripts\LevelDataDisplayer.cs" />
+     <Compile Include="Assets\Scripts\LevelFinishedController.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PowerUpsMenu.cs" />
      <Compile Include="Assets\Scripts\StartMenu.cs" />
      <Compile Include="Assets\Scripts\StatsManager.cs" />
      <None Include="Assets\readme.txt" />
