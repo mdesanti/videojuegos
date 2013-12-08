@@ -5,6 +5,8 @@ using System.Collections;
 
 public class GliderController : MonoBehaviour {
 	
+	public int lives = 3;
+	
 	void Start() {
     }
 	
@@ -16,9 +18,13 @@ public class GliderController : MonoBehaviour {
 	}
 	
 	void OnControllerColliderHit(ControllerColliderHit collision) {
-		Debug.Log("Hit a" + collision.gameObject.tag);
 		if(collision.gameObject.tag == "SolidWall") {
-			Application.LoadLevel("GameOver");
+			if( lives == 0 ) {
+				Application.LoadLevel("GameOver");
+			} else {
+				lives = lives -1;
+				Application.LoadLevel(Application.loadedLevel);
+			}
 		}
 
 		if(collision.gameObject.tag == "Target") {

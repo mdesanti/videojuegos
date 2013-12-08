@@ -5,7 +5,7 @@ public class CoinController : MonoBehaviour
 {
 	void OnTriggerEnter(Collider collider) 
     {
-		//perform(collider.gameObject);
+		StatsManager.Instance.OnCoinCollected();
 		Destroy(gameObject);
     }
 }
