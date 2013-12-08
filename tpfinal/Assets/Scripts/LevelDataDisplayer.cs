@@ -7,6 +7,10 @@ public class LevelDataDisplayer : MonoBehaviour {
 	public GUIStyle style;
 	public Texture heart;
 	
+	void Start() {
+		StatsManager.Instance.ResetStatistics();
+	}
+	
 	void OnGUI () {
 		GUI.Label (new Rect (150,30,50,50),"Score: " + StatsManager.Instance.coins, style);
 		int i = StatsManager.Instance.remainingLives;

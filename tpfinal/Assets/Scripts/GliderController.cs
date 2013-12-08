@@ -4,6 +4,14 @@ using UnityEngine;
 using System.Collections;
 
 public class GliderController : MonoBehaviour {
+
+	private float gravity = 0;
+	private float walkSpeed = 0;
+
+	void Start() {
+		gravity = PlayerController.gravity;
+		walkSpeed = PlayerController.walkSpeed;
+	}
 	
 	void FixedUpdate() {
 		double vertical_position = this.gameObject.transform.position.y;
@@ -21,6 +29,11 @@ public class GliderController : MonoBehaviour {
 		if(collision.gameObject.tag == "Target") {
 			Application.LoadLevel("LevelFinished");
 		}
-    }
+  }
+
+  	public void OnGliderReset() {
+  		PlayerController.gravity = gravity;
+  		PlayerController.walkSpeed = walkSpeed;
+  	}
 }
 
